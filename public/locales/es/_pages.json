@@ -1,6 +1,24 @@
 {
   "home": {
-    "hero": {},
+    "hero": {
+      "titles": {
+        "default": "@Sito/ui",
+        "productivity": "Productividad",
+        "speed": "Velocidad"
+      }
+    },
+    "logo": {
+      "title": "Logo"
+    },
+    "concepts": {
+      "title": "Conceptos"
+    },
+    "clearSpace": {
+      "title": "Zona segura"
+    },
+    "colors": {
+      "title": "Colores"
+    },
     "typography": {
       "title": "Tipografía"
     }

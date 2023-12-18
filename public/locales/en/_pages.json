@@ -1,6 +1,24 @@
 {
   "home": {
-    "hero": {},
+    "hero": {
+      "titles": {
+        "default": "@Sito/ui",
+        "productivity": "Productivity",
+        "speed": "Speed"
+      }
+    },
+    "logo": {
+      "title": "Logo"
+    },
+    "concepts": {
+      "title": "Concepts"
+    },
+    "clearSpace": {
+      "title": "Clear Space"
+    },
+    "colors": {
+      "title": "Colors"
+    },
     "typography": {
       "title": "Typography"
     }
