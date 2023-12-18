@@ -11,3 +11,22 @@ section {
   min-height: 100vh;
   min-height: 100svh;
 }
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+h4,
+h5,
+h6,
+p,
+a,
+span,
+button,
+li,
+ul,
+ol {
+  font-family: "Roboto", sans-serif;
+}
