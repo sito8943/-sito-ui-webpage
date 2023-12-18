@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-snap-type: y mandatory;
+}
+
 .viewport {
   min-height: 100vh;
   min-height: 100svh;
@@ -10,6 +14,7 @@
 section {
   min-height: 100vh;
   min-height: 100svh;
+  @apply flex flex-col justify-start items-center py-20;
 }
 
 h1,
@@ -32,7 +37,7 @@ ol {
 }
 
 h2 {
-  @apply lg:text-6xl md:text-5xl xs:text-4xl;
+  @apply text-6xl md:text-5xl xs:text-4xl font-[900];
 }
 
 .responsive-container {

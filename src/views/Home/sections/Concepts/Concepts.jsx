@@ -19,7 +19,9 @@ function Concepts() {
 
   return (
     <section id="concepts" className={background}>
-      <h2>{t("_pages:home.concepts.title")}</h2>
+      <div className="responsive-container">
+        <h2>{t("_pages:home.concepts.title")}</h2>
+      </div>
     </section>
   );
 }

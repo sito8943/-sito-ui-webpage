@@ -17,8 +17,10 @@ function Typography() {
   );
 
   return (
-    <section id="typography" className={`${background} responsive-container`}>
-      <h2>{t("_pages:home.typography.title")}</h2>
+    <section id="typography" className={`${background}`}>
+      <div className="responsive-container">
+        <h2>{t("_pages:home.typography.title")}</h2>
+      </div>
     </section>
   );
 }

@@ -19,7 +19,9 @@ function Logo() {
 
   return (
     <section id="logo" className={background}>
-      <h2>{t("_pages:home.logo.title")}</h2>
+      <div className="responsive-container">
+        <h2>{t("_pages:home.logo.title")}</h2>
+      </div>
     </section>
   );
 }

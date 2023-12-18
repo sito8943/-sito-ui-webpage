@@ -19,7 +19,9 @@ function ClearSpace() {
 
   return (
     <section id="clear-space" className={background}>
-      <h2>{t("_pages:home.clearSpace.title")}</h2>
+      <div className="responsive-container">
+        <h2>{t("_pages:home.clearSpace.title")}</h2>
+      </div>
     </section>
   );
 }

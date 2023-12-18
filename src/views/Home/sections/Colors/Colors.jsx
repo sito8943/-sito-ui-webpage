@@ -5,7 +5,9 @@ function Colors() {
 
   return (
     <section id="colors">
-      <h2>{t("_pages:home.colors.title")}</h2>
+      <div className="responsive-container">
+        <h2>{t("_pages:home.colors.title")}</h2>
+      </div>
     </section>
   );
 }
