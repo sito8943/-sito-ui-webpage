@@ -17,7 +17,11 @@
       "title": "Clear Space"
     },
     "colors": {
-      "title": "Colors Palette"
+      "title": "Colors Palette",
+      "blackAndWhite": {
+        "white": "Single Ink",
+        "black": "Negative"
+      }
     },
     "typography": {
       "title": "Typography"

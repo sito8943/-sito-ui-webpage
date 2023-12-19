@@ -17,7 +17,11 @@
       "title": "Zona segura"
     },
     "colors": {
-      "title": "Paleta Colores"
+      "title": "Paleta Colores",
+      "blackAndWhite": {
+        "white": "A una sola tinta",
+        "black": "Negativo"
+      }
     },
     "typography": {
       "title": "Tipografía"
