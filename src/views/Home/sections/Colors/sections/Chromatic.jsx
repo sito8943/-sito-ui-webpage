@@ -1,7 +1,7 @@
 import React from "react";
 
-function Cromatic() {
+function Chromatic() {
   return <div></div>;
 }
 
-export default Cromatic;
+export default Chromatic;
