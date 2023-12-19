@@ -21,6 +21,7 @@ h1,
 h2,
 h3 {
   font-family: "Poppins", sans-serif;
+  @apply font-[900];
 }
 
 h4,
@@ -37,7 +38,11 @@ ol {
 }
 
 h2 {
-  @apply text-6xl md:text-5xl xs:text-4xl font-[900];
+  @apply text-6xl md:text-5xl xs:text-4xl;
+}
+
+h3 {
+  @apply text-5xl xs:text-3xl;
 }
 
 .responsive-container {
