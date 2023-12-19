@@ -21,7 +21,8 @@
       "blackAndWhite": {
         "white": "A una sola tinta",
         "black": "Negativo"
-      }
+      },
+      "chromatic": "Otras combinaciónes cromáticas"
     },
     "typography": {
       "title": "Tipografía"
