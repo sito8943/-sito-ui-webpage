@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 // @emotion/css
 import { css } from "@emotion/css";
 
-import { useStyle } from "@sito/ui";
+import { PrintAfter, useStyle } from "@sito/ui";
 
 function Typography() {
   const { colors } = useStyle();
@@ -19,7 +19,9 @@ function Typography() {
   return (
     <section id="typography" className={`${background}`}>
       <div className="responsive-container">
-        <h2>{t("_pages:home.typography.title")}</h2>
+        <PrintAfter onVisible animation="appear" delay={200}>
+          <h2>{t("_pages:home.typography.title")}</h2>
+        </PrintAfter>
       </div>
     </section>
   );

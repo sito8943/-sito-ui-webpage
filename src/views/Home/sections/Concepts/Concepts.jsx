@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { css } from "@emotion/css";
 
 // @sito/ui
-import { useStyle } from "@sito/ui";
+import { PrintAfter, useStyle } from "@sito/ui";
 
 function Concepts() {
   const { colors } = useStyle();
@@ -20,7 +20,9 @@ function Concepts() {
   return (
     <section id="concepts" className={background}>
       <div className="responsive-container">
-        <h2>{t("_pages:home.concepts.title")}</h2>
+        <PrintAfter onVisible animation="appear" delay={200}>
+          <h2>{t("_pages:home.concepts.title")}</h2>
+        </PrintAfter>
       </div>
     </section>
   );

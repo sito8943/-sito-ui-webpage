@@ -1,3 +1,4 @@
+import { PrintAfter } from "@sito/ui";
 import { useTranslation } from "react-i18next";
 
 function Colors() {
@@ -6,7 +7,9 @@ function Colors() {
   return (
     <section id="colors">
       <div className="responsive-container">
-        <h2>{t("_pages:home.colors.title")}</h2>
+        <PrintAfter onVisible animation="appear" delay={200}>
+          <h2>{t("_pages:home.colors.title")}</h2>
+        </PrintAfter>
       </div>
     </section>
   );

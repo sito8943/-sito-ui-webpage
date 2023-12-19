@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { css } from "@emotion/css";
 
 // @sito/ui
-import { useStyle } from "@sito/ui";
+import { PrintAfter, useStyle } from "@sito/ui";
 
 function ClearSpace() {
   const { colors } = useStyle();
@@ -20,7 +20,9 @@ function ClearSpace() {
   return (
     <section id="clear-space" className={background}>
       <div className="responsive-container">
-        <h2>{t("_pages:home.clearSpace.title")}</h2>
+        <PrintAfter onVisible animation="appear" delay={200}>
+          <h2>{t("_pages:home.clearSpace.title")}</h2>
+        </PrintAfter>
       </div>
     </section>
   );
