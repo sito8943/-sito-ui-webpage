@@ -5,10 +5,8 @@ import { PrintAfter, useScreenHandler, useStyle } from "@sito/ui";
 
 // components
 import Card from "../../../../../components/Card/Card";
+import Logo from "../../../../../components/Logo/Logo";
 import RGBColor from "../components/RGBColor";
-
-// images
-import logo from "../../../../../assets/images/logo.svg";
 
 export default function BlackAndWhite() {
   const { t } = useTranslation();
@@ -26,10 +24,10 @@ export default function BlackAndWhite() {
         <PrintAfter animation="appear" onVisible delay={400}>
           <Card inverted className="relative flex items-center justify-center">
             <div className="p-3 flex absolute w-full h-full flex-col justify-between items-start">
-              <p className="uppercase">{colors.basics.text}</p>
+              <p className="uppercase basics">{colors.basics.text}</p>
               <RGBColor color={colors.basics.text} />
             </div>
-            <img src={logo} alt="logo" className="w-40 h-40" />
+            <Logo color={colors.basics.dark} className="w-40 h-40" />
           </Card>
         </PrintAfter>
       </div>
@@ -51,7 +49,7 @@ export default function BlackAndWhite() {
               <p className="uppercase">{colors.basics.dark}</p>
               <RGBColor color={colors.basics.dark} />
             </div>
-            <img src={logo} alt="logo" className="w-40 h-40" />
+            <Logo color={colors.basics.text} className="w-40 h-40" />
           </Card>
         </PrintAfter>
       </div>
