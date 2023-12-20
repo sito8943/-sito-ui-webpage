@@ -485,10 +485,9 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.9.0.tgz#4ea610e0c40a07a8afa2977cbf80507f41c2271c"
   integrity sha512-aPP5Q5AqNGuT0tnuEkK/g4mnt3ZhheiXrDIiSVIHN9mcN21OyXDVbEMqmXPE7e2OplNLDkcvV+ZoGJa2ZImFgw==
 
-"@sito/ui@^0.0.178":
-  version "0.0.178"
-  resolved "https://registry.yarnpkg.com/@sito/ui/-/ui-0.0.178.tgz#523e5647ecb88c24122cde9ef82935386694866d"
-  integrity sha512-pOukWaYp8NIj/QHPsHM0bCwAQJt2AEx5xMp/KENDW/CrhY86wOr75GJtrX4SBI3v0qYW21q7EpxY5wr4jTkFHw==
+"@sito/ui@C:\\Users\\Sito\\Documents\\Code\\Code\\SiUi\\sito-ui-0.0.181.tgz":
+  version "0.0.181"
+  resolved "C:\\Users\\Sito\\Documents\\Code\\Code\\SiUi\\sito-ui-0.0.181.tgz#339071707368911288398a4d3be79a6883da9ad1"
   dependencies:
     "@emotion/css" "11.11.2"
     react "18.2.0"
