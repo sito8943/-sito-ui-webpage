@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-  @apply text-5xl xs:text-3xl;
+  @apply text-5xl md:text-4xl sm:text-3xl;
 }
 
 .responsive-container {
