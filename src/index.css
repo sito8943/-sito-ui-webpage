@@ -47,7 +47,7 @@ h3 {
 
 .responsive-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
 @media (max-width: 1230px) {
