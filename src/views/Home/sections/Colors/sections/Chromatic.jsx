@@ -18,13 +18,26 @@ export default function Chromatic() {
 
   const { breakpoint } = useScreenHandler();
 
+  const parseDelayByBreakpoint = (breakpoints = [], delays = []) => {
+    let indexOf = breakpoints.indexOf(breakpoint);
+    if (indexOf === -1) indexOf = 0;
+    return delays[indexOf];
+  };
+
   return (
     <div className="w-full flex flex-col justify-start items-start gap-4">
       <PrintAfter animation="appear" onVisible delay={200}>
         <h3>{t("_pages:home.colors.chromatic")}</h3>
       </PrintAfter>
       <div className="w-full grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-2 gap-y-4">
-        <PrintAfter animation="appear" onVisible delay={400}>
+        <PrintAfter
+          animation="appear"
+          onVisible
+          delay={parseDelayByBreakpoint(
+            ["lg", "md", "sm"],
+            ["400", "400", "200"]
+          )}
+        >
           <Card
             inverted
             className={`relative flex items-center justify-center `}
@@ -36,7 +49,14 @@ export default function Chromatic() {
             <Logo color={colors.basics.dark} className="w-40 h-40" />
           </Card>
         </PrintAfter>
-        <PrintAfter animation="appear" onVisible delay={400}>
+        <PrintAfter
+          animation="appear"
+          onVisible
+          delay={parseDelayByBreakpoint(
+            ["lg", "md", "sm"],
+            ["600", "600", "200"]
+          )}
+        >
           <Card
             inverted
             className={`relative flex items-center justify-center ${css({
@@ -50,7 +70,14 @@ export default function Chromatic() {
             <Logo color={colors.basics.dark} className="w-40 h-40" />
           </Card>
         </PrintAfter>
-        <PrintAfter animation="appear" onVisible delay={400}>
+        <PrintAfter
+          animation="appear"
+          onVisible
+          delay={parseDelayByBreakpoint(
+            ["lg", "md", "sm"],
+            ["800", "200", "200"]
+          )}
+        >
           <Card
             inverted
             className={`relative flex items-center justify-center ${css({
@@ -64,7 +91,14 @@ export default function Chromatic() {
             <Logo color={colors.basics.dark} className="w-40 h-40" />
           </Card>
         </PrintAfter>
-        <PrintAfter animation="appear" onVisible delay={400}>
+        <PrintAfter
+          animation="appear"
+          onVisible
+          delay={parseDelayByBreakpoint(
+            ["lg", "md", "sm"],
+            ["200", "400", "200"]
+          )}
+        >
           <Card
             className={`relative flex items-center justify-center ${css({
               background: `${colors.basics.light} !important`,
@@ -77,7 +111,14 @@ export default function Chromatic() {
             <Logo color={colors.basics.text} className="w-40 h-40" />
           </Card>
         </PrintAfter>
-        <PrintAfter animation="appear" onVisible delay={400}>
+        <PrintAfter
+          animation="appear"
+          onVisible
+          delay={parseDelayByBreakpoint(
+            ["lg", "md", "sm"],
+            ["400", "200", "200"]
+          )}
+        >
           <Card
             className={`relative flex items-center justify-center ${css({
               background: colors.basics.default,
@@ -90,7 +131,14 @@ export default function Chromatic() {
             <Logo color={colors.basics.text} className="w-40 h-40" />
           </Card>
         </PrintAfter>
-        <PrintAfter animation="appear" onVisible delay={400}>
+        <PrintAfter
+          animation="appear"
+          onVisible
+          delay={parseDelayByBreakpoint(
+            ["lg", "md", "sm"],
+            ["600", "200", "200"]
+          )}
+        >
           <Card bordered className="relative flex items-center justify-center">
             <div className="p-3 flex absolute w-full h-full flex-col justify-between items-start">
               <p className="uppercase">{colors.basics.dark}</p>
