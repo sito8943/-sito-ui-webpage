@@ -29,7 +29,9 @@ export default function Primary() {
       <PrintAfter animation="appear" onVisible delay={200}>
         <h4>{t("_pages:home.colors.lightMode")}</h4>
       </PrintAfter>
-      <div className="w-full grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-2 gap-y-4">
+      <div
+        className={`w-full grid grid-cols-3 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-1 gap-x-2 gap-y-4`}
+      >
         <PrintAfter
           animation="appear"
           onVisible
@@ -66,24 +68,32 @@ export default function Primary() {
             <Logo color={colors.primary.default} className="w-40 h-40" />
           </Card>
         </PrintAfter>
-        <PrintAfter
-          animation="appear"
-          onVisible
-          delay={delayByBreakpoint(["lg", "md", "sm"], [800, 600, 200])}
+        <div
+          className={`${css({
+            "@media (max-width:900px) and (min-width: 601px)": {
+              gridArea: "2 / 1 / 3 / 3;",
+            },
+          })}`}
         >
-          <Card
-            className={`relative flex items-center justify-center ${css({
-              background: `#E1E1E1 !important`,
-              color: `${colors.primary.default} !important`,
-            })}`}
+          <PrintAfter
+            animation="appear"
+            onVisible
+            delay={delayByBreakpoint(["lg", "md", "sm"], [800, 600, 200])}
           >
-            <div className="p-3 flex absolute w-full h-full flex-col justify-between items-start">
-              <p className="uppercase">#E1E1E1</p>
-              <RGBColor color="#E1E1E1" />
-            </div>
-            <Logo color={colors.primary.default} className="w-40 h-40" />
-          </Card>
-        </PrintAfter>
+            <Card
+              className={`relative flex items-center justify-center ${css({
+                background: `#E1E1E1 !important`,
+                color: `${colors.primary.default} !important`,
+              })}`}
+            >
+              <div className="p-3 flex absolute w-full h-full flex-col justify-between items-start">
+                <p className="uppercase">#E1E1E1</p>
+                <RGBColor color="#E1E1E1" />
+              </div>
+              <Logo color={colors.primary.default} className="w-40 h-40" />
+            </Card>
+          </PrintAfter>
+        </div>
       </div>
       <PrintAfter animation="appear" onVisible delay={200}>
         <h4>{t("_pages:home.colors.darkMode")}</h4>
@@ -125,25 +135,33 @@ export default function Primary() {
             <Logo color={colors.primary.default} className="w-40 h-40" />
           </Card>
         </PrintAfter>
-        <PrintAfter
-          animation="appear"
-          onVisible
-          delay={delayByBreakpoint(["lg", "md", "sm"], [800, 600, 200])}
+        <div
+          className={`${css({
+            "@media (max-width:900px) and (min-width: 601px)": {
+              gridArea: "2 / 1 / 3 / 3;",
+            },
+          })}`}
         >
-          <Card
-            bordered
-            className={`relative flex items-center justify-center ${css({
-              borderColor: colors.primary.default,
-              color: `${colors.primary.default} !important`,
-            })}`}
+          <PrintAfter
+            animation="appear"
+            onVisible
+            delay={delayByBreakpoint(["lg", "md", "sm"], [800, 600, 200])}
           >
-            <div className="p-3 flex absolute w-full h-full flex-col justify-between items-start">
-              <p className="uppercase">{colors.basics.default}</p>
-              <RGBColor color={colors.basics.default} />
-            </div>
-            <Logo color={colors.primary.default} className="w-40 h-40" />
-          </Card>
-        </PrintAfter>
+            <Card
+              bordered
+              className={`relative flex items-center justify-center ${css({
+                borderColor: colors.primary.default,
+                color: `${colors.primary.default} !important`,
+              })}`}
+            >
+              <div className="p-3 flex absolute w-full h-full flex-col justify-between items-start">
+                <p className="uppercase">{colors.basics.default}</p>
+                <RGBColor color={colors.basics.default} />
+              </div>
+              <Logo color={colors.primary.default} className="w-40 h-40" />
+            </Card>
+          </PrintAfter>
+        </div>
       </div>
       <PrintAfter animation="appear" onVisible delay={200}>
         <h4>{t("_pages:home.colors.colorChromatic")}</h4>
@@ -186,24 +204,32 @@ export default function Primary() {
             <Logo color={colors.basics.text} className="w-40 h-40" />
           </Card>
         </PrintAfter>
-        <PrintAfter
-          animation="appear"
-          onVisible
-          delay={delayByBreakpoint(["lg", "md", "sm"], [800, 600, 200])}
+        <div
+          className={`${css({
+            "@media (max-width:900px) and (min-width: 601px)": {
+              gridArea: "2 / 1 / 3 / 3;",
+            },
+          })}`}
         >
-          <Card
-            className={`relative flex items-center justify-center ${css({
-              background: `${colors.primary.dark} !important`,
-              color: `${colors.primary.text} !important`,
-            })}`}
+          <PrintAfter
+            animation="appear"
+            onVisible
+            delay={delayByBreakpoint(["lg", "md", "sm"], [800, 600, 200])}
           >
-            <div className="p-3 flex absolute w-full h-full flex-col justify-between items-start">
-              <p className="uppercase">{colors.primary.dark}</p>
-              <RGBColor color={colors.primary.dark} />
-            </div>
-            <Logo color={colors.primary.text} className="w-40 h-40" />
-          </Card>
-        </PrintAfter>
+            <Card
+              className={`relative flex items-center justify-center ${css({
+                background: `${colors.primary.dark} !important`,
+                color: `${colors.primary.text} !important`,
+              })}`}
+            >
+              <div className="p-3 flex absolute w-full h-full flex-col justify-between items-start">
+                <p className="uppercase">{colors.primary.dark}</p>
+                <RGBColor color={colors.primary.dark} />
+              </div>
+              <Logo color={colors.primary.text} className="w-40 h-40" />
+            </Card>
+          </PrintAfter>
+        </div>
       </div>
     </div>
   );
