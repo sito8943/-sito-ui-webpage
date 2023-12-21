@@ -22,7 +22,12 @@
         "white": "Single Ink",
         "black": "Negative"
       },
-      "chromatic": "Other chromatic combinations"
+      "chromatic": "Other chromatic combinations",
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "lightMode": "Light Mode",
+      "darkMode": "Dark Mode",
+      "colorChromatic": "Chromatic"
     },
     "typography": {
       "title": "Typography"
