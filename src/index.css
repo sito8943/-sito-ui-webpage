@@ -45,6 +45,10 @@ h3 {
   @apply text-5xl md:text-4xl sm:text-3xl;
 }
 
+h4 {
+  @apply text-4xl md:text-3xl sm:text-2xl;
+}
+
 .responsive-container {
   width: 100%;
   max-width: 1300px;
