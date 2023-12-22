@@ -12,6 +12,9 @@ import App from "./App.jsx";
 // styles
 import "./index.css";
 
+// animations
+import "./assets/animations/scaleUp.css";
+
 // font
 import "@fontsource/roboto";
 import "@fontsource/poppins";
