@@ -59,3 +59,13 @@ h4 {
     width: 90%;
   }
 }
+
+.roboto {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 900;
+}
