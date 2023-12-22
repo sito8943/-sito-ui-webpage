@@ -30,7 +30,9 @@
       "colorChromatic": "Chromatic"
     },
     "typography": {
-      "title": "Typography"
+      "title": "Typography",
+      "poppins": "Designed by Jonny Pinhorn and Ninad Kale, Poppins is a modern and versatile sans-serif font that works well in a variety of contexts. Its clean and contemporary design makes it suitable for projects seeking a fresh and modern look. Poppins has been designed with excellent readability, especially at smaller font sizes. Poppins is a Google Fonts font, which means it is easily accessible and usable in web projects.",
+      "roboto": "Designed by Christian Robertson, Roboto has a dual nature. It has a mechanical skeleton and the shapes are largely geometric. At the same time, the fountain features friendly, open curves. While some grotesques distort the shape of their letters to force a rigid rhythm, Roboto makes no compromises and allows the letters to adjust to their natural width. This creates a more natural reading rhythm that is more commonly found in humanistic and serif type."
     }
   }
 }

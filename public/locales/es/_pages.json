@@ -2,7 +2,6 @@
   "home": {
     "hero": {
       "titles": {
-        "default": "@Sito/ui",
         "productivity": "Productividad",
         "speed": "Velocidad"
       }
@@ -30,7 +29,9 @@
       "colorChromatic": "Cromático"
     },
     "typography": {
-      "title": "Tipografía"
+      "title": "Tipografía",
+      "poppins": "Diseñada por Jonny Pinhorn y Ninad Kale, Poppins es una fuente sans-serif moderna y versátil que funciona bien en una variedad de contextos. Su diseño limpio y contemporáneo la hace adecuada para proyectos que buscan un aspecto fresco y moderno. Poppins ha sido diseñada con una excelente legibilidad, especialmente en tamaños de letra más pequeños. Poppins es una fuente de Google Fonts, lo que significa que es fácilmente accesible y utilizable en proyectos web.",
+      "roboto": "Diseñado por Christian Robertson, Roboto tiene una naturaleza dual. Tiene un esqueleto mecánico y las formas son en gran medida geométricas. Al mismo tiempo, la fuente presenta curvas amigables y abiertas. Mientras que algunos grotescos distorsionan la forma de sus letras para forzar un ritmo rígido, Roboto no hace concesiones y permite que las letras se ajusten a su ancho natural. Esto crea un ritmo de lectura más natural que se encuentra más comúnmente en los tipos humanistas y serif."
     }
   }
 }
