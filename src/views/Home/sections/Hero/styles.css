@@ -1,0 +1,11 @@
+.hero-slider {
+  display: flex;
+}
+
+.hero-slider::-webkit-scrollbar {
+  width: 0px;
+}
+
+.hero-slider {
+  scrollbar-width: none;
+}
