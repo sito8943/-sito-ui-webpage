@@ -6,9 +6,18 @@
   scroll-snap-type: y mandatory;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .viewport {
   min-height: 100vh;
   min-height: 100svh;
+}
+
+.w-viewport {
+  min-width: 100vw;
+  min-width: 100svw;
 }
 
 section {
