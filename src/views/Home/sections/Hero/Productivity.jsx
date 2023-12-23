@@ -1,5 +1,6 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // @emotion/css
 import { css } from "@emotion/css";
@@ -11,12 +12,18 @@ function Default() {
   const { t } = useTranslation();
   const { colors } = useStyle();
 
+  const location = useLocation();
+
+  useEffect(() => {}, [location]);
+
   return (
     <section
       id="productivity"
-      className="secondary filled !p-0 relative flex items-center justify-center"
+      className="secondary w-viewport filled !p-0 relative flex items-center justify-center"
     >
-      <h2>{t("_pages:home.hero.titles.productivity")}</h2>
+      <PrintAfter animation="scale-up" onVisible>
+        <h2>{t("_pages:home.hero.titles.productivity")}</h2>
+      </PrintAfter>
 
       <div className="absolute bottom-10 px-10 left-0 w-full flex justify-between items-center">
         <PrintAfter animation="appear" delay={300}>
