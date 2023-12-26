@@ -65,7 +65,13 @@ h4 {
 
 @media (max-width: 1230px) {
   .responsive-container {
-    width: 90%;
+    @apply px-10;
+  }
+}
+
+@media (max-width: 600px) {
+  .responsive-container {
+    @apply px-5;
   }
 }
 
