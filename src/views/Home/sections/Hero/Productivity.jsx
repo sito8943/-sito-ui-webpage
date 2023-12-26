@@ -25,7 +25,7 @@ function Default() {
         <h2>{t("_pages:home.hero.titles.productivity")}</h2>
       </PrintAfter>
 
-      <div className="absolute bottom-10 px-10 left-0 w-full flex justify-between items-center">
+      <div className="absolute bottom-10 px-10 sm:px-5 left-0 w-full flex justify-between items-center">
         <PrintAfter animation="appear" delay={300}>
           <Link
             className={`text-xl transition ${css({

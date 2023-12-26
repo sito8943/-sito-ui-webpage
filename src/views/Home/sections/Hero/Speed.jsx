@@ -25,7 +25,7 @@ function Default() {
         <h2>{t("_pages:home.hero.titles.speed")}</h2>
       </PrintAfter>
 
-      <div className="absolute bottom-10 px-10 left-0 w-full flex justify-between items-center">
+      <div className="absolute bottom-10 px-10 sm:px-5 left-0 w-full flex justify-between items-center">
         <PrintAfter onVisible animation="appear" delay={300}>
           <Link
             className={`text-xl transition ${css({
