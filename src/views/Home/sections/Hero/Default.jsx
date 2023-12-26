@@ -27,11 +27,11 @@ function Default() {
       <PrintAfter animation="scale-up" onVisible>
         <Logo
           color={colors.primary.text}
-          className="w-[350px] h-[190px]"
+          className="w-[350px] sm:w-[200px] h-[190px]"
         />
       </PrintAfter>
 
-      <div className="absolute bottom-10 px-10 left-0 w-full flex justify-between items-center">
+      <div className="absolute bottom-10 px-10 sm:px-5 left-0 w-full flex justify-between items-center">
         <PrintAfter onVisible animation="appear" delay={300}>
           <Link
             className={`text-xl transition ${css({
