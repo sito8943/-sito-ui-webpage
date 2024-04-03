@@ -14,11 +14,12 @@ import "./index.css";
 
 // animations
 import "./assets/animations/scaleUp.css";
+import "./assets/animations/expand.css";
 
 // font
-import '@fontsource/roboto/300.css'
-import '@fontsource/poppins/600.css';
-import '@fontsource/poppins/900.css';
+import "@fontsource/roboto/300.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/900.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ModeProvider>
