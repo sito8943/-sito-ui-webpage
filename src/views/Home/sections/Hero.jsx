@@ -29,36 +29,34 @@ function Hero() {
           }`}
         />
         <h1
-          className={`uppercase poppins-600 w-[175px] text-[16px] delay-100 transitional ${
+          className={`uppercase poppins-600 w-[175px] text-base delay-100 transitional ${
             appear ? "appearable" : "dissapearable"
           }`}
         >
           {t("_pages:home.hero.title")}
         </h1>
       </div>
-      <div className="absolute bottom-10 left-10">
-        <div>
-          <h2
-            className={`poppins-600 text-[38px] delay-200 transitional ${
-              appear ? "appearable" : "dissapearable"
-            }`}
-          >
-            {t("_pages:home.hero.subtitle")}
-          </h2>
-          <h3
-            className={`poppins-900 text-[52px] delay-300 transitional ${
-              appear ? "appearable" : "dissapearable"
-            }`}
-          >
-            {t("_pages:home.hero.subtitleBig")}
-          </h3>
-        </div>
+      <div className="absolute bottom-10 left-10 flex flex-col gap-3">
+        <h2
+          className={`poppins-600 text-4xl md:text-3xl sm:text-2xl delay-200 transitional ${
+            appear ? "appearable" : "dissapearable"
+          }`}
+        >
+          {t("_pages:home.hero.subtitle")}
+        </h2>
+        <h3
+          className={`poppins-900 text-6xl md:text-5xl sm:text-4xl sm:w-2/4 delay-300 transitional ${
+            appear ? "appearable" : "dissapearable"
+          }`}
+        >
+          {t("_pages:home.hero.subtitleBig")}
+        </h3>
       </div>
       <div>
         <img
           src={logoHalf}
           alt="half of the logo"
-          className="h-screen absolute top-0 right-0"
+          className="transition-opacity duration-500 ease-in-out h-screen absolute top-0 right-0 sm:opacity-40"
         />
       </div>
     </section>
