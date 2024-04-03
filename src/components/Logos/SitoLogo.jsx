@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 function SitoLogo(props) {
-  const { color } = props;
+  const { color, className } = props;
 
   return (
     <svg
@@ -9,6 +9,7 @@ function SitoLogo(props) {
       height="77"
       viewBox="0 0 170 77"
       fill="none"
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -32,10 +33,12 @@ function SitoLogo(props) {
 }
 
 SitoLogo.defaultProps = {
+  className: "",
   color: "#FBFBFB",
 };
 
 SitoLogo.propTypes = {
+  className: PropTypes.string,
   color: PropTypes.string,
 };
 
