@@ -1,7 +1,7 @@
 {
   "name": "app",
   "private": true,
-  "version": "0.0.4",
+  "version": "0.0.12",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -19,14 +19,15 @@
     "@fortawesome/free-solid-svg-icons": "6.3.0",
     "@fortawesome/react-fontawesome": "0.2.0",
     "@loadable/component": "^5.16.2",
-    "@sito/ui": "C:\\Users\\Sito\\Documents\\Code\\Code\\SiUi\\sito-ui-0.0.181.tgz",
+    "@sito/ui": "^0.0.199",
     "i18next": "^23.7.11",
     "i18next-browser-languagedetector": "^7.2.0",
     "i18next-http-backend": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.5.0",
-    "react-router-dom": "^6.21.0"
+    "react-router-dom": "^6.21.0",
+    "some-javascript-utils": "^0.10.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

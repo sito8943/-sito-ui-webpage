@@ -485,9 +485,10 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.9.0.tgz#4ea610e0c40a07a8afa2977cbf80507f41c2271c"
   integrity sha512-aPP5Q5AqNGuT0tnuEkK/g4mnt3ZhheiXrDIiSVIHN9mcN21OyXDVbEMqmXPE7e2OplNLDkcvV+ZoGJa2ZImFgw==
 
-"@sito/ui@C:\\Users\\Sito\\Documents\\Code\\Code\\SiUi\\sito-ui-0.0.181.tgz":
-  version "0.0.181"
-  resolved "C:\\Users\\Sito\\Documents\\Code\\Code\\SiUi\\sito-ui-0.0.181.tgz#339071707368911288398a4d3be79a6883da9ad1"
+"@sito/ui@^0.0.199":
+  version "0.0.199"
+  resolved "https://registry.yarnpkg.com/@sito/ui/-/ui-0.0.199.tgz#de80ac7418d7005f758deb4d8705c70e8cc6d6b6"
+  integrity sha512-fzm/RNITZaiFiX/CekZl59parKSsQ71orpKxWIbNRIkllaTTMYvvgfWk1bIQ1A2iJj5g97xxdnfPa47MJ4fTDg==
   dependencies:
     "@emotion/css" "11.11.2"
     react "18.2.0"
@@ -2385,6 +2386,11 @@ side-channel@^1.0.4:
     call-bind "^1.0.0"
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
+
+some-javascript-utils@^0.10.3:
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/some-javascript-utils/-/some-javascript-utils-0.10.3.tgz#a69c688e1ae84b829e55d7760d2e9404bda0012a"
+  integrity sha512-dZySDclYfuakAEChyGyamt3kwB44cP9yfBR2Pe88WTm4Lq4zBeoMDlunZBMUTEatmvlyALSUGTYntD0KHPqKVg==
 
 source-map-js@^1.0.2:
   version "1.0.2"

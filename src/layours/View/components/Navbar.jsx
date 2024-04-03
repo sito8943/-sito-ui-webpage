@@ -5,7 +5,9 @@ import { useLocation } from "react-router-dom";
 // @sito/ui
 import { IconButton } from "@sito/ui";
 
+// font awesome
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Navbar() {
   const [transparency, setTransparency] = useState(true);
@@ -44,7 +46,7 @@ export default function Navbar() {
       >
         <a></a>
         <nav></nav>
-        <IconButton icon={faBars} />
+        <IconButton icon={<FontAwesomeIcon icon={faBars} />} />
       </div>
     </header>
   );

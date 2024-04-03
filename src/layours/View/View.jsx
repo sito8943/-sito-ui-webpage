@@ -1,10 +1,8 @@
 import { Outlet } from "react-router-dom";
 
-// @sito/ui
-import { ToTop } from "@sito/ui";
-
 // components
 import Navbar from "./components/Navbar";
+import ToTop from "../../components/ToTop/ToTop";
 
 function View() {
   return (
