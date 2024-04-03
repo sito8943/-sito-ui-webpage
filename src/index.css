@@ -33,6 +33,12 @@ h3 {
   @apply font-[900];
 }
 
+.body {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+  @apply text-lg text-balance;
+}
+
 h4,
 h5,
 h6,
@@ -75,9 +81,14 @@ h4 {
   }
 }
 
-.roboto {
+.roboto-300 {
   font-family: "Roboto", sans-serif !important;
   font-weight: 300;
+}
+
+.roboto-400 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
 }
 
 .poppins-600 {

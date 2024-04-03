@@ -22,7 +22,7 @@ function Hero() {
 
   return (
     <section className="filled secondary viewport w-full relative expand">
-      <div className="absolute top-20 left-10 gap-4 flex flex-col">
+      <div className="absolute top-20 left-20 sm:left-10 gap-4 flex flex-col">
         <SitoLogo
           className={`w-[130px] h-[58px] transitional ${
             appear ? "appearable" : "dissapearable"
@@ -36,7 +36,7 @@ function Hero() {
           {t("_pages:home.hero.title")}
         </h1>
       </div>
-      <div className="absolute bottom-10 left-10 flex flex-col gap-3">
+      <div className="absolute bottom-20 left-20 sm:left-10 flex flex-col gap-3">
         <h2
           className={`poppins-600 text-4xl md:text-3xl sm:text-2xl delay-200 transitional ${
             appear ? "appearable" : "dissapearable"

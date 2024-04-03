@@ -18,6 +18,7 @@ import "./assets/animations/expand.css";
 
 // font
 import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
 import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/900.css";
 

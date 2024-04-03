@@ -4,6 +4,19 @@
       "title": "Códigos que conectan y crean",
       "subtitle": "Manual de",
       "subtitleBig": "Identidad Visual"
+    },
+    "introduction": {
+      "title": "Introducción",
+      "leftColumn": {
+        "block1": "La identidad corporativa es un instrumento estratégico fundamental que representa todos aquellos elementos gráficos y visuales, de experiencias y principios que sustentan la promesa y la propuesta de valor de una marca. Su principal objetivo es crear un factor de diferenciación con respecto a la competencia y, a su vez, posicionarse en el imaginario de los públicos objetivos.",
+        "block2": "De ahí la importancia de contar con un documento rector que agrupe los elementos visuales y comunicativos que distinguen a Sito, asi como los principios de gestión de la marca. Lo anterior permitirá crear y comunicar una imagen homogénea, y evitará que existan variacio?nes que pongan en riesgo la consistencia de marca alcanzada.",
+        "block3": "Sito es un joven diseñador todo terreno apasionado por la programación, quien se dedica a ofrecer soluciones de diseño y desarrollo web desde 2019. Aunque su tono de voz siempre es amigable y cercano, posee un nivel de responsabilidad y una actitud ante el trabajo admirables."
+      },
+      "rightColumn": {
+        "block1": "Se define como una persona profesional, rápida y eficiente, pero también es comprometido con todo aquello que emprende. Reconocido por ser directo, comprensivo y abierto a ideas en el trato con los demás, Sito comunica seguridad y templanza. Sito siempre entrega lo que sus clientes necesitan, un resultado que construyen juntos.",
+        "block2": "El presente manual de identidad visual facilitará la aplicación de la marca Sito. Su uso es obligatorio, ya que representa la guía normativa del universo visual diseñado.",
+        "block3": "En aquellos casos en los que se hagan necesarias aplicaciones gráficas no pautadas en este documento, éstas deben respetar, en la medida de lo posible y según criterio del representante de la marca y del diseñador, los principios que serán tratados a continuación."
+      }
     }
   }
 }
