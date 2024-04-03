@@ -16,8 +16,8 @@ import "./index.css";
 import "./assets/animations/scaleUp.css";
 
 // font
-import "@fontsource/roboto";
-import "@fontsource/poppins";
+import '@fontsource/roboto/300.css'
+import '@fontsource/poppins/900.css';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ModeProvider>
