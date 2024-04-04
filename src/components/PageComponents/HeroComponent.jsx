@@ -3,12 +3,12 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
 // images
-import logoHalf from "../../../assets/images/logo-half.svg";
+import logoHalf from "../../../../assets/images/logo-half.svg";
 
 // logo
-import SitoLogo from "../../../components/Logos/SitoLogo";
+import SitoLogo from "../../Logos/SitoLogo";
 
-function Hero(props) {
+function HeroComponent(props) {
   const { title, subtitle } = props;
 
   const { t } = useTranslation();
@@ -24,7 +24,7 @@ function Hero(props) {
   }, []);
 
   return (
-    <section className="filled secondary viewport w-full relative expand">
+    <div className="filled secondary viewport w-full relative expand">
       <div className="absolute top-20 left-20 sm:left-10 gap-4 flex flex-col">
         <SitoLogo
           className={`w-[130px] h-[58px] transitional ${
@@ -70,13 +70,13 @@ function Hero(props) {
           className="transition-opacity duration-500 ease-in-out h-screen absolute top-0 right-0 sm:opacity-40"
         />
       </div>
-    </section>
+    </div>
   );
 }
 
-Hero.propTypes = {
+HeroComponent.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
 };
 
-export default Hero;
+export default HeroComponent;

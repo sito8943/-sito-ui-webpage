@@ -1,45 +1,35 @@
 import { useTranslation } from "react-i18next";
 
+// components
+import HeroComponent from "../../components/PageComponents/HeroComponent";
+
 // sections
-import HeroSection from "./sections/HeroSection";
 import Introduction from "./sections/Introduction";
-import IdentifierGrid from "./sections/IdentifierGrid";
+import Identifier from "./sections/Identifier";
+import Resources from "./sections/Resources";
+import Applications from "./sections/Applications";
 
 function Home() {
   const { t } = useTranslation();
 
-  const identifierGrids = [
-    { section: "isotype", bodyCount: 2 },
-    { section: "logo", bodyCount: 1 },
-    { section: "generic", bodyCount: 1 },
-    { section: "versions", bodyCount: 1 },
-    { section: "constructions", bodyCount: 1 },
-    { section: "invasion", bodyCount: 1 },
-    { section: "limits", bodyCount: 1 },
-    { section: "prohibitions", bodyCount: 1 },
-  ];
-
   return (
     <>
-      <HeroSection
-        title={t("_pages:home.hero.subtitle")}
-        subtitle={t("_pages:home.hero.subtitleBig")}
-      />
-      <Introduction />
-      <HeroSection title={t("_pages:home.identifier.title")} />
-      {identifierGrids.map((section) => (
-        <IdentifierGrid
-          key={section.section}
-          section={section.section}
-          bodyCount={section.bodyCount}
+      <section>
+        <HeroComponent
+          title={t("_pages:home.hero.subtitle")}
+          subtitle={t("_pages:home.hero.subtitleBig")}
         />
-      ))}
-      <HeroSection title={t("_pages:home.resources.title")} />
-      <HeroSection title={t("_pages:home.applications.title")} />
-      <HeroSection
-        title={t("_pages:home.hero.subtitle")}
-        subtitle={t("_pages:home.hero.subtitleBig")}
-      />
+      </section>
+      <Introduction />
+      <Identifier />
+      <Resources />
+      <Applications />
+      <section>
+        <HeroComponent
+          title={t("_pages:home.hero.subtitle")}
+          subtitle={t("_pages:home.hero.subtitleBig")}
+        />
+      </section>
     </>
   );
 }
