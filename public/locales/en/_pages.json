@@ -9,7 +9,7 @@
       "title": "Introducción",
       "leftColumn": {
         "block1": "La identidad corporativa es un instrumento estratégico fundamental que representa todos aquellos elementos gráficos y visuales, de experiencias y principios que sustentan la promesa y la propuesta de valor de una marca. Su principal objetivo es crear un factor de diferenciación con respecto a la competencia y, a su vez, posicionarse en el imaginario de los públicos objetivos.",
-        "block2": "De ahí la importancia de contar con un documento rector que agrupe los elementos visuales y comunicativos que distinguen a Sito, asi como los principios de gestión de la marca. Lo anterior permitirá crear y comunicar una imagen homogénea, y evitará que existan variacio?nes que pongan en riesgo la consistencia de marca alcanzada.",
+        "block2": "De ahí la importancia de contar con un documento rector que agrupe los elementos visuales y comunicativos que distinguen a Sito, asi como los principios de gestión de la marca. Lo anterior permitirá crear y comunicar una imagen homogénea, y evitará que existan variaciones que pongan en riesgo la consistencia de marca alcanzada.",
         "block3": "Sito es un joven diseñador todo terreno apasionado por la programación, quien se dedica a ofrecer soluciones de diseño y desarrollo web desde 2019. Aunque su tono de voz siempre es amigable y cercano, posee un nivel de responsabilidad y una actitud ante el trabajo admirables."
       },
       "rightColumn": {
@@ -17,6 +17,64 @@
         "block2": "El presente manual de identidad visual facilitará la aplicación de la marca Sito. Su uso es obligatorio, ya que representa la guía normativa del universo visual diseñado.",
         "block3": "En aquellos casos en los que se hagan necesarias aplicaciones gráficas no pautadas en este documento, éstas deben respetar, en la medida de lo posible y según criterio del representante de la marca y del diseñador, los principios que serán tratados a continuación."
       }
+    },
+    "identifier": {
+      "title": "El Identificador",
+      "isotype": {
+        "title": "Isotipo",
+        "body": {
+          "paragraph1": "El isotipo es el símbolo gráfico que constituye una parte importante del identificador. El isotipo de Sito alude principalmente a una brújula, representando la orientación clara y enfocada en su propósito como diseñador web, y la búsqueda y aprovechamiento de las oportunidades que vengan de cualquier dirección. Cabe destacar que los signos de mayor que y menor que, no llegan a unirse nunca con la S, manifestando la capacidad de Sito para avanzar y adaptarse a entornos, personas, ideas y proyectos diferentes.",
+          "paragraph2": "Diseñado desde una concepción minimalista, el símbolo gráfico resplada la esencia de Sito. Su estructura garantiza legibilidad, por lo que será de fácil implementación en diferentes soportes, tanto digitales como impresos."
+        }
+      },
+      "logo": {
+        "title": "Logotipo",
+        "body": {
+          "paragraph1": "El logotipo es el nombre de la marca. Se construyó de forma tipográfica con ligeros retoques. Está constituido por la palabra Sito, diminutivo personalizado del representante y dueño de la marca."
+        }
+      },
+      "generic": {
+        "title": "Genérico",
+        "body": {
+          "paragraph1": "El genérico define, en este caso, la promesa de marca. Su elaboración estratégica alude al universo de Sito, su proceso de trabajo y el resultado a alcanzar."
+        }
+      },
+      "versions": {
+        "title": "Versiones de marca",
+        "body": {
+          "paragraph1": "Se proponen dos versiones: vertical y horizontal. Ambas versiones balancean los pesos visuales entre tipografía y símbolo, brindándole estabilidad y consistencia al identificador de marca."
+        }
+      },
+      "constructions": {
+        "title": "Construcción y proporciones",
+        "body": {
+          "paragraph1": "En ambas versiones, los elementos que componen el identificador están construidos sobre una trama modular o retícula, que reproduce fielmente las proporciones."
+        }
+      },
+      "invasion": {
+        "title": "Área mínima de invasión",
+        "body": {
+          "paragraph1": "Para ser efectivo, el identificador debe estar siempre dentro de un espacio mínimo requerido sin interferencias. Este espacio aislará la marca de cualquier acompañamiento gráfico, ilustrativo u otro elemento. La distancia mínima recomendada se deriva de las proporciones y estructura del identificador."
+        }
+      },
+      "limits": {
+        "title": "Límites de reducción",
+        "body": {
+          "paragraph1": "Los límtites de reducción se pautaron para regular el tamaño mínimo de correcta legibilidad de la marca en soporte impreso y digital. El identificador podrá ser ampliado a cualquier tamaño; por el contrario, solo podrá ser reducido hasta los valores que se describen a continuación."
+        }
+      },
+      "prohibitions": {
+        "title": "Prohibiciones",
+        "body": {
+          "paragraph1": "En este apartado se muestran algunos ejemplos de variaciones incorrectas del identificador, aunque no constituyen todas las posibles violaciones que pudieran suscitarse. Queda por parte del representante de la marca, velar en todo momento por la aplicación correcta del identificador."
+        }
+      }
+    },
+    "resources": {
+      "title": "Recursos Gráficos"
+    },
+    "applications": {
+      "title": "Aplicaciones"
     }
   }
 }

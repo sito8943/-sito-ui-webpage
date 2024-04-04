@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
@@ -7,7 +8,9 @@ import logoHalf from "../../../assets/images/logo-half.svg";
 // logo
 import SitoLogo from "../../../components/Logos/SitoLogo";
 
-function Hero() {
+function Hero(props) {
+  const { title, subtitle } = props;
+
   const { t } = useTranslation();
 
   const [appear, setAppear] = useState(false);
@@ -37,20 +40,28 @@ function Hero() {
         </h1>
       </div>
       <div className="absolute bottom-20 left-20 sm:left-10 flex flex-col gap-3">
-        <h2
-          className={`poppins-600 text-4xl md:text-3xl sm:text-2xl delay-200 transitional ${
-            appear ? "appearable" : "dissapearable"
-          }`}
-        >
-          {t("_pages:home.hero.subtitle")}
-        </h2>
-        <h3
-          className={`poppins-900 text-6xl md:text-5xl sm:text-4xl sm:w-2/4 delay-300 transitional ${
-            appear ? "appearable" : "dissapearable"
-          }`}
-        >
-          {t("_pages:home.hero.subtitleBig")}
-        </h3>
+        {title && (
+          <h2
+            className={`${
+              !subtitle
+                ? "poppins-900 text-6xl md:text-5xl sm:text-4xl sm:w-2/4 "
+                : "poppins-600 text-4xl md:text-3xl sm:text-2xl"
+            } uppercase delay-200 transitional ${
+              appear ? "appearable" : "dissapearable"
+            }`}
+          >
+            {title}
+          </h2>
+        )}
+        {subtitle && (
+          <h3
+            className={`poppins-900 text-6xl md:text-5xl sm:text-4xl sm:w-2/4 uppercase delay-300 transitional ${
+              appear ? "appearable" : "dissapearable"
+            }`}
+          >
+            {subtitle}
+          </h3>
+        )}
       </div>
       <div>
         <img
@@ -62,5 +73,10 @@ function Hero() {
     </section>
   );
 }
+
+Hero.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+};
 
 export default Hero;
