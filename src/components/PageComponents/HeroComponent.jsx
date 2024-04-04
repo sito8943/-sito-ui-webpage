@@ -3,10 +3,10 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
 // images
-import logoHalf from "../../../../assets/images/logo-half.svg";
+import logoHalf from "../../assets/images/logo-half.svg";
 
 // logo
-import SitoLogo from "../../Logos/SitoLogo";
+import SitoLogo from "../Logos/SitoLogo";
 
 function HeroComponent(props) {
   const { title, subtitle } = props;

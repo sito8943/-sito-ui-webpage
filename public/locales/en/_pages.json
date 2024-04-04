@@ -72,7 +72,7 @@
     },
     "resources": {
       "title": "Recursos Gráficos",
-      "complementaries": {
+      "complementary": {
         "title": "Código Cromático Complementario",
         "body": {
           "paragraph1": "La paleta cromática complementaria servirá de apoyo y contraste a la paleta cromática principal. De esta forma se garantiza variedad y dinamismo de marca, pero cuidando la consistencia de la identidad que se pretende comunicar"

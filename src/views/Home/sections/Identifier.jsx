@@ -5,14 +5,14 @@ import HeroComponent from "../../../components/PageComponents/HeroComponent";
 import DualColumn from "../../../components/PageComponents/DualColumn";
 
 const identifierGrids = [
-  { section: "isotype", bodyCount: 2 },
-  { section: "logo", bodyCount: 1 },
-  { section: "generic", bodyCount: 1 },
-  { section: "versions", bodyCount: 1 },
-  { section: "constructions", bodyCount: 1 },
-  { section: "invasion", bodyCount: 1 },
-  { section: "limits", bodyCount: 1 },
-  { section: "prohibitions", bodyCount: 1 },
+  { subtitle: "isotype", bodyCount: 2 },
+  { subtitle: "logo", bodyCount: 1 },
+  { subtitle: "generic", bodyCount: 1 },
+  { subtitle: "versions", bodyCount: 1 },
+  { subtitle: "constructions", bodyCount: 1 },
+  { subtitle: "invasion", bodyCount: 1 },
+  { subtitle: "limits", bodyCount: 1 },
+  { subtitle: "prohibitions", bodyCount: 1 },
 ];
 
 function Identifier() {
@@ -23,8 +23,9 @@ function Identifier() {
       <HeroComponent title={t("_pages:home.identifier.title")} />
       {identifierGrids.map((section) => (
         <DualColumn
-          key={section.section}
-          section={section.section}
+          key={section.subtitle}
+          section="identifier"
+          subtitle={section.subtitle}
           bodyCount={section.bodyCount}
         />
       ))}

@@ -23,7 +23,6 @@ body {
 section {
   min-height: 100vh;
   min-height: 100svh;
-  @apply flex flex-col justify-start items-center py-20;
 }
 
 h1,
