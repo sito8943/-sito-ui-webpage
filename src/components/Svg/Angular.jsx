@@ -9,6 +9,7 @@ function Angular(props) {
       height="30"
       viewBox="0 0 46 30"
       fill="none"
+      className="w-[34px] h-[24px]"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clipPath="url(#clip0_280_8)">

@@ -29,14 +29,6 @@ const resourcesGrids1 = [
   },
 ];
 
-const resourcesGrids2 = [
-  {
-    subtitle: "graphics",
-    bodyCount: 2,
-    content: <Graphics />,
-  },
-];
-
 function Resources() {
   const { t } = useTranslation();
 
@@ -55,15 +47,7 @@ function Resources() {
       <div></div>
       <div></div>
       <Typography />
-      {resourcesGrids2.map((section) => (
-        <DualColumn
-          key={section.subtitle}
-          section="resources"
-          subtitle={section.subtitle}
-          bodyCount={section.bodyCount}
-          content={section.content}
-        />
-      ))}
+      <Graphics />
     </section>
   );
 }

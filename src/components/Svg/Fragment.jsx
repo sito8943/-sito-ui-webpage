@@ -9,6 +9,7 @@ function Fragment(props) {
       height="40"
       viewBox="0 0 68 40"
       fill="none"
+      className="w-[58px] h-[32px]"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clipPath="url(#clip0_280_11)">
