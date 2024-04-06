@@ -4,7 +4,8 @@ import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 
 function DualColumn(props) {
-  const { section, subtitle, bodyCount, content } = props;
+  const { section, subtitle, bodyCount, content, bodyRendererClassName } =
+    props;
 
   const { t } = useTranslation();
 
@@ -30,7 +31,9 @@ function DualColumn(props) {
         <h4 className="text-xl poppins-600">
           {t(`_pages:home.${section}.${subtitle}.title`)}
         </h4>
-        {renderBody}
+        <div className={`body-renderer ${bodyRendererClassName}`}>
+          {renderBody}
+        </div>
       </div>
       <div className="h-full w-full">{content}</div>
     </div>
@@ -42,6 +45,7 @@ DualColumn.propTypes = {
   subtitle: PropTypes.string,
   bodyCount: PropTypes.number,
   content: PropTypes.node,
+  bodyRendererClassName: PropTypes.string,
 };
 
 export default DualColumn;
