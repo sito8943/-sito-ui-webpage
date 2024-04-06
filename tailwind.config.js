@@ -24,6 +24,7 @@ export default {
     extend: {
       colors: {
         bg: "#1B1B1B",
+        white: "#FBFBFB",
         yellow: "#D7942E",
         green: "#00997B",
       },

@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
 // images
@@ -10,8 +9,6 @@ import SitoLogo from "../Logos/SitoLogo";
 
 function HeroComponent(props) {
   const { title, subtitle } = props;
-
-  const { t } = useTranslation();
 
   const [appear, setAppear] = useState(false);
 
@@ -32,11 +29,11 @@ function HeroComponent(props) {
           }`}
         />
         <h1
-          className={`uppercase poppins-600 w-[175px] text-base delay-100 transitional ${
+          className={`uppercase poppins-600 text-base delay-100 transitional ${
             appear ? "appearable" : "dissapearable"
           }`}
         >
-          {t("_pages:home.hero.title")}
+          Códigos que <br /> conectan  y crean
         </h1>
       </div>
       <div className="absolute bottom-20 left-20 sm:left-10 flex flex-col gap-3">
