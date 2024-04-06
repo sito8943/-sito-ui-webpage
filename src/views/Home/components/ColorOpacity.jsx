@@ -41,7 +41,7 @@ function ColorOpacity(props) {
 ColorOpacity.propTypes = {
   color: PropTypes.string,
   description: PropTypes.string,
-  colorHex: PropTypes.string,
+  colorHex: PropTypes.any,
 };
 
 export default ColorOpacity;

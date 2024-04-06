@@ -9,6 +9,7 @@ import ChromaticCards from "../components/ChromaticCards";
 import PrimaryPalette from "../components/PrimaryPalette";
 import SecondaryPalette from "../components/SecondaryPalette";
 import Typography from "../components/Typography";
+import Graphics from "../components/Graphics";
 
 const resourcesGrids1 = [
   {
@@ -30,14 +31,9 @@ const resourcesGrids1 = [
 
 const resourcesGrids2 = [
   {
-    subtitle: "complementary",
-    bodyCount: 1,
-    content: <SecondaryPalette />,
-  },
-  {
-    subtitle: "versions",
-    bodyCount: 1,
-    content: <ChromaticCards />,
+    subtitle: "graphics",
+    bodyCount: 2,
+    content: <Graphics />,
   },
 ];
 
@@ -66,7 +62,6 @@ function Resources() {
           subtitle={section.subtitle}
           bodyCount={section.bodyCount}
           content={section.content}
-          bodyRendererClassName={section.bodyRendererClassName}
         />
       ))}
     </section>
