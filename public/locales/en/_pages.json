@@ -86,7 +86,24 @@
       }
     },
     "applications": {
-      "title": "Aplicaciones"
+      "title": "Aplicaciones",
+      "subtitle": "Tarjeta de presentación",
+      "body": "Versiones de primer nivel que serán empleadas por el representante de la marca.",
+      "format": {
+        "title": "Formato",
+        "number": "85 x 55 mm"
+      },
+      "material": {
+        "title": "Material recomendado",
+        "one": "cartulina mate (150-200 gramos)",
+        "two": "cartulina de hilo (150-250 gramos)"
+      },
+      "typography": {
+        "title": "Tipografías",
+        "name": "Nombre: Poppins Bold, 10 ptos.",
+        "profession": "Profesión: Poppins Bold, 9 ptos.",
+        "contactInfo": "Información de contacto: Roboto Medium, 8.5 ptos."
+      }
     }
   }
 }

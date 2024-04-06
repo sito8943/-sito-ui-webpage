@@ -21,7 +21,13 @@ export default {
       xs: { max: "400px" },
       // => @media (max-width: 383px) { ... }
     },
-    extend: {},
+    extend: {
+      colors: {
+        bg: "#1B1B1B",
+        yellow: "#D7942E",
+        green: "#00997B",
+      },
+    },
   },
   plugins: [],
 };

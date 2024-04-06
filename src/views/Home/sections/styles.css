@@ -1,0 +1,13 @@
+.content {
+  @apply w-full px-20 sm:px-10 xs:px-5 py-20;
+}
+
+.applications {
+  grid-template-columns: 0.6fr 1fr;
+}
+
+@media (max-width: 1200px) {
+  .applications {
+    grid-template-columns: 1fr;
+  }
+}

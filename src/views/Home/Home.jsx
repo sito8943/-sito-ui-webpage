@@ -9,6 +9,9 @@ import Identifier from "./sections/Identifier";
 import Resources from "./sections/Resources";
 import Applications from "./sections/Applications";
 
+// styles
+import "./sections/styles.css";
+
 function Home() {
   const { t } = useTranslation();
 

@@ -4,7 +4,7 @@ function Introduction() {
   const { t } = useTranslation();
 
   return (
-    <section className="viewport w-full px-20 sm:px-10 py-20 flex flex-col items-start justify-start">
+    <section className="content viewport flex flex-col items-start justify-start">
       <h2 className="text-2xl mb-10">{t("_pages:home.introduction.title")}</h2>
       <div className="grid grid-cols-2 sm:grid-cols-1 gap-10 sm:gap-5">
         <div className="flex flex-col gap-5">

@@ -24,7 +24,7 @@ function DualColumn(props) {
   }, [bodyCount, t, section, subtitle]);
 
   return (
-    <div className="viewport w-full px-20 sm:px-10 py-20 grid grid-cols-2 md:grid-cols-1">
+    <div className="content viewport grid grid-cols-2 md:grid-cols-1">
       <div className="flex flex-col items-start justify-start gap-5">
         <h2 className="text-2xl">{t(`_pages:home.${section}.title`)}</h2>
         <h4 className="text-xl poppins-600">
