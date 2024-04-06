@@ -71,6 +71,12 @@
     },
     "resources": {
       "title": "Recursos Gráficos",
+      "primary": {
+        "title": "Código Cromático Principal",
+        "body": {
+          "paragraph1": "Quedan pautados los colores PANTONE PMS 18-1662 TCX y PMS 282 C como las versiones óptimas para representar el identificador y los atributos de la marca Sito."
+        }
+      },
       "complementary": {
         "title": "Código Cromático Complementario",
         "body": {
