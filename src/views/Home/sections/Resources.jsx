@@ -1,9 +1,13 @@
 import { useTranslation } from "react-i18next";
 
-// components
+// page components
 import HeroComponent from "../../../components/PageComponents/HeroComponent";
 import DualColumn from "../../../components/PageComponents/DualColumn";
+
+// components
 import ChromaticCards from "../components/ChromaticCards";
+import PrimaryPalette from "../components/PrimaryPalette";
+import SecondaryPalette from "../components/SecondaryPalette";
 
 function Resources() {
   const { t } = useTranslation();
@@ -12,12 +16,12 @@ function Resources() {
     {
       subtitle: "primary",
       bodyCount: 1,
-      content: <div className="flex flex-col"></div>,
+      content: <PrimaryPalette />,
     },
     {
       subtitle: "complementary",
       bodyCount: 1,
-      content: <div className="flex flex-col"></div>,
+      content: <SecondaryPalette />,
     },
     {
       subtitle: "versions",

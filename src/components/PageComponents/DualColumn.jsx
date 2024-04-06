@@ -32,7 +32,7 @@ function DualColumn(props) {
         </h4>
         {renderBody}
       </div>
-      <div>{content}</div>
+      <div className="h-full w-full">{content}</div>
     </div>
   );
 }
