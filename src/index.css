@@ -7,12 +7,17 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .viewport {
   min-height: 100vh;
   min-height: 100svh;
+}
+
+.fit-viewport {
+  height: 100vh;
+  height: 100svh;
 }
 
 .w-viewport {
