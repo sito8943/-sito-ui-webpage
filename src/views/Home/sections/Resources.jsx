@@ -10,6 +10,7 @@ import PrimaryPalette from "../components/PrimaryPalette";
 import SecondaryPalette from "../components/SecondaryPalette";
 import Typography from "../components/Typography";
 import Graphics from "../components/Graphics";
+import InkVersions from "../components/InkVersions";
 
 const resourcesGrids1 = [
   {
@@ -45,7 +46,7 @@ function Resources() {
         />
       ))}
       <div></div>
-      <div></div>
+      <InkVersions />
       <Typography />
       <Graphics />
     </section>
