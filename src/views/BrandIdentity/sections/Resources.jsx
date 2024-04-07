@@ -36,7 +36,10 @@ function Resources() {
 
   return (
     <section>
-      <HeroComponent title={t("_pages:brandIdentity.resources.title")} />
+      <HeroComponent
+        noAnimations
+        title={t("_pages:brandIdentity.resources.title")}
+      />
       {resourcesGrids1.map((section) => (
         <DualColumn
           key={section.subtitle}

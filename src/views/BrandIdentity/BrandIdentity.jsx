@@ -30,6 +30,7 @@ function BrandIdentity() {
       <Applications />
       <section>
         <HeroComponent
+          noAnimations
           title={t("_pages:brandIdentity.hero.subtitle")}
           subtitle={t("_pages:brandIdentity.hero.subtitleBig")}
         />

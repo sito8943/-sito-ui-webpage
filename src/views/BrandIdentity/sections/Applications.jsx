@@ -10,7 +10,7 @@ function Applications() {
 
   return (
     <section>
-      <HeroComponent title={t("_pages:brandIdentity.applications.title")} />
+      <HeroComponent noAnimations title={t("_pages:brandIdentity.applications.title")} />
       <div className="applications content viewport grid gap-10">
         <div className="flex flex-col items-start justify-start gap-5">
           <h2 className="text-2xl">{t("_pages:brandIdentity.applications.title")}</h2>

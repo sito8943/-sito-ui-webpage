@@ -23,7 +23,7 @@ function Identifier() {
 
   return (
     <section>
-      <HeroComponent title={t("_pages:brandIdentity.identifier.title")} />
+      <HeroComponent noAnimations title={t("_pages:brandIdentity.identifier.title")} />
       {identifierGrids.map((section) => (
         <DualColumn
           key={section.subtitle}
