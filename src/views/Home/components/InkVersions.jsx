@@ -13,35 +13,41 @@ function InkVersions() {
 
   return (
     <div className="content viewport w-full h-full flex flex-col items-start justify-center">
-      <div className="grid grid-cols-2 md:grid-cols-1 gap-5 w-full">
+      <div className="grid grid-cols-2 md:grid-cols-1 gap-10 w-full">
         <div className="grid grid-cols-2 gap-5 items-center">
           <FullVerticalLogo
-            className="w-[125px]  h-[150px]"
+            className="w-[125px] h-[150px] md:justify-self-center"
             color={colors.secondary.default}
           />
           <FullVerticalLogo
-            className="w-[125px]  h-[150px]"
+            className="w-[125px] h-[150px] md:justify-self-center"
             color={colors.primary.default}
           />
-          <FullVerticalLogo className="w-[125px]  h-[150px]" color="#D7942E" />
-          <FullVerticalLogo className="w-[125px]  h-[150px]" color="#00997B" />
+          <FullVerticalLogo
+            className="w-[125px] h-[150px] md:justify-self-center"
+            color="#D7942E"
+          />
+          <FullVerticalLogo
+            className="w-[125px] h-[150px] md:justify-self-center"
+            color="#00997B"
+          />
         </div>
         <div className="grid grid-cols-2 gap-5 items-center">
           <FullHorizontalLogo
             color={colors.secondary.default}
-            className="justify-self-end w-[215px] h-[90px]"
+            className="justify-self-end md:justify-self-center w-[215px] h-[90px]"
           />
           <FullHorizontalLogo
             color={colors.primary.default}
-            className="justify-self-end w-[215px] h-[90px]"
+            className="justify-self-end md:justify-self-center w-[215px] h-[90px]"
           />
           <FullHorizontalLogo
             color="#D7942E"
-            className="justify-self-end w-[215px] h-[90px]"
+            className="justify-self-end md:justify-self-center w-[215px] h-[90px]"
           />
           <FullHorizontalLogo
             color="#00997B"
-            className="justify-self-end w-[215px] h-[90px]"
+            className="justify-self-end md:justify-self-center w-[215px] h-[90px]"
           />
         </div>
       </div>
