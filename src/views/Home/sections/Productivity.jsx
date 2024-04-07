@@ -24,7 +24,11 @@ function Default() {
   return (
     <section
       id="productivity"
-      className="secondary w-viewport filled !p-0 relative flex items-center justify-center"
+      className={`!p-0 w-viewport flex items-center justify-center filled secondary flex-col gap-10 fixed top-0 left-0 w-full transition duration-500 ease-in-out ${
+        appear
+          ? "opacity-100 pointer-events-auto"
+          : "opacity-0 pointer-events-none"
+      }`}
     >
       <h2
         className={`delay-100 transitional ${

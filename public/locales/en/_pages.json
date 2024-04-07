@@ -5,7 +5,8 @@
   },
   "home": {
     "hero": {
-      "title": "Códigos que conectan  y crean",
+      "title": "Códigos que",
+      "subtitle": "conectan y crean",
       "titles": {
         "speed": "Velocidad",
         "productivity": "Productividad"
