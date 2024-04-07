@@ -1,16 +1,17 @@
 import { useTranslation } from "react-i18next";
+import loadable from "@loadable/component";
+
+// styles
+import "./sections/styles.css";
 
 // components
 import HeroComponent from "../../components/PageComponents/HeroComponent";
 
 // sections
-import Introduction from "./sections/Introduction";
-import Identifier from "./sections/Identifier";
-import Resources from "./sections/Resources";
-import Applications from "./sections/Applications";
-
-// styles
-import "./sections/styles.css";
+const Introduction = loadable(() => import("./sections/Introduction"));
+const Identifier = loadable(() => import("./sections/Identifier"));
+const Resources = loadable(() => import("./sections/Resources"));
+const Applications = loadable(() => import("./sections/Applications"));
 
 function Home() {
   const { t } = useTranslation();
