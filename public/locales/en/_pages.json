@@ -78,6 +78,35 @@
         "title": "Prohibiciones",
         "body": {
           "paragraph1": "En este apartado se muestran algunos ejemplos de variaciones incorrectas del identificador, aunque no constituyen todas las posibles violaciones que pudieran suscitarse. Queda por parte del representante de la marca, velar en todo momento por la aplicación correcta del identificador."
+        },
+        "list": {
+          "inclination": { "body": "Inclinar el identificador", "alt": "" },
+          "rotation": { "body": "Rotar el identificador", "alt": "" },
+          "distortion": { "body": "Distorsionar el identificador", "alt": "" },
+          "colors": {
+            "body": "Utilizar colores no pautados para el identificador",
+            "alt": ""
+          },
+          "background": {
+            "body": "Colocar el identifcador sobre fondos de colores no pautados",
+            "alt": ""
+          },
+          "position": {
+            "body": "Cambiar la disposición del identificador",
+            "alt": ""
+          },
+          "dimensions": {
+            "body": "Alterar las proporciones del identificador",
+            "alt": ""
+          },
+          "mutilation": {
+            "body": "Mutilar algún elemento del identifcador",
+            "alt": ""
+          },
+          "fonts": {
+            "body": "Modificar las tipografías pautadas",
+            "alt": ""
+          }
         }
       }
     },

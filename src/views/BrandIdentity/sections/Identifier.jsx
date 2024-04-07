@@ -15,7 +15,6 @@ const identifierGrids = [
   { subtitle: "constructions", bodyCount: 1 },
   { subtitle: "invasion", bodyCount: 1 },
   { subtitle: "limits", bodyCount: 1 },
-  { subtitle: "prohibitions", bodyCount: 1, content: <Prohibitions /> },
 ];
 
 function Identifier() {
@@ -23,7 +22,10 @@ function Identifier() {
 
   return (
     <section>
-      <HeroComponent noAnimations title={t("_pages:brandIdentity.identifier.title")} />
+      <HeroComponent
+        noAnimations
+        title={t("_pages:brandIdentity.identifier.title")}
+      />
       {identifierGrids.map((section) => (
         <DualColumn
           key={section.subtitle}
@@ -33,6 +35,7 @@ function Identifier() {
           content={section.content}
         />
       ))}
+      <Prohibitions />
     </section>
   );
 }
