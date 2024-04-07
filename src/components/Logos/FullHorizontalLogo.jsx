@@ -6,18 +6,16 @@ import MiniLogo from "./MiniLogo";
 import SitoLogo from "./SitoLogo";
 
 function FullHorizontalLogo(props) {
-  const { color, className } = props;
+  const { color, logoColor, fontColor, sitoColor, className } = props;
 
   return (
-    <div
-      className={`flex gap-1 items-center justify-center w-[215px] h-[90px] ${className}`}
-    >
-      <MiniLogo color={color} className="w-[80px] h-[80px]" />
+    <div className={`flex gap-1 items-center justify-center ${className}`}>
+      <MiniLogo color={color ?? logoColor} className="w-[80px] h-[80px]" />
       <div className="flex flex-col gap-2">
-        <SitoLogo color={color} className="w-[110px] h-[50px]" />
+        <SitoLogo color={color ?? sitoColor} className="w-[110px] h-[50px]" />
         <p
           className={`uppercase poppins-600 text-xs delay-100 transitional ${css(
-            { color: color, lineHeight: 1 }
+            { color: color ?? fontColor, lineHeight: 1 }
           )}`}
         >
           Códigos que <br /> conectan y crean
@@ -30,6 +28,9 @@ function FullHorizontalLogo(props) {
 FullHorizontalLogo.propTypes = {
   color: PropTypes.string,
   className: PropTypes.string,
+  logoColor: PropTypes.string,
+  fontColor: PropTypes.string,
+  sitoColor: PropTypes.string,
 };
 
 export default FullHorizontalLogo;

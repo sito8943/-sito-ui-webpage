@@ -12,30 +12,42 @@ function InkVersions() {
   const { t } = useTranslation();
 
   return (
-    <div className="content viewport w-full h-full">
-      <div className="grid grid-cols-2 md:grid-cols-1 gap-5">
+    <div className="content viewport w-full h-full flex flex-col items-start justify-center">
+      <div className="grid grid-cols-2 md:grid-cols-1 gap-5 w-full">
         <div className="grid grid-cols-2 gap-5 items-center">
-          <FullVerticalLogo color={colors.secondary.default} />
-          <FullVerticalLogo color={colors.primary.default} />
-          <FullVerticalLogo color="#D7942E" />
-          <FullVerticalLogo color="#00997B" />
+          <FullVerticalLogo
+            className="w-[125px]  h-[150px]"
+            color={colors.secondary.default}
+          />
+          <FullVerticalLogo
+            className="w-[125px]  h-[150px]"
+            color={colors.primary.default}
+          />
+          <FullVerticalLogo className="w-[125px]  h-[150px]" color="#D7942E" />
+          <FullVerticalLogo className="w-[125px]  h-[150px]" color="#00997B" />
         </div>
         <div className="grid grid-cols-2 gap-5 items-center">
           <FullHorizontalLogo
             color={colors.secondary.default}
-            className="justify-self-end"
+            className="justify-self-end w-[215px] h-[90px]"
           />
           <FullHorizontalLogo
             color={colors.primary.default}
-            className="justify-self-end"
+            className="justify-self-end w-[215px] h-[90px]"
           />
-          <FullHorizontalLogo color="#D7942E" className="justify-self-end" />
-          <FullHorizontalLogo color="#00997B" className="justify-self-end" />
+          <FullHorizontalLogo
+            color="#D7942E"
+            className="justify-self-end w-[215px] h-[90px]"
+          />
+          <FullHorizontalLogo
+            color="#00997B"
+            className="justify-self-end w-[215px] h-[90px]"
+          />
         </div>
       </div>
 
       <div className="w-full h-[0px] border-[1px] border-bg mt-10 mb-5"></div>
-      <h4 className="poppins-600 text-base">
+      <h4 className="poppins-600 text-base justify-self-start text-left">
         {t("_pages:home.resources.inkVersions.oneInk")}
       </h4>
     </div>
