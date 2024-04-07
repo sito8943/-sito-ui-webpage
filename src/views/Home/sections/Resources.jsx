@@ -11,6 +11,7 @@ import SecondaryPalette from "../components/SecondaryPalette";
 import Typography from "../components/Typography";
 import Graphics from "../components/Graphics";
 import InkVersions from "../components/InkVersions";
+import PositiveNegativeInk from "../components/PositiveNegativeInk";
 
 const resourcesGrids1 = [
   {
@@ -45,7 +46,7 @@ function Resources() {
           content={section.content}
         />
       ))}
-      <div></div>
+      <PositiveNegativeInk />
       <InkVersions />
       <Typography />
       <Graphics />

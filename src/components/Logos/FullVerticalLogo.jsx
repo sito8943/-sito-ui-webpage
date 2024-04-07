@@ -15,7 +15,7 @@ function FullVerticalLogo(props) {
       <MiniLogo color={color ?? logoColor} className="w-[70px] h-[70px]" />
       <SitoLogo color={color ?? sitoColor} className="w-[95px] h-[45px]" />
       <p
-        className={`uppercase text-center poppins-600 text-xs delay-100 transitional ${css(
+        className={`pointer-events-none uppercase text-center poppins-600 text-xs delay-100 transitional ${css(
           {
             color: color ?? fontColor,
             lineHeight: 1,

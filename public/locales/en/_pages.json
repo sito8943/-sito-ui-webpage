@@ -104,6 +104,11 @@
           "paragraph2": "En este caso, se han utilizado elementos gráficos del propio identifcador de la marca; los mismos pueden presentarse en diferentes pesos, tamaños y espaciamiento. Las formas diseñadas pueden ser objeto de modificación si llega a ser necesario, siempre y cuando se respete el diseño base. Estas gráficas de apoyo podrán adoptar igualmente, los diferentes colores pautados en este manual."
         }
       },
+      "primarySecondaryInk": {
+        "positive": "Versiones en positivo",
+        "chromaticPositive": "Versiones acromáticas en postivo",
+        "negative": "Versiones acromáticas en negativo"
+      },
       "inkVersions": {
         "oneInk": "Versiones a una tinta"
       }

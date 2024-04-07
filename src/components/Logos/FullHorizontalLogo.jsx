@@ -14,7 +14,7 @@ function FullHorizontalLogo(props) {
       <div className="flex flex-col gap-2">
         <SitoLogo color={color ?? sitoColor} className="w-[110px] h-[50px]" />
         <p
-          className={`uppercase poppins-600 text-xs delay-100 transitional ${css(
+          className={`pointer-events-none uppercase poppins-600 text-xs delay-100 transitional ${css(
             { color: color ?? fontColor, lineHeight: 1 }
           )}`}
         >
