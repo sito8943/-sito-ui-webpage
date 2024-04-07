@@ -54,14 +54,17 @@ function Applications() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-1 gap-5">
-          <div className="flex flex-col gap-5">
-            <PresentationCard color="#D7942E" />
-            <PresentationCardBack color="#D7942E" />
-          </div>
-          <div className="flex flex-col gap-5">
-            <PresentationCard color="#00997B" />
-            <PresentationCardBack color="#00997B" />
+        <div>
+          <div className="md:hidden h-[56px]" />
+          <div className="grid grid-cols-2 md:grid-cols-1 gap-5">
+            <div className="flex flex-col gap-5">
+              <PresentationCard color="#D7942E" />
+              <PresentationCardBack color="#D7942E" />
+            </div>
+            <div className="flex flex-col gap-5">
+              <PresentationCard color="#00997B" />
+              <PresentationCardBack color="#00997B" />
+            </div>
           </div>
         </div>
       </div>
