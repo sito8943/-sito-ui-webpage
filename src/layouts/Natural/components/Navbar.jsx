@@ -78,9 +78,9 @@ function Navbar() {
                   key={id}
                   className="flex flex-col items-center justify-center"
                 >
-                  <a href={href} className={`text-white transition`}>
+                  <Link to={href} className={`text-white transition`}>
                     {t(`_pages:routes.${id}`)}
-                  </a>
+                  </Link>
                   <div
                     className={`w-[120%] grid ${css({
                       gridTemplateRows: pathname === href ? "1fr" : "0fr",
