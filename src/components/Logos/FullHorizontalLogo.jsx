@@ -6,15 +6,17 @@ import MiniLogo from "./MiniLogo";
 import SitoLogo from "./SitoLogo";
 
 function FullHorizontalLogo(props) {
-  const { color } = props;
+  const { color, className } = props;
 
   return (
-    <div className="flex gap-1 items-center justify-center">
-      <MiniLogo color={color} className="w-[110px] h-[110px]" />
-      <div>
-        <SitoLogo color={color} className="w-[140px] h-[70px]" />
+    <div
+      className={`flex gap-1 items-center justify-center w-[215px] h-[90px] ${className}`}
+    >
+      <MiniLogo color={color} className="w-[80px] h-[80px]" />
+      <div className="flex flex-col gap-2">
+        <SitoLogo color={color} className="w-[110px] h-[50px]" />
         <p
-          className={`uppercase poppins-600 text-lg delay-100 transitional ${css(
+          className={`uppercase poppins-600 text-xs delay-100 transitional ${css(
             { color: color, lineHeight: 1 }
           )}`}
         >
@@ -27,6 +29,7 @@ function FullHorizontalLogo(props) {
 
 FullHorizontalLogo.propTypes = {
   color: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default FullHorizontalLogo;

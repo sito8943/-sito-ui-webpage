@@ -8,6 +8,7 @@ function PrimaryPalette() {
 
   return (
     <div className="w-full h-full flex flex-col gap-5">
+      <div className="md:hidden h-[76px]" />
       <ColorOpacity
         color={colors.primary.default}
         description={

@@ -9,11 +9,11 @@ function FullVerticalLogo(props) {
   const { color } = props;
 
   return (
-    <div className="flex flex-col gap-1 items-center justify-center">
-      <MiniLogo color={color} className="w-[110px] h-[110px]" />
-      <SitoLogo color={color} className="w-[140px] h-[70px]" />
+    <div className="flex flex-col gap-1 items-center justify-center w-[125px]  h-[150px]">
+      <MiniLogo color={color} className="w-[70px] h-[70px]" />
+      <SitoLogo color={color} className="w-[95px] h-[45px]" />
       <p
-        className={`uppercase text-center poppins-600 text-lg delay-100 transitional ${css({
+        className={`uppercase text-center poppins-600 text-xs delay-100 transitional ${css({
           color: color,
           lineHeight: 1,
         })}`}

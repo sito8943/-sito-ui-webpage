@@ -7,7 +7,7 @@ function ChromaticCards() {
   const { colors } = useStyle();
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-1 h-full w-full gap-4 ">
+    <div className="grid grid-cols-2 md:grid-cols-1 h-full w-full gap-4 mt-[56px] md:mt-0">
       <ChromaticCard bgColor={colors.primary.default} />
       <ChromaticCard bgColor={colors.secondary.default} />
       <ChromaticCard bgColor="#D7942E" />
