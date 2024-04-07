@@ -10,7 +10,6 @@ import { useStyle } from "@sito/ui";
 
 // components
 import MiniLogo from "../../../components/Logos/MiniLogo";
-import SitoLogo from "../../../components/Logos/SitoLogo";
 
 function Default() {
   const { t } = useTranslation();
@@ -36,11 +35,7 @@ function Default() {
             appear ? "appearable" : "dissapearable"
           }`}
         />
-        <SitoLogo
-          className={`w-[160px] sm:w-[110px] h-[75px] delay-200 transitional ${
-            appear ? "appearable" : "dissapearable"
-          }`}
-        />
+        <h1 className="text-xl text-white">{t("_pages:home.hero.title")}</h1>
       </div>
 
       <div className="absolute bottom-10 px-10 sm:px-5 left-0 w-full flex justify-between items-center">

@@ -14,7 +14,7 @@ function Typography() {
           <p className="body">
             {t("_pages:brandIdentity.resources.typography.body.paragraph1")}
           </p>
-          <p className="poppins-600 text-4xl">
+          <p className="poppins-600 text-4xl md:text-2xl sm:text-xl xs:text-base">
             1234567890!”#$%& <span className="text-primary">{"</>"}</span>()={" "}
             <br />
             abcdefghijklmnñopqrstuvwxyz <br />
@@ -25,7 +25,7 @@ function Typography() {
           <p className="body">
             {t("_pages:brandIdentity.resources.typography.body.paragraph1")}
           </p>
-          <p className="poppins-600 text-4xl">
+          <p className="poppins-600 text-4xl md:text-2xl sm:text-xl xs:text-base">
             1234567890!”#$%&{"</>"}()= <br />
             abcdefghijklmnñopqrs<span className="text-green">t</span>uvwxyz{" "}
             <br />
@@ -36,7 +36,7 @@ function Typography() {
           <p className="body">
             {t("_pages:brandIdentity.resources.typography.body.paragraph1")}
           </p>
-          <p className="roboto-300 text-4xl">
+          <p className="roboto-300 text-4xl md:text-2xl sm:text-xl xs:text-base ">
             1234567890!”#$%& <span className="text-yellow">{"</>"}</span>()={" "}
             <br />
             abcdefghijklmnñ<span className="text-yellow">

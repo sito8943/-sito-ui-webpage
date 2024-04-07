@@ -36,8 +36,8 @@ export default function Hero() {
       })}`}
     >
       <Default />
-      <Speed />
-      <Productivity />
+      {/* <Speed />
+      <Productivity /> */}
     </div>
   );
 }

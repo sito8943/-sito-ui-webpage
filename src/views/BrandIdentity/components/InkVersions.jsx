@@ -14,7 +14,7 @@ function InkVersions() {
   return (
     <div className="content viewport w-full h-full flex flex-col items-start justify-center">
       <div className="grid grid-cols-2 md:grid-cols-1 gap-10 w-full">
-        <div className="grid grid-cols-2 gap-5 items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-1 gap-5 items-center">
           <FullVerticalLogo
             className="w-[125px] h-[150px] md:justify-self-center"
             color={colors.secondary.default}
@@ -32,7 +32,7 @@ function InkVersions() {
             color="#00997B"
           />
         </div>
-        <div className="grid grid-cols-2 gap-5 items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-1 gap-5 items-center">
           <FullHorizontalLogo
             color={colors.secondary.default}
             className="justify-self-end md:justify-self-center w-[215px] h-[90px]"

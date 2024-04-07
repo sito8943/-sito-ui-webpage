@@ -17,7 +17,7 @@ function BrandIdentity() {
   const { t } = useTranslation();
 
   return (
-    <>
+    <div className="bg-white text-bg">
       <section>
         <HeroComponent
           title={t("_pages:brandIdentity.hero.subtitle")}
@@ -35,7 +35,7 @@ function BrandIdentity() {
           subtitle={t("_pages:brandIdentity.hero.subtitleBig")}
         />
       </section>
-    </>
+    </div>
   );
 }
 
