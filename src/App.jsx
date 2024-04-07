@@ -6,7 +6,8 @@ import loadable from "@loadable/component";
 import { SplashScreen } from "@sito/ui";
 
 // layouts
-import View from "./layours/View/View";
+import View from "./layouts/View/View";
+import Natural from "./layouts/Natural/Natural";
 
 // views
 const Home = loadable(() => import("./views/Home/Home"));
@@ -19,10 +20,10 @@ function App() {
     <Suspense fallback={<SplashScreen />}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<View />}>
+          <Route path="/" element={<Natural />}>
             <Route index element={<Home />} />
           </Route>
-          <Route path="brand-identity">
+          <Route path="brand-identity" element={<View />}>
             <Route index element={<BrandIdentity />} />
           </Route>
         </Routes>
