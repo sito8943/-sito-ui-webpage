@@ -12,7 +12,7 @@ function DualColumn(props) {
     const arrayToRender = [];
     for (let i = 0; i < bodyCount; i++) {
       arrayToRender.push(
-        t(`_pages:home.${section}.${subtitle}.body.paragraph${i + 1}`)
+        t(`_pages:brandIdentity.${section}.${subtitle}.body.paragraph${i + 1}`)
       );
     }
 
@@ -26,9 +26,9 @@ function DualColumn(props) {
   return (
     <div className="content viewport grid applications gap-5">
       <div className="flex flex-col items-start justify-start gap-5">
-        <h2 className="text-2xl">{t(`_pages:home.${section}.title`)}</h2>
+        <h2 className="text-2xl">{t(`_pages:brandIdentity.${section}.title`)}</h2>
         <h4 className="text-xl poppins-600">
-          {t(`_pages:home.${section}.${subtitle}.title`)}
+          {t(`_pages:brandIdentity.${section}.${subtitle}.title`)}
         </h4>
         {renderBody}
       </div>

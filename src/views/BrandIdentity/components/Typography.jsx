@@ -5,14 +5,14 @@ function Typography() {
 
   return (
     <div className="content viewport flex flex-col items-start justify-start applications gap-5">
-      <h2 className="text-2xl">{t(`_pages:home.resources.title`)}</h2>
+      <h2 className="text-2xl">{t(`_pages:brandIdentity.resources.title`)}</h2>
       <h4 className="text-xl poppins-600">
-        {t(`_pages:home.resources.typography.title`)}
+        {t(`_pages:brandIdentity.resources.typography.title`)}
       </h4>
       <div className="flex flex-col items-start justify-start gap-10">
         <div className="gap-10 grid applications w-full">
           <p className="body">
-            {t("_pages:home.resources.typography.body.paragraph1")}
+            {t("_pages:brandIdentity.resources.typography.body.paragraph1")}
           </p>
           <p className="poppins-600 text-4xl">
             1234567890!”#$%& <span className="text-primary">{"</>"}</span>()={" "}
@@ -23,7 +23,7 @@ function Typography() {
         </div>
         <div className="gap-10 grid applications w-full">
           <p className="body">
-            {t("_pages:home.resources.typography.body.paragraph1")}
+            {t("_pages:brandIdentity.resources.typography.body.paragraph1")}
           </p>
           <p className="poppins-600 text-4xl">
             1234567890!”#$%&{"</>"}()= <br />
@@ -34,7 +34,7 @@ function Typography() {
         </div>
         <div className="gap-10 grid applications w-full">
           <p className="body">
-            {t("_pages:home.resources.typography.body.paragraph1")}
+            {t("_pages:brandIdentity.resources.typography.body.paragraph1")}
           </p>
           <p className="roboto-300 text-4xl">
             1234567890!”#$%& <span className="text-yellow">{"</>"}</span>()={" "}

@@ -20,8 +20,8 @@ function BrandIdentity() {
     <>
       <section>
         <HeroComponent
-          title={t("_pages:home.hero.subtitle")}
-          subtitle={t("_pages:home.hero.subtitleBig")}
+          title={t("_pages:brandIdentity.hero.subtitle")}
+          subtitle={t("_pages:brandIdentity.hero.subtitleBig")}
         />
       </section>
       <Introduction />
@@ -30,8 +30,8 @@ function BrandIdentity() {
       <Applications />
       <section>
         <HeroComponent
-          title={t("_pages:home.hero.subtitle")}
-          subtitle={t("_pages:home.hero.subtitleBig")}
+          title={t("_pages:brandIdentity.hero.subtitle")}
+          subtitle={t("_pages:brandIdentity.hero.subtitleBig")}
         />
       </section>
     </>

@@ -1,6 +1,14 @@
 {
   "home": {
     "hero": {
+      "titles": {
+        "speed": "Velocidad",
+        "productivity": "Productividad"
+      }
+    }
+  },
+  "brandIdentity": {
+    "hero": {
       "subtitle": "Manual de",
       "subtitleBig": "Identidad Visual"
     },

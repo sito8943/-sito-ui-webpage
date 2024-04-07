@@ -54,7 +54,7 @@ function InkVersions() {
 
       <div className="w-full h-[0px] border-[1px] border-bg mt-10 mb-5"></div>
       <h4 className="poppins-600 text-base justify-self-start text-left">
-        {t("_pages:home.resources.inkVersions.oneInk")}
+        {t("_pages:brandIdentity.resources.inkVersions.oneInk")}
       </h4>
     </div>
   );
