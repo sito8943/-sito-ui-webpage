@@ -10,6 +10,9 @@ import View from "./layours/View/View";
 
 // views
 const Home = loadable(() => import("./views/Home/Home"));
+const BrandIdentity = loadable(() =>
+  import("./views/BrandIdentity/BrandIdentity")
+);
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Routes>
           <Route path="/" element={<View />}>
             <Route index element={<Home />} />
+          </Route>
+          <Route path="brand-identity">
+            <Route index element={<BrandIdentity />} />
           </Route>
         </Routes>
       </BrowserRouter>

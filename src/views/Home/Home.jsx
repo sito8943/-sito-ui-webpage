@@ -1,41 +1,7 @@
-import { useTranslation } from "react-i18next";
-import loadable from "@loadable/component";
-
-// styles
-import "./sections/styles.css";
-
-// components
-import HeroComponent from "../../components/PageComponents/HeroComponent";
-
-// sections
-const Introduction = loadable(() => import("./sections/Introduction"));
-const Identifier = loadable(() => import("./sections/Identifier"));
-const Resources = loadable(() => import("./sections/Resources"));
-const Applications = loadable(() => import("./sections/Applications"));
+import React from "react";
 
 function Home() {
-  const { t } = useTranslation();
-
-  return (
-    <>
-      <section>
-        <HeroComponent
-          title={t("_pages:home.hero.subtitle")}
-          subtitle={t("_pages:home.hero.subtitleBig")}
-        />
-      </section>
-      <Introduction />
-      <Identifier />
-      <Resources />
-      <Applications />
-      <section>
-        <HeroComponent
-          title={t("_pages:home.hero.subtitle")}
-          subtitle={t("_pages:home.hero.subtitleBig")}
-        />
-      </section>
-    </>
-  );
+  return <div></div>;
 }
 
 export default Home;
