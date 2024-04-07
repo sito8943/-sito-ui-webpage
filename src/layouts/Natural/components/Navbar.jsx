@@ -23,13 +23,11 @@ function Navbar() {
 
   const { pathname } = useLocation();
 
-  console.log(pathname);
-
   const [transparency, setTransparency] = useState(true);
 
   const onScroll = useCallback(() => {
     let top = window.scrollY;
-    setTransparency(top < 60);
+    setTransparency(top < 40);
   }, []);
 
   useEffect(() => {
@@ -40,6 +38,8 @@ function Navbar() {
     };
   }, [onScroll]);
 
+  const showLogo = pathname !== "/brand-identity" || !transparency;
+
   return (
     <header
       className={`expand flex items-center justify-center w-full fixed top-0 left-0 min-h-[60px] transition duration-500 z-[50] ${
@@ -47,11 +47,14 @@ function Navbar() {
       }`}
     >
       <div
-        className={`transition-all duration-500 flex items-center justify-between px-10 w-full ${
-          transparency ? "h-[100px]" : "h-[60px]"
-        }`}
+        className={`transition-all duration-500 flex items-center justify-between ${
+          pathname === "/brand-identity" ? "px-20 sm:px-10" : "px-10"
+        } w-full ${transparency ? "h-[100px]" : "h-[80px]"}`}
       >
-        <Link to="/" className="text-white">
+        <Link
+          to="/"
+          className={`text-white transition duration-500 ease-in-out ${showLogo ? "opacity-100" : "opacity-0"}`}
+        >
           <SitoLogo className="w-[100px] h-[75px]" />
         </Link>
         <nav className="">
