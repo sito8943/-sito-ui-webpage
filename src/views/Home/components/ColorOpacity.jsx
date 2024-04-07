@@ -5,7 +5,7 @@ function ColorOpacity(props) {
   const { color, colorHex, description } = props;
 
   return (
-    <div className="flex h-full">
+    <div className="flex h-full md:flex-col-reverse">
       <div
         className={`h-full flex items-end justify-start p-3 pr-10 ${css({
           background: `${color ?? colorHex}1E`,
