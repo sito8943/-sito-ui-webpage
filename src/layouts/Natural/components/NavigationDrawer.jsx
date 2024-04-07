@@ -62,9 +62,9 @@ export default function NavigationDrawer(props) {
                   key={id}
                   className="w-full flex flex-col items-start justify-start"
                 >
-                  <a href={href} className={`text-white transition`}>
+                  <Link to={href} className={`text-white transition`}>
                     {t(`_pages:routes.${id}`)}
-                  </a>
+                  </Link>
                   <div
                     className={`w-full grid ${css({
                       gridTemplateRows: pathname === href ? "1fr" : "0fr",
