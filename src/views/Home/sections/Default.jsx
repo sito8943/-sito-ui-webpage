@@ -18,11 +18,16 @@ function Default() {
   const location = useLocation();
 
   const [appear, setAppear] = useState(false);
+  const [oneTime, setOneTime] = useState(false);
 
   useEffect(() => {
     const { hash } = location;
     setAppear(!hash.length || hash.length === 1);
   }, [location]);
+
+  useEffect(() => {
+    if (appear) setOneTime(true);
+  }, [appear]);
 
   return (
     <section
@@ -39,7 +44,7 @@ function Default() {
             appear ? "appearable" : "dissapearable"
           }`}
         />
-        <h1 className="text-xl roboto-500 text-white text-center">
+        <h1 className="text-3xl roboto-500 text-white text-center">
           {t("_pages:home.hero.title")}
           <br />
           {t("_pages:home.hero.subtitle")}
@@ -53,7 +58,7 @@ function Default() {
               color: colors.primary.light,
             },
           })} delay-300 transitional ${
-            appear ? "appearable" : "dissapearable"
+            oneTime ? "appearable" : "dissapearable"
           }`}
           to="/#speed"
         >
@@ -65,7 +70,7 @@ function Default() {
               color: colors.secondary.light,
             },
           })} delay-[400ms] transitional ${
-            appear ? "appearable" : "dissapearable"
+            oneTime ? "appearable" : "dissapearable"
           }`}
           to="/#productivity"
         >

@@ -8,6 +8,9 @@ import { css } from "@emotion/css";
 // @sito/ui
 import { useStyle } from "@sito/ui";
 
+// components
+import MiniLogo from "../../../components/Logos/MiniLogo";
+
 function Default() {
   const { t } = useTranslation();
   const { colors } = useStyle();
@@ -30,13 +33,20 @@ function Default() {
           : "opacity-0 pointer-events-none"
       }`}
     >
-      <h2
-        className={`delay-100 transitional ${
-          appear ? "appearable" : "dissapearable"
-        }`}
-      >
-        {t("_pages:home.hero.titles.speed")}
-      </h2>
+      <div className={`flex flex-col items-center justify-center gap-5`}>
+        <MiniLogo
+          className={`w-[200px] h-[200px] sm:w-[150px] md:h-[150px] delay-100 transitional ${
+            appear ? "appearable" : "dissapearable"
+          }`}
+        />
+        <h2
+          className={`text-4xl delay-200 transitional ${
+            appear ? "appearable" : "dissapearable"
+          }`}
+        >
+          {t("_pages:home.hero.titles.speed")}
+        </h2>
+      </div>
 
       <div className="absolute bottom-10 px-10 sm:px-5 left-0 w-full flex justify-between items-center">
         <Link
