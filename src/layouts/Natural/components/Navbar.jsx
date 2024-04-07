@@ -98,7 +98,7 @@ function Navbar() {
           <IconButton
             onClick={() => setShowMenu(true)}
             icon={<FontAwesomeIcon icon={faBars} />}
-            className="!text-white msm:hidden absolute top-[1.3rem] right-10"
+            className="!text-white msm:hidden"
           />
         </div>
       </header>
