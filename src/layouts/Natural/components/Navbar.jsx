@@ -2,7 +2,10 @@ import { useState, useCallback, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { css } from "@emotion/css";
+import { IconButton } from "@sito/ui";
 
 // components
 import SitoLogo from "../../../components/Logos/SitoLogo";
@@ -40,6 +43,8 @@ function Navbar() {
 
   const showLogo = pathname !== "/brand-identity" || !transparency;
 
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <header
       className={`expand flex items-center justify-center w-full fixed top-0 left-0 min-h-[60px] transition duration-500 z-[50] ${
@@ -47,17 +52,19 @@ function Navbar() {
       }`}
     >
       <div
-        className={`transition-all duration-500 flex items-center justify-between ${
+        className={`relative transition-all duration-500 flex items-center justify-between ${
           pathname === "/brand-identity" ? "px-20 sm:px-10" : "px-10"
         } w-full ${transparency ? "h-[100px]" : "h-[80px]"}`}
       >
         <Link
           to="/"
-          className={`text-white transition duration-500 ease-in-out ${showLogo ? "opacity-100" : "opacity-0"}`}
+          className={`text-white transition duration-500 ease-in-out ${
+            showLogo ? "opacity-100" : "opacity-0"
+          }`}
         >
           <SitoLogo className="w-[100px] h-[75px]" />
         </Link>
-        <nav className="">
+        <nav className="sm:hidden">
           <ul className="flex gap-10">
             {links.map(({ href, id }) => (
               <li
@@ -81,6 +88,11 @@ function Navbar() {
             ))}
           </ul>
         </nav>
+        <IconButton
+          onClick={() => setShowMenu(true)}
+          icon={<FontAwesomeIcon icon={faBars} />}
+          className="!text-white msm:hidden absolute top-[1.3rem] right-10"
+        />
       </div>
     </header>
   );

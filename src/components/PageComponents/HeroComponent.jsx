@@ -64,7 +64,7 @@ function HeroComponent(props) {
         <img
           src={logoHalf}
           alt="half of the logo"
-          className="transition-opacity duration-500 ease-in-out fit-viewport absolute top-0 right-0 sm:opacity-40"
+          className="transition-opacity duration-500 ease-in-out fit-viewport absolute top-0 right-0 md:opacity-40"
         />
       </div>
     </div>
