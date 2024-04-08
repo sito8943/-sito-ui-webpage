@@ -85,6 +85,16 @@ h4 {
   }
 }
 
+@font-face {
+  font-family: "Futura";
+  src: url("FUTURA75BOLD.TTF");
+}
+
+.futura {
+  font-family: "Futura", sans-serif !important;
+  font-weight: bold;
+}
+
 .roboto-300 {
   font-family: "Roboto", sans-serif !important;
   font-weight: 300;

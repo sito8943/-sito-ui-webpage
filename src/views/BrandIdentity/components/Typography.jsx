@@ -14,7 +14,7 @@ function Typography() {
           <p className="body">
             {t("_pages:brandIdentity.resources.typography.body.paragraph1")}
           </p>
-          <p className="poppins-600 text-4xl md:text-2xl sm:text-xl xs:text-base">
+          <p className="futura text-4xl md:text-2xl sm:text-xl xs:text-base">
             1234567890!”#$%& <span className="text-primary">{"</>"}</span>()={" "}
             <br />
             abcdefghijklmnñopqrstuvwxyz <br />
