@@ -30,7 +30,7 @@ function HeroComponent(props) {
 
   return (
     <div className="filled secondary viewport w-full relative expand">
-      <div className="absolute top-20 left-20 sm:left-10 gap-4 flex flex-col">
+      <div className="absolute top-20 left-20 sm:left-10 xs:left-5 gap-4 flex flex-col">
         <SitoLogo
           className={`w-[130px] h-[58px] transitional ${renderAnimation}`}
         />
@@ -40,7 +40,7 @@ function HeroComponent(props) {
           Códigos que <br /> conectan y crean
         </h1>
       </div>
-      <div className="absolute bottom-20 left-20 sm:left-10 flex flex-col gap-3">
+      <div className="absolute bottom-20 left-20 sm:left-10 xs:left-5 flex flex-col gap-3">
         {title && (
           <h2
             className={`${
