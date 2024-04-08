@@ -1,15 +1,15 @@
 import { useTranslation } from "react-i18next";
 
 // images
-import inclination from "../../../assets/images/0.png";
-import rotation from "../../../assets/images/1.png";
-import distortion from "../../../assets/images/2.png";
-import colors from "../../../assets/images/3.png";
-import background from "../../../assets/images/4.png";
-import position from "../../../assets/images/5.png";
-import dimensions from "../../../assets/images/6.png";
-import mutilation from "../../../assets/images/7.png";
-import fonts from "../../../assets/images/8.png";
+import inclination from "../../../assets/images/0.svg";
+import rotation from "../../../assets/images/1.svg";
+import distortion from "../../../assets/images/2.svg";
+import colors from "../../../assets/images/3.svg";
+import background from "../../../assets/images/4.svg";
+import position from "../../../assets/images/5.svg";
+import dimensions from "../../../assets/images/6.svg";
+import mutilation from "../../../assets/images/7.svg";
+import fonts from "../../../assets/images/8.svg";
 
 const list = [
   { src: inclination, alt: "inclination" },
