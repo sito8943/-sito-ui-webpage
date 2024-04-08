@@ -2,19 +2,16 @@ import PropTypes from "prop-types";
 import { css } from "@emotion/css";
 
 // logos
-import LogoHalf from "../Logos/LogoHalf";
+import LogoHalfAlt from "../Logos/LogoHalfAlt";
 
 function PresentationCardBack(props) {
-  const { color } = props;
+  const { color, className } = props;
 
   return (
-    <div className="bg-bg w-[423px] h-[274px] flex items-center justify-between pointer-events-none">
-      <LogoHalf
-        className={`h-full w-[112px] ${css({
-          transform: "rotateY(-180deg)",
-        })}`}
-        color={color}
-      />
+    <div
+      className={`bg-bg w-[423px] h-[274px] flex items-center justify-between pointer-events-none ${className}`}
+    >
+      <LogoHalfAlt alt className={`h-full w-[112px]`} color={color} />
       <div
         className={`p-6 flex flex-col items-end h-full justify-between ${css({
           color,
@@ -36,6 +33,7 @@ function PresentationCardBack(props) {
 
 PresentationCardBack.propTypes = {
   color: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default PresentationCardBack;

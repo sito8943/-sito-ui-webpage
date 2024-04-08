@@ -3,13 +3,15 @@ import { css } from "@emotion/css";
 
 // logos
 import SitoLogo from "../Logos/SitoLogo";
-import LogoHalf from "../Logos/LogoHalf";
+import LogoHalfAlt from "../Logos/LogoHalfAlt";
 
 function PresentationCard(props) {
-  const { color } = props;
+  const { color, className } = props;
 
   return (
-    <div className="bg-bg w-[423px] h-[274px] flex items-center justify-between pointer-events-none">
+    <div
+      className={`bg-bg w-[423px] h-[274px] flex items-center justify-between pointer-events-none ${className}`}
+    >
       <div className="pl-[85px]">
         <SitoLogo color={color} className="w-[134.67px] h-[60.6]" />
         <p
@@ -17,16 +19,17 @@ function PresentationCard(props) {
             color,
           })}`}
         >
-          Códigos que <br /> conectan  y crean
+          Códigos que <br /> conectan y crean
         </p>
       </div>
-      <LogoHalf className="h-full w-[112px]" color={color} />
+      <LogoHalfAlt className="h-full w-[112px]" color={color} />
     </div>
   );
 }
 
 PresentationCard.propTypes = {
   color: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default PresentationCard;

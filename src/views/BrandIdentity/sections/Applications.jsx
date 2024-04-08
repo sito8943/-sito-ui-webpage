@@ -10,10 +10,15 @@ function Applications() {
 
   return (
     <section>
-      <HeroComponent noAnimations title={t("_pages:brandIdentity.applications.title")} />
+      <HeroComponent
+        noAnimations
+        title={t("_pages:brandIdentity.applications.title")}
+      />
       <div className="applications content viewport grid gap-10">
         <div className="flex flex-col items-start justify-start gap-5">
-          <h2 className="text-2xl">{t("_pages:brandIdentity.applications.title")}</h2>
+          <h2 className="text-2xl">
+            {t("_pages:brandIdentity.applications.title")}
+          </h2>
           <h3 className="text-xl poppins-600">
             {t("_pages:brandIdentity.applications.subtitle")}
           </h3>
@@ -56,14 +61,14 @@ function Applications() {
         </div>
         <div>
           <div className="md:hidden h-[56px]" />
-          <div className="grid grid-cols-2 md:grid-cols-1 gap-5">
-            <div className="flex flex-col gap-5">
-              <PresentationCard color="#D7942E" />
-              <PresentationCardBack color="#D7942E" />
+          <div className="grid grid-cols-2 md:grid-cols-1 gap-5 xs:pt-[160px] xs:gap-[170px] xs:mb-40">
+            <div className="flex flex-col gap-5 xs:items-center xs:justify-center xs:gap-[160px]">
+              <PresentationCard color="#D7942E" className="xs:rotate-90" />
+              <PresentationCardBack color="#D7942E" className="xs:rotate-90" />
             </div>
-            <div className="flex flex-col gap-5">
-              <PresentationCard color="#00997B" />
-              <PresentationCardBack color="#00997B" />
+            <div className="flex flex-col gap-5 xs:items-center xs:justify-center xs:gap-[160px]">
+              <PresentationCard color="#00997B" className="xs:rotate-90" />
+              <PresentationCardBack color="#00997B" className="xs:rotate-90" />
             </div>
           </div>
         </div>
