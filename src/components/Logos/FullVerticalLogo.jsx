@@ -21,16 +21,10 @@ function FullVerticalLogo(props) {
     <div
       className={`flex flex-col gap-1 items-center justify-center ${className}`}
     >
-      <MiniLogo
-        color={color ?? logoColor}
-        className={`w-[70px] h-[70px] ${logoClassName}`}
-      />
-      <SitoLogo
-        color={color ?? sitoColor}
-        className={`w-[95px] h-[45px] ${sitoClassName}`}
-      />
+      <MiniLogo color={color ?? logoColor} className={`${logoClassName}`} />
+      <SitoLogo color={color ?? sitoColor} className={`${sitoClassName}`} />
       <p
-        className={`pointer-events-none uppercase text-center poppins-600 text-xs delay-100 transitional ${css(
+        className={`pointer-events-none uppercase text-center poppins-600 delay-100 transitional ${css(
           {
             color: color ?? fontColor,
             lineHeight: 1,
@@ -42,6 +36,12 @@ function FullVerticalLogo(props) {
     </div>
   );
 }
+
+FullVerticalLogo.defaultProps = {
+  logoClassName: "w-[70px] h-[70px]",
+  sitoClassName: "w-[95px] h-[45px]",
+  fontClassName: "text-xs",
+};
 
 FullVerticalLogo.propTypes = {
   color: PropTypes.string,
