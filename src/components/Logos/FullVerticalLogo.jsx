@@ -6,21 +6,36 @@ import MiniLogo from "./MiniLogo";
 import SitoLogo from "./SitoLogo";
 
 function FullVerticalLogo(props) {
-  const { color, logoColor, fontColor, sitoColor, className } = props;
+  const {
+    color,
+    logoColor,
+    fontColor,
+    sitoColor,
+    className,
+    logoClassName,
+    sitoClassName,
+    fontClassName,
+  } = props;
 
   return (
     <div
       className={`flex flex-col gap-1 items-center justify-center ${className}`}
     >
-      <MiniLogo color={color ?? logoColor} className="w-[70px] h-[70px]" />
-      <SitoLogo color={color ?? sitoColor} className="w-[95px] h-[45px]" />
+      <MiniLogo
+        color={color ?? logoColor}
+        className={`w-[70px] h-[70px] ${logoClassName}`}
+      />
+      <SitoLogo
+        color={color ?? sitoColor}
+        className={`w-[95px] h-[45px] ${sitoClassName}`}
+      />
       <p
         className={`pointer-events-none uppercase text-center poppins-600 text-xs delay-100 transitional ${css(
           {
             color: color ?? fontColor,
             lineHeight: 1,
           }
-        )}`}
+        )} ${fontClassName}`}
       >
         Códigos que <br /> conectan y crean
       </p>
@@ -34,6 +49,9 @@ FullVerticalLogo.propTypes = {
   logoColor: PropTypes.string,
   fontColor: PropTypes.string,
   sitoColor: PropTypes.string,
+  logoClassName: PropTypes.string,
+  sitoClassName: PropTypes.string,
+  fontClassName: PropTypes.string,
 };
 
 export default FullVerticalLogo;

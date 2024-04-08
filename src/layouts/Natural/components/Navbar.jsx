@@ -60,7 +60,7 @@ function Navbar() {
       >
         <div
           className={`relative transition-all duration-500 flex items-center justify-between ${
-            pathname === "/brand-identity" ? "px-20 sm:px-10" : "md:px-10 sm:px-5"
+            pathname === "/brand-identity" ? "px-20 md:px-10 sm:px-5" : "px-10 sm:px-5"
           } w-full ${transparency ? "h-[100px]" : "h-[80px]"}`}
         >
           <Link
