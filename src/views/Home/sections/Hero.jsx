@@ -45,7 +45,7 @@ export default function Hero() {
       id="home"
       className={`!p-0 w-viewport flex items-center justify-center ${color} flex-col gap-10 fixed top-0 left-0 w-full transition duration-500 ease-in-out`}
     >
-      <div className={`flex flex-col items-center justify-center gap-5 relative`}>
+      <div className={`w-full flex flex-col items-center justify-center gap-5 relative`}>
         <MiniLogo
           className={`-mt-40 w-[250px] h-[250px] sm:w-[150px] md:h-[150px] delay-100 transitional ${
             appear ? "appearable" : "dissapearable"
@@ -53,7 +53,7 @@ export default function Hero() {
         />
 
         <h1
-          className={`text-3xl roboto-500 text-white text-center delay-200 transitional absolute mt-[250px] ${
+          className={`text-3xl roboto-500 text-white text-center delay-200 transitional absolute mt-[250px] md:mt-[150px] ${
             color === "bg-bg" && appear ? "appearable" : "dissapearable"
           }`}
         >
@@ -63,14 +63,14 @@ export default function Hero() {
         </h1>
 
         <h2
-          className={`text-white text-4xl delay-200 transitional absolute mt-[250px] ${
+          className={`text-white text-4xl delay-200 transitional absolute mt-[250px] md:mt-[150px]  ${
             color === "bg-primary" && appear ? "appearable" : "dissapearable"
           }`}
         >
           {t("_pages:home.hero.titles.speed")}
         </h2>
         <h2
-          className={`text-white text-4xl delay-200 transitional absolute mt-[250px] ${
+          className={`text-white text-4xl delay-200 transitional absolute mt-[250px] md:mt-[150px]  ${
             color === "bg-secondary" && appear ? "appearable" : "dissapearable"
           }`}
         >
