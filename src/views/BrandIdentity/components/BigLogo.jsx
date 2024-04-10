@@ -14,7 +14,7 @@ export default function BigLogo(props) {
   } = props;
 
   return (
-    <div className="flex w-full items-start justify-end md:mt-20 md:justify-center">
+    <div className="flex w-full items-start justify-end lg:mt-20 md:mt-5 md:justify-center">
       <FullVerticalLogo
         logoColor={logoColor}
         logoClassName={logoClassName}

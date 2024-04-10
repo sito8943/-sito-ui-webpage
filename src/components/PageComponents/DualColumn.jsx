@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 
 function DualColumn(props) {
-  const { section, subtitle, bodyCount, content } = props;
+  const { section, subtitle, bodyCount, content, reverse } = props;
 
   const { t } = useTranslation();
 
@@ -24,9 +24,15 @@ function DualColumn(props) {
   }, [bodyCount, t, section, subtitle]);
 
   return (
-    <div className="content viewport grid applications gap-5">
+    <div
+      className={`content viewport grid ${
+        reverse ? "reverse" : "applications"
+      } gap-20 md:gap-10`}
+    >
       <div className="flex flex-col items-start justify-start gap-5">
-        <h2 className="text-2xl">{t(`_pages:brandIdentity.${section}.title`)}</h2>
+        <h2 className="text-2xl">
+          {t(`_pages:brandIdentity.${section}.title`)}
+        </h2>
         <h4 className="text-xl poppins-700">
           {t(`_pages:brandIdentity.${section}.${subtitle}.title`)}
         </h4>
@@ -42,6 +48,7 @@ DualColumn.propTypes = {
   subtitle: PropTypes.string,
   bodyCount: PropTypes.number,
   content: PropTypes.node,
+  reverse: PropTypes.bool,
 };
 
 export default DualColumn;

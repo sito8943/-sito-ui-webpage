@@ -18,8 +18,8 @@ export default function Versions(props) {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col w-full">
-      <div className="w-full flex flex-col items-end justify-start">
+    <div className="flex flex-col w-full md:gap-10 items-center">
+      <div className="w-full flex flex-col items-end md:items-center justify-start">
         <FullVerticalLogo
           logoColor={logoColor}
           logoClassName={logoClassName}
@@ -28,14 +28,14 @@ export default function Versions(props) {
           sitoColor={sitoColor}
           sitoClassName={sitoClassName}
         />
-        <div className="flex items-center gap-10 w-full">
-          <h4 className="poppins-700 text-xl whitespace-nowrap text-center min-w-[188px]">
+        <div className="flex md:flex-col-reverse items-center md:items-start gap-10 md:gap-2 w-full">
+          <h4 className="poppins-700 text-xl whitespace-nowrap text-center md:text-left min-w-[188px]">
             {t("_pages:brandIdentity.identifier.versions.list.vertical")}
           </h4>
-          <div className="w-full h-[0px] border-[1px] border-bg my-10"></div>
+          <div className="w-full h-[0px] border-[1px] border-bg my-10 md:my-0 md:mt-5"></div>
         </div>
       </div>
-      <div className="w-full flex flex-col items-end justify-start">
+      <div className="w-full flex flex-col items-end md:items-center justify-start">
         <FullHorizontalLogo
           logoColor={logoColor}
           logoClassName={logoClassName}
@@ -44,11 +44,11 @@ export default function Versions(props) {
           sitoColor={sitoColor}
           sitoClassName={sitoClassName}
         />
-        <div className="flex items-center gap-10 w-full">
-          <h4 className="poppins-700 text-xl whitespace-nowrap text-center min-w-[188px]">
+        <div className="flex md:flex-col-reverse items-center md:items-start gap-10 md:gap-2 w-full">
+          <h4 className="poppins-700 text-xl whitespace-nowrap text-center md:text-left min-w-[188px]">
             {t("_pages:brandIdentity.identifier.versions.list.horizontal")}
           </h4>
-          <div className="w-full h-[0px] border-[1px] border-bg my-10"></div>
+          <div className="w-full h-[0px] border-[1px] border-bg my-10 md:my-0 md:mt-5"></div>
         </div>
       </div>
     </div>

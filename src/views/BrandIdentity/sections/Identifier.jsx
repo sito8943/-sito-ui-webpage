@@ -21,6 +21,7 @@ function Identifier() {
     {
       subtitle: "isotype",
       bodyCount: 2,
+      reverse: true,
       content: (
         <BigLogo
           logoColor={colors.primary.default}
@@ -35,6 +36,7 @@ function Identifier() {
     {
       subtitle: "logo",
       bodyCount: 1,
+      reverse: true,
       content: (
         <BigLogo
           logoColor="#d7d7d7"
@@ -49,6 +51,7 @@ function Identifier() {
     {
       subtitle: "generic",
       bodyCount: 1,
+      reverse: true,
       content: (
         <BigLogo
           logoColor="#d7d7d7"
@@ -63,6 +66,7 @@ function Identifier() {
     {
       subtitle: "versions",
       bodyCount: 1,
+      reverse: true,
       content: (
         <Versions
           logoColor={colors.primary.default}
@@ -89,6 +93,7 @@ function Identifier() {
         <DualColumn
           key={section.subtitle}
           section="identifier"
+          reverse={section.reverse}
           subtitle={section.subtitle}
           bodyCount={section.bodyCount}
           content={section.content}
