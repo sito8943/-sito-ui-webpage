@@ -24,7 +24,7 @@ function Applications() {
           </h3>
           <p className="body">{t("_pages:brandIdentity.applications.body")}</p>
           <div className="flex flex-col gap-3">
-            <h4 className="body roboto-500">
+            <h4 className="body roboto-700">
               {t("_pages:brandIdentity.applications.format.title")}
             </h4>
             <p className="body">
@@ -32,7 +32,7 @@ function Applications() {
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            <h4 className="body roboto-500">
+            <h4 className="body roboto-700">
               {t("_pages:brandIdentity.applications.material.title")}
             </h4>
             <div>
@@ -45,7 +45,7 @@ function Applications() {
             </div>
           </div>
           <div>
-            <h4 className="body roboto-500">
+            <h4 className="body roboto-700">
               {t("_pages:brandIdentity.applications.typography.title")}
             </h4>
             <p className="body">

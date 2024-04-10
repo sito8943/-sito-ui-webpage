@@ -10,6 +10,7 @@ import DualColumn from "../../../components/PageComponents/DualColumn";
 // components
 import Prohibitions from "../components/Prohibitions";
 import BigLogo from "../components/BigLogo";
+import Versions from "../components/Versions";
 
 function Identifier() {
   const { t } = useTranslation();
@@ -59,7 +60,20 @@ function Identifier() {
         />
       ),
     },
-    { subtitle: "versions", bodyCount: 1 },
+    {
+      subtitle: "versions",
+      bodyCount: 1,
+      content: (
+        <Versions
+          logoColor={colors.primary.default}
+          logoClassName="w-[145px] h-[135px]"
+          fontColor="#d7d7d7"
+          fontClassName="text-xl"
+          sitoColor="#d7d7d7"
+          sitoClassName="w-[190px] h-[90px]"
+        />
+      ),
+    },
     { subtitle: "constructions", bodyCount: 1 },
     { subtitle: "invasion", bodyCount: 1 },
     { subtitle: "limits", bodyCount: 1 },

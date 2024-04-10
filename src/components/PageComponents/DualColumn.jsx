@@ -27,7 +27,7 @@ function DualColumn(props) {
     <div className="content viewport grid applications gap-5">
       <div className="flex flex-col items-start justify-start gap-5">
         <h2 className="text-2xl">{t(`_pages:brandIdentity.${section}.title`)}</h2>
-        <h4 className="text-xl poppins-600">
+        <h4 className="text-xl poppins-700">
           {t(`_pages:brandIdentity.${section}.${subtitle}.title`)}
         </h4>
         {renderBody}

@@ -6,7 +6,7 @@ function Typography() {
   return (
     <div className="content viewport flex flex-col items-start justify-start applications gap-5">
       <h2 className="text-2xl">{t(`_pages:brandIdentity.resources.title`)}</h2>
-      <h4 className="text-xl poppins-600">
+      <h4 className="text-xl poppins-700">
         {t(`_pages:brandIdentity.resources.typography.title`)}
       </h4>
       <div className="flex flex-col items-start justify-start gap-10">

@@ -32,7 +32,7 @@ function Prohibitions() {
         <h2 className="text-2xl">
           {t(`_pages:brandIdentity.identifier.title`)}
         </h2>
-        <h4 className="text-xl poppins-600">
+        <h4 className="text-xl poppins-700">
           {t(`_pages:brandIdentity.identifier.prohibitions.title`)}
         </h4>
         <p className="body">

@@ -11,7 +11,7 @@ function Graphics() {
     <div className="content viewport grid grid-cols-2 md:grid-cols-1 gap-5">
       <div className="flex flex-col items-start justify-start gap-5">
         <h2 className="text-2xl">{t(`_pages:brandIdentity.resources.title`)}</h2>
-        <h4 className="text-xl poppins-600">
+        <h4 className="text-xl poppins-700">
           {t(`_pages:brandIdentity.resources.graphics.title`)}
         </h4>
         <p className="body">

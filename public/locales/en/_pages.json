@@ -56,6 +56,10 @@
         "title": "Versiones de marca",
         "body": {
           "paragraph1": "Se proponen dos versiones: vertical y horizontal. Ambas versiones balancean los pesos visuales entre tipografía y símbolo, brindándole estabilidad y consistencia al identificador de marca."
+        },
+        "list": {
+          "vertical": "Versión Vertical",
+          "horizontal": "Versión Horizontal"
         }
       },
       "constructions": {
