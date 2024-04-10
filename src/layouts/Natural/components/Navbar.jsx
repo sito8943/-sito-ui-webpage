@@ -76,15 +76,15 @@ function Navbar() {
               {links.map(({ href, id }) => (
                 <li
                   key={id}
-                  className="flex flex-col items-center justify-center"
+                  className="flex flex-col items-center justify-center group"
                 >
                   <Link to={href} className={`text-white transition`}>
                     {t(`_pages:routes.${id}`)}
                   </Link>
                   <div
-                    className={`w-[120%] grid ${css({
-                      gridTemplateRows: pathname === href ? "1fr" : "0fr",
-                      transition: "grid-template-rows 0.5s ease-in-out",
+                    className={`w-[120%] grid group-hover:!grid-cols-only h-1 ${css({
+                      gridTemplateColumns: pathname === href ? "1fr" : "0fr",
+                      transition: "grid-template-columns 0.5s ease-in-out",
                     })}`}
                   >
                     <div className="w-full overflow-hidden">

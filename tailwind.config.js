@@ -25,6 +25,9 @@ export default {
       // => @media (max-width: 383px) { ... }
     },
     extend: {
+      gridTemplateColumns: {
+        only: "1fr",
+      },
       colors: {
         bg: "#1B1B1B",
         primary: "#CD212A",
