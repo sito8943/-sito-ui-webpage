@@ -11,6 +11,8 @@ import DualColumn from "../../../components/PageComponents/DualColumn";
 import Prohibitions from "../components/Prohibitions";
 import BigLogo from "../components/BigLogo";
 import Versions from "../components/Versions";
+import Constructions from "../components/Constructions";
+import Restrict from "../components/Restricts";
 
 function Identifier() {
   const { t } = useTranslation();
@@ -78,8 +80,8 @@ function Identifier() {
         />
       ),
     },
-    { subtitle: "constructions", bodyCount: 1 },
-    { subtitle: "invasion", bodyCount: 1 },
+    { subtitle: "constructions", bodyCount: 1, content: <Constructions /> },
+    { subtitle: "invasion", bodyCount: 1, content: <Restrict /> },
     { subtitle: "limits", bodyCount: 1 },
   ];
 
