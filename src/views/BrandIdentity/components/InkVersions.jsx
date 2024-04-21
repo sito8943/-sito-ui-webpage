@@ -6,53 +6,44 @@ import { useStyle } from "@sito/ui";
 import FullHorizontalLogo from "../../../components/Logos/FullHorizontalLogo";
 import FullVerticalLogo from "../../../components/Logos/FullVerticalLogo";
 
+// sty;es
+import "./styles.css";
+
 function InkVersions() {
   const { colors } = useStyle();
 
   const { t } = useTranslation();
 
   return (
-    <div className="content viewport w-full h-full flex flex-col items-start justify-center">
+    <div className="ink-container content viewport ">
       <div className="grid grid-cols-2 md:grid-cols-1 gap-10 w-full">
-        <div className="grid grid-cols-2 sm:grid-cols-1 gap-5 items-center">
+        <div className="ink-column">
           <FullVerticalLogo
-            className="w-[125px] h-[150px] md:justify-self-center"
+            className="ink-logo"
             color={colors.secondary.default}
           />
           <FullVerticalLogo
-            className="w-[125px] h-[150px] md:justify-self-center"
+            className="ink-logo"
             color={colors.primary.default}
           />
-          <FullVerticalLogo
-            className="w-[125px] h-[150px] md:justify-self-center"
-            color="#D7942E"
-          />
-          <FullVerticalLogo
-            className="w-[125px] h-[150px] md:justify-self-center"
-            color="#00997B"
-          />
+          <FullVerticalLogo className="ink-logo" color="#D7942E" />
+          <FullVerticalLogo className="ink-logo" color="#00997B" />
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-1 gap-5 items-center">
+        <div className="ink-column">
           <FullHorizontalLogo
             color={colors.secondary.default}
-            className="justify-self-end md:justify-self-center w-[215px] h-[90px]"
+            className="ink-logo2"
           />
           <FullHorizontalLogo
             color={colors.primary.default}
-            className="justify-self-end md:justify-self-center w-[215px] h-[90px]"
+            className="ink-logo2"
           />
-          <FullHorizontalLogo
-            color="#D7942E"
-            className="justify-self-end md:justify-self-center w-[215px] h-[90px]"
-          />
-          <FullHorizontalLogo
-            color="#00997B"
-            className="justify-self-end md:justify-self-center w-[215px] h-[90px]"
-          />
+          <FullHorizontalLogo color="#D7942E" className="ink-logo2" />
+          <FullHorizontalLogo color="#00997B" className="ink-logo2" />
         </div>
       </div>
 
-      <div className="w-full h-[0px] border-[1px] border-bg mt-10 mb-5"></div>
+      <div className="ink-border"></div>
       <h4 className="poppins-700 text-base justify-self-start text-left">
         {t("_pages:brandIdentity.resources.inkVersions.oneInk")}
       </h4>
