@@ -6,8 +6,36 @@
   grid-template-columns: 0.6fr 1fr;
 }
 
+.basic-column {
+  @apply flex flex-col items-start justify-start gap-5;
+}
+
 .reverse {
   grid-template-columns: 1fr 0.8fr;
+}
+
+.border-column-container {
+  @apply flex flex-col w-full md:gap-10 items-center;
+}
+
+.border-column {
+  @apply w-full flex flex-col items-end md:items-center justify-start;
+}
+
+.border-row {
+  @apply flex md:flex-col-reverse items-center md:items-start gap-10 md:gap-2 w-full;
+}
+
+.border-header {
+  @apply text-xl whitespace-nowrap text-center md:text-left min-w-[188px];
+}
+
+.border {
+  @apply w-full h-[0px] border-[1px] border-bg my-10 md:my-0 md:mt-5;
+}
+
+.logo-row {
+  @apply flex sm:flex-col gap-40 sm:gap-10 items-end sm:items-center justify-end sm:justify-center;
 }
 
 @media (max-width: 1200px) {

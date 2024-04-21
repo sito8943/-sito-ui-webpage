@@ -5,9 +5,12 @@ import constructions1 from "../../../assets/images/constructions1.svg";
 import constructions2 from "../../../assets/images/constructions2.svg";
 import constructions3 from "../../../assets/images/constructions3.svg";
 
+// styles
+import "./styles.css";
+
 function Constructions() {
   return (
-    <div className="flex flex-col gap-10 w-full">
+    <div className="basic-column-container">
       <div className="flex md:flex-col gap-10">
         <img src={constructions} alt="cell with the vertical logo" />
         <img src={constructions1} alt="only vertical logo with x" />

@@ -28,7 +28,7 @@ function Prohibitions() {
 
   return (
     <div className="content w-full viewport gap-10 flex flex-col items-start justify-start">
-      <div className="flex flex-col items-start justify-start gap-5 w-1/2 md:w-full">
+      <div className="basic-column w-1/2 md:w-full">
         <h2 className="text-2xl">
           {t(`_pages:brandIdentity.identifier.title`)}
         </h2>

@@ -9,7 +9,7 @@ function Graphics() {
 
   return (
     <div className="content viewport grid grid-cols-2 md:grid-cols-1 gap-5">
-      <div className="flex flex-col items-start justify-start gap-5">
+      <div className="basic-column">
         <h2 className="text-2xl">{t(`_pages:brandIdentity.resources.title`)}</h2>
         <h4 className="text-xl poppins-700">
           {t(`_pages:brandIdentity.resources.graphics.title`)}
@@ -21,7 +21,7 @@ function Graphics() {
           {t("_pages:brandIdentity.resources.graphics.body.paragraph2")}
         </p>
       </div>
-      <div className="flex flex-col items-start justify-start gap-5">
+      <div className="basic-column">
         <div className="md:hidden h-[70px]"></div>
         <div className="flex flex-wrap gap-1">
           {Array.from({ length: 96 }, () => 0).map((_, i) => (

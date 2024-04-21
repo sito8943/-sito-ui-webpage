@@ -1,0 +1,7 @@
+.color {
+  @apply h-full md:h-auto flex items-end justify-start p-3 pr-10;
+}
+
+.basic-column-container {
+  @apply flex flex-col gap-10 w-full;
+}

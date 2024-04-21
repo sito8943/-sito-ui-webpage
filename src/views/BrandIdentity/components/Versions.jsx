@@ -18,7 +18,7 @@ export default function Versions(props) {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col w-full md:gap-10 items-center">
+    <div className="border-column-container">
       <div className="w-full flex flex-col items-end md:items-center justify-start">
         <FullVerticalLogo
           logoColor={logoColor}

@@ -29,7 +29,7 @@ function DualColumn(props) {
         reverse ? "reverse" : "applications"
       } gap-20 md:gap-10`}
     >
-      <div className="flex flex-col items-start justify-start gap-5">
+      <div className="basic-column">
         <h2 className="text-2xl">
           {t(`_pages:brandIdentity.${section}.title`)}
         </h2>
