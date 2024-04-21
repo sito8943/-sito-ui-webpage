@@ -3,11 +3,14 @@ import { useStyle } from "@sito/ui";
 // components
 import ColorOpacity from "./ColorOpacity";
 
+// styles
+import "./styles.css";
+
 function PrimaryPalette() {
   const { colors } = useStyle();
 
   return (
-    <div className="w-full h-full flex flex-col gap-5">
+    <div className="palette-container">
       <div className="hidden-on-md h-[76px]" />
       <ColorOpacity
         color={colors.primary.default}

@@ -1,9 +1,12 @@
 // components
 import ColorOpacity from "./ColorOpacity";
 
+// styles
+import "./styles.css";
+
 function SecondaryPalette() {
   return (
-    <div className="w-full h-full flex flex-col gap-5">
+    <div className="palette-container">
       <div className="hidden-on-md h-[76px]" />
       <ColorOpacity
         colorHex="#00997B"

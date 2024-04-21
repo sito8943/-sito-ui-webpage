@@ -33,3 +33,7 @@
 .ink-border-header {
   @apply text-base justify-self-start text-left mb-10;
 }
+
+.palette-container {
+  @apply w-full h-full flex flex-col gap-5;
+}

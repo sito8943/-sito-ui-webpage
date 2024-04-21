@@ -13,7 +13,7 @@ function PositiveNegativeInk() {
   const { colors } = useStyle();
 
   return (
-    <div className="ink-container content viewport ">
+    <div className="ink-container content viewport">
       <InkRow
         fontColor="#1b1b1b"
         logoColor={colors.primary.default}
