@@ -78,6 +78,10 @@
         "title": "Límites de reducción",
         "body": {
           "paragraph1": "Los límtites de reducción se pautaron para regular el tamaño mínimo de correcta legibilidad de la marca en soporte impreso y digital. El identificador podrá ser ampliado a cualquier tamaño; por el contrario, solo podrá ser reducido hasta los valores que se describen a continuación."
+        },
+        "versions": {
+          "digital": "Soporte Digital",
+          "printed": "Soporte Impreso"
         }
       },
       "prohibitions": {

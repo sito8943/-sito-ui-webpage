@@ -13,6 +13,7 @@ import BigLogo from "../components/BigLogo";
 import Versions from "../components/Versions";
 import Constructions from "../components/Constructions";
 import Restrict from "../components/Restricts";
+import Reductions from "../components/Reductions";
 
 function Identifier() {
   const { t } = useTranslation();
@@ -82,7 +83,12 @@ function Identifier() {
     },
     { subtitle: "constructions", bodyCount: 1, content: <Constructions /> },
     { subtitle: "invasion", bodyCount: 1, content: <Restrict /> },
-    { subtitle: "limits", bodyCount: 1 },
+    {
+      subtitle: "limits",
+      bodyCount: 1,
+      reverse: true,
+      content: <Reductions />,
+    },
   ];
 
   return (
