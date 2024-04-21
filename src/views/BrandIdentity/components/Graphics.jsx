@@ -27,7 +27,7 @@ function Graphics() {
         </p>
       </div>
       <div className="basic-column">
-        <div className="md:hidden h-[70px]"></div>
+        <div className="hidden-on-md h-[70px]"></div>
         <div className="basic-flex-wrap">
           {Array.from({ length: 96 }, () => 0).map((_, i) => (
             <Angular key={i} />

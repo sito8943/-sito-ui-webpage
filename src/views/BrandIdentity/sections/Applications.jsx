@@ -5,6 +5,9 @@ import HeroComponent from "../../../components/PageComponents/HeroComponent";
 import PresentationCard from "../../../components/Card/PresentationCard";
 import PresentationCardBack from "../../../components/Card/PresentationCardBack";
 
+// styles
+import "./styles.css";
+
 function Applications() {
   const { t } = useTranslation();
 
@@ -60,7 +63,7 @@ function Applications() {
           </div>
         </div>
         <div>
-          <div className="md:hidden h-[56px]" />
+          <div className="hidden-on-md h-[56px]" />
           <div className="grid grid-cols-2 md:grid-cols-1 gap-5 xs:pt-[160px] xs:gap-[170px] xs:mb-40">
             <div className="flex flex-col gap-5 xs:items-center xs:justify-center xs:gap-[160px]">
               <PresentationCard color="#D7942E" className="xs:rotate-90" />

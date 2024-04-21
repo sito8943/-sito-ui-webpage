@@ -44,3 +44,7 @@
     grid-template-columns: 1fr;
   }
 }
+
+.hidden-on-md {
+  @apply hidden-on-md;
+}

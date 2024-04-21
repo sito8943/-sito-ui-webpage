@@ -4,7 +4,7 @@ import ColorOpacity from "./ColorOpacity";
 function SecondaryPalette() {
   return (
     <div className="w-full h-full flex flex-col gap-5">
-      <div className="md:hidden h-[76px]" />
+      <div className="hidden-on-md h-[76px]" />
       <ColorOpacity
         colorHex="#00997B"
         description={
