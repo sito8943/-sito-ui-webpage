@@ -52,7 +52,12 @@ export default function NavigationDrawer(props) {
         }`}
       >
         <div className="w-full h-full relative p-10 flex flex-col gap-10">
-          <Link to="/" className={`text-white`}>
+          <Link
+            to="/"
+            name="logo"
+            aria-label="click to go home"
+            className={`text-white`}
+          >
             <SitoLogo className="w-[100px] h-[75px]" />
           </Link>
           <nav>
@@ -62,7 +67,12 @@ export default function NavigationDrawer(props) {
                   key={id}
                   className="w-full flex flex-col items-start justify-start"
                 >
-                  <Link to={href} className={`text-white transition`}>
+                  <Link
+                    to={href}
+                    name={id}
+                    aria-label={t(`_pages:routes.${id}`)}
+                    className={`text-white transition`}
+                  >
                     {t(`_pages:routes.${id}`)}
                   </Link>
                   <div

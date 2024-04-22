@@ -46,5 +46,5 @@
 }
 
 .hidden-on-md {
-  @apply hidden-on-md;
+  @apply md:hidden;
 }

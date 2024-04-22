@@ -45,7 +45,9 @@ export default function Hero() {
       id="home"
       className={`!p-0 w-viewport flex items-center justify-center ${color} flex-col gap-10 fixed top-0 left-0 w-full transition duration-500 ease-in-out`}
     >
-      <div className={`w-full flex flex-col items-center justify-center gap-5 relative`}>
+      <div
+        className={`w-full flex flex-col items-center justify-center gap-5 relative`}
+      >
         <MiniLogo
           className={`-mt-40 w-[250px] h-[250px] sm:w-[150px] md:h-[150px] delay-100 transitional ${
             appear ? "appearable" : "dissapearable"
@@ -87,6 +89,8 @@ export default function Hero() {
           })} delay-300 transitional ${
             appear ? "appearable" : "dissapearable"
           }`}
+          name="speed"
+          aria-label="click to go to speed section"
           to="/#speed"
         >
           {t("_pages:home.hero.titles.speed")}
@@ -99,6 +103,8 @@ export default function Hero() {
           })} delay-[400ms] transitional ${
             appear ? "appearable" : "dissapearable"
           }`}
+          name="productivity"
+          aria-label="click to go to productivity section"
           to="/#productivity"
         >
           {t("_pages:home.hero.titles.productivity")}

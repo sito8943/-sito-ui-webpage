@@ -1,3 +1,4 @@
+
 import { useState, useCallback, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -60,11 +61,15 @@ function Navbar() {
       >
         <div
           className={`relative transition-all duration-500 flex items-center justify-between ${
-            pathname === "/brand-identity" ? "px-20 sm:px-10 xs:px-5" : "px-10 sm:px-5"
+            pathname === "/brand-identity"
+              ? "px-20 sm:px-10 xs:px-5"
+              : "px-10 sm:px-5"
           } w-full ${transparency ? "h-[100px]" : "h-[80px]"}`}
         >
           <Link
             to="/"
+            name="logo"
+            aria-label="click to go home"
             className={`text-white transition duration-500 ease-in-out ${
               showLogo ? "opacity-100" : "opacity-0"
             }`}
@@ -78,14 +83,21 @@ function Navbar() {
                   key={id}
                   className="flex flex-col items-center justify-center group"
                 >
-                  <Link to={href} className={`text-white transition`}>
+                  <Link
+                    to={href}
+                    name={id}
+                    aria-label={t(`_pages:routes.${id}`)}
+                    className={`text-white transition`}
+                  >
                     {t(`_pages:routes.${id}`)}
                   </Link>
                   <div
-                    className={`w-[120%] grid group-hover:!grid-cols-only h-1 ${css({
-                      gridTemplateColumns: pathname === href ? "1fr" : "0fr",
-                      transition: "grid-template-columns 0.5s ease-in-out",
-                    })}`}
+                    className={`w-[120%] grid group-hover:!grid-cols-only h-1 ${css(
+                      {
+                        gridTemplateColumns: pathname === href ? "1fr" : "0fr",
+                        transition: "grid-template-columns 0.5s ease-in-out",
+                      }
+                    )}`}
                   >
                     <div className="w-full overflow-hidden">
                       <div className={`border-white border-[1px] h-0`}></div>
