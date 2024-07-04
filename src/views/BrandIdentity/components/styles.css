@@ -6,7 +6,7 @@
   @apply flex flex-col gap-10 w-full;
 }
 
-.basic-flex-grap {
+.basic-flex-wrap {
   @apply flex flex-wrap gap-1;
 }
 
