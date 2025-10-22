@@ -7,12 +7,17 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .viewport {
   min-height: 100vh;
   min-height: 100svh;
+}
+
+.fit-viewport {
+  height: 100vh;
+  height: 100svh;
 }
 
 .w-viewport {
@@ -23,7 +28,6 @@ body {
 section {
   min-height: 100vh;
   min-height: 100svh;
-  @apply flex flex-col justify-start items-center py-20;
 }
 
 h1,
@@ -31,6 +35,12 @@ h2,
 h3 {
   font-family: "Poppins", sans-serif;
   @apply font-[900];
+}
+
+.body {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+  @apply text-lg text-balance;
 }
 
 h4,
@@ -75,12 +85,54 @@ h4 {
   }
 }
 
-.roboto {
+@font-face {
+  font-family: "Futura";
+  src: url("FUTURA75BOLD.TTF");
+}
+
+.futura {
+  font-family: "Futura", sans-serif !important;
+  font-weight: bold;
+}
+
+.roboto-300 {
   font-family: "Roboto", sans-serif !important;
   font-weight: 300;
 }
 
-.poppins {
+.roboto-400 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+}
+
+.roboto-500 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 500;
+}
+
+.poppins-600 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+}
+
+.poppins-700 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700;
+}
+
+.poppins-900 {
   font-family: "Poppins", sans-serif !important;
   font-weight: 900;
+}
+
+.transitional {
+  @apply transition duration-500 ease-in-out;
+}
+
+.appearable {
+  @apply translate-y-0 opacity-100;
+}
+
+.dissapearable {
+  @apply translate-y-2 opacity-0;
 }

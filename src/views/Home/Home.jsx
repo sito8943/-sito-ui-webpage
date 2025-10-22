@@ -1,22 +1,7 @@
-// sections
-import Hero from "./sections/Hero/Hero";
-import Logo from "./sections/Logo/Logo";
-import ClearSpace from "./sections/ClearSpace/ClearSpace";
-import Concepts from "./sections/Concepts/Concepts";
-import Colors from "./sections/Colors/Colors";
-import Typography from "./sections/Typography/Typography";
+import Hero from "./sections/Hero";
 
 function Home() {
-  return (
-    <main>
-      <Hero />
-      <Logo />
-      <ClearSpace />
-      <Concepts />
-      <Colors />
-      <Typography />
-    </main>
-  );
+  return <Hero />;
 }
 
 export default Home;

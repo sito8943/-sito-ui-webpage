@@ -1,38 +1,188 @@
 {
+  "routes": {
+    "home": "Inicio",
+    "brandIdentity": "Identidad de Marca"
+  },
   "home": {
     "hero": {
+      "title": "Códigos que",
+      "subtitle": "conectan y crean",
       "titles": {
-        "default": "@Sito/ui",
-        "productivity": "Productivity",
-        "speed": "Speed"
+        "speed": "Velocidad",
+        "productivity": "Productividad"
+      }
+    }
+  },
+  "brandIdentity": {
+    "hero": {
+      "subtitle": "Manual de",
+      "subtitleBig": "Identidad Visual"
+    },
+    "introduction": {
+      "title": "Introducción",
+      "leftColumn": {
+        "block1": "La identidad corporativa es un instrumento estratégico fundamental que representa todos aquellos elementos gráficos y visuales, de experiencias y principios que sustentan la promesa y la propuesta de valor de una marca. Su principal objetivo es crear un factor de diferenciación con respecto a la competencia y, a su vez, posicionarse en el imaginario de los públicos objetivos.",
+        "block2": "De ahí la importancia de contar con un documento rector que agrupe los elementos visuales y comunicativos que distinguen a Sito, asi como los principios de gestión de la marca. Lo anterior permitirá crear y comunicar una imagen homogénea, y evitará que existan variaciones que pongan en riesgo la consistencia de marca alcanzada.",
+        "block3": "Sito es un joven diseñador todo terreno apasionado por la programación, quien se dedica a ofrecer soluciones de diseño y desarrollo web desde 2019. Aunque su tono de voz siempre es amigable y cercano, posee un nivel de responsabilidad y una actitud ante el trabajo admirables."
+      },
+      "rightColumn": {
+        "block1": "Se define como una persona profesional, rápida y eficiente, pero también es comprometido con todo aquello que emprende. Reconocido por ser directo, comprensivo y abierto a ideas en el trato con los demás, Sito comunica seguridad y templanza. Sito siempre entrega lo que sus clientes necesitan, un resultado que construyen juntos.",
+        "block2": "El presente manual de identidad visual facilitará la aplicación de la marca Sito. Su uso es obligatorio, ya que representa la guía normativa del universo visual diseñado.",
+        "block3": "En aquellos casos en los que se hagan necesarias aplicaciones gráficas no pautadas en este documento, éstas deben respetar, en la medida de lo posible y según criterio del representante de la marca y del diseñador, los principios que serán tratados a continuación."
       }
     },
-    "logo": {
-      "title": "Logo"
-    },
-    "concepts": {
-      "title": "Concepts"
-    },
-    "clearSpace": {
-      "title": "Clear Space"
-    },
-    "colors": {
-      "title": "Colors Palette",
-      "blackAndWhite": {
-        "white": "Single Ink",
-        "black": "Negative"
+    "identifier": {
+      "title": "El Identificador",
+      "isotype": {
+        "title": "Isotipo",
+        "body": {
+          "paragraph1": "El isotipo es el símbolo gráfico que constituye una parte importante del identificador. El isotipo de Sito alude principalmente a una brújula, representando la orientación clara y enfocada en su propósito como diseñador web, y la búsqueda y aprovechamiento de las oportunidades que vengan de cualquier dirección. Cabe destacar que los signos de mayor que y menor que, no llegan a unirse nunca con la S, manifestando la capacidad de Sito para avanzar y adaptarse a entornos, personas, ideas y proyectos diferentes.",
+          "paragraph2": "Diseñado desde una concepción minimalista, el símbolo gráfico resplada la esencia de Sito. Su estructura garantiza legibilidad, por lo que será de fácil implementación en diferentes soportes, tanto digitales como impresos."
+        }
       },
-      "chromatic": "Other chromatic combinations",
-      "primary": "Primary",
-      "secondary": "Secondary",
-      "lightMode": "Light Mode",
-      "darkMode": "Dark Mode",
-      "colorChromatic": "Chromatic"
+      "logo": {
+        "title": "Logotipo",
+        "body": {
+          "paragraph1": "El logotipo es el nombre de la marca. Se construyó de forma tipográfica con ligeros retoques. Está constituido por la palabra Sito, diminutivo personalizado del representante y dueño de la marca."
+        }
+      },
+      "generic": {
+        "title": "Genérico",
+        "body": {
+          "paragraph1": "El genérico define, en este caso, la promesa de marca. Su elaboración estratégica alude al universo de Sito, su proceso de trabajo y el resultado a alcanzar."
+        }
+      },
+      "versions": {
+        "title": "Versiones de marca",
+        "body": {
+          "paragraph1": "Se proponen dos versiones: vertical y horizontal. Ambas versiones balancean los pesos visuales entre tipografía y símbolo, brindándole estabilidad y consistencia al identificador de marca."
+        },
+        "list": {
+          "vertical": "Versión Vertical",
+          "horizontal": "Versión Horizontal"
+        }
+      },
+      "constructions": {
+        "title": "Construcción y proporciones",
+        "body": {
+          "paragraph1": "En ambas versiones, los elementos que componen el identificador están construidos sobre una trama modular o retícula, que reproduce fielmente las proporciones."
+        }
+      },
+      "invasion": {
+        "title": "Área mínima de invasión",
+        "body": {
+          "paragraph1": "Para ser efectivo, el identificador debe estar siempre dentro de un espacio mínimo requerido sin interferencias. Este espacio aislará la marca de cualquier acompañamiento gráfico, ilustrativo u otro elemento. La distancia mínima recomendada se deriva de las proporciones y estructura del identificador."
+        }
+      },
+      "limits": {
+        "title": "Límites de reducción",
+        "body": {
+          "paragraph1": "Los límtites de reducción se pautaron para regular el tamaño mínimo de correcta legibilidad de la marca en soporte impreso y digital. El identificador podrá ser ampliado a cualquier tamaño; por el contrario, solo podrá ser reducido hasta los valores que se describen a continuación."
+        },
+        "versions": {
+          "digital": "Soporte Digital",
+          "printed": "Soporte Impreso"
+        }
+      },
+      "prohibitions": {
+        "title": "Prohibiciones",
+        "body": {
+          "paragraph1": "En este apartado se muestran algunos ejemplos de variaciones incorrectas del identificador, aunque no constituyen todas las posibles violaciones que pudieran suscitarse. Queda por parte del representante de la marca, velar en todo momento por la aplicación correcta del identificador."
+        },
+        "list": {
+          "inclination": { "body": "Inclinar el identificador", "alt": "" },
+          "rotation": { "body": "Rotar el identificador", "alt": "" },
+          "distortion": { "body": "Distorsionar el identificador", "alt": "" },
+          "colors": {
+            "body": "Utilizar colores no pautados para el identificador",
+            "alt": ""
+          },
+          "background": {
+            "body": "Colocar el identifcador sobre fondos de colores no pautados",
+            "alt": ""
+          },
+          "position": {
+            "body": "Cambiar la disposición del identificador",
+            "alt": ""
+          },
+          "dimensions": {
+            "body": "Alterar las proporciones del identificador",
+            "alt": ""
+          },
+          "mutilation": {
+            "body": "Mutilar algún elemento del identifcador",
+            "alt": ""
+          },
+          "fonts": {
+            "body": "Modificar las tipografías pautadas",
+            "alt": ""
+          }
+        }
+      }
     },
-    "typography": {
-      "title": "Typography",
-      "poppins": "Designed by Jonny Pinhorn and Ninad Kale, Poppins is a modern and versatile sans-serif font that works well in a variety of contexts. Its clean and contemporary design makes it suitable for projects seeking a fresh and modern look. Poppins has been designed with excellent readability, especially at smaller font sizes. Poppins is a Google Fonts font, which means it is easily accessible and usable in web projects.",
-      "roboto": "Designed by Christian Robertson, Roboto has a dual nature. It has a mechanical skeleton and the shapes are largely geometric. At the same time, the fountain features friendly, open curves. While some grotesques distort the shape of their letters to force a rigid rhythm, Roboto makes no compromises and allows the letters to adjust to their natural width. This creates a more natural reading rhythm that is more commonly found in humanistic and serif type."
+    "resources": {
+      "title": "Recursos Gráficos",
+      "primary": {
+        "title": "Código Cromático Principal",
+        "body": {
+          "paragraph1": "Quedan pautados los colores PANTONE PMS 18-1662 TCX y PMS 282 C como las versiones óptimas para representar el identificador y los atributos de la marca Sito."
+        }
+      },
+      "complementary": {
+        "title": "Código Cromático Complementario",
+        "body": {
+          "paragraph1": "La paleta cromática complementaria servirá de apoyo y contraste a la paleta cromática principal. De esta forma se garantiza variedad y dinamismo de marca, pero cuidando la consistencia de la identidad que se pretende comunicar"
+        }
+      },
+      "versions": {
+        "title": "Versiones Cromáticas y Acromáticas",
+        "body": {
+          "paragraph1": "Se presentan las variantes cromáticas y acromáticas definidas como eficientes para la aplicación de la identidad visual."
+        }
+      },
+      "typography": {
+        "title": "Código Tipográfico",
+        "body": {
+          "paragraph1": "Como signo identificador de la marca Sito se pauta la tipografía Futura 75 Bold, la cual se empleará de forma exclusiva en la construcción del logotipo.",
+          "paragraph2": "Como tipografía complementaria se ha elegido a Poppins, y será empleada en la construcción del genérico del identificador de marca y en la creación de títulos.",
+          "paragraph3": "Para cuerpos de texto de todo tipo se ha seleccionado la tipografía Roboto, debido a su altura y estructura sencilla, garantiza legibilidad, sobre todo cuando sea empleada en medios digitales."
+        }
+      },
+      "graphics": {
+        "title": "Gráficas de apoyo",
+        "body": {
+          "paragraph1": "La gráfica de apoyo está constituida por aquellas texturas y demás elementos ornamentales que ayudan a ambientar y complementar el identificador como un sistema visual mucho más amplio.",
+          "paragraph2": "En este caso, se han utilizado elementos gráficos del propio identifcador de la marca; los mismos pueden presentarse en diferentes pesos, tamaños y espaciamiento. Las formas diseñadas pueden ser objeto de modificación si llega a ser necesario, siempre y cuando se respete el diseño base. Estas gráficas de apoyo podrán adoptar igualmente, los diferentes colores pautados en este manual."
+        }
+      },
+      "primarySecondaryInk": {
+        "positive": "Versiones en positivo",
+        "chromaticPositive": "Versiones acromáticas en postivo",
+        "negative": "Versiones acromáticas en negativo"
+      },
+      "inkVersions": {
+        "oneInk": "Versiones a una tinta"
+      }
+    },
+    "applications": {
+      "title": "Aplicaciones",
+      "subtitle": "Tarjeta de presentación",
+      "body": "Versiones de primer nivel que serán empleadas por el representante de la marca.",
+      "format": {
+        "title": "Formato",
+        "number": "85 x 55 mm"
+      },
+      "material": {
+        "title": "Material recomendado",
+        "one": "cartulina mate (150-200 gramos)",
+        "two": "cartulina de hilo (150-250 gramos)"
+      },
+      "typography": {
+        "title": "Tipografías",
+        "name": "Nombre: Poppins Bold, 10 ptos.",
+        "profession": "Profesión: Poppins Bold, 9 ptos.",
+        "contactInfo": "Información de contacto: Roboto Medium, 8.5 ptos."
+      }
     }
   }
 }

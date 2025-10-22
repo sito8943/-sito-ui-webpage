@@ -15,13 +15,28 @@ export default {
       md: { max: "900px" },
       // => @media (max-width: 767px) { ... }
 
+      msm: { min: "600px" },
+      // => @media (min-width: 640px) { ... }
+
       sm: { max: "600px" },
       // => @media (max-width: 639px) { ... }
 
       xs: { max: "400px" },
       // => @media (max-width: 383px) { ... }
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        only: "1fr",
+      },
+      colors: {
+        bg: "#1B1B1B",
+        primary: "#CD212A",
+        secondary: "#041E42",
+        white: "#FBFBFB",
+        yellow: "#D7942E",
+        green: "#00997B",
+      },
+    },
   },
   plugins: [],
 };
