@@ -1,4 +1,3 @@
-
 import { useState, useCallback, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -55,8 +54,8 @@ function Navbar() {
   return (
     <>
       <header
-        className={`expand flex items-center justify-center w-full fixed top-0 left-0 min-h-[60px] transition duration-500 z-[50] ${
-          transparency ? "" : "bg-bg backdrop-blur-lg"
+        className={`expand flex items-center justify-center w-full fixed top-0 min-h-[60px] transition-all duration-500 z-[50] ${
+          transparency ? "left-0" : "left-[50%] translate-x-[-50%] bg-primary/80 rounded-3xl backdrop-blur-md mx-auto mt-2 w-[95%]"
         }`}
       >
         <div
@@ -74,7 +73,9 @@ function Navbar() {
               showLogo ? "opacity-100" : "opacity-0"
             }`}
           >
-            <SitoLogo className="w-[100px] h-[75px]" />
+            <SitoLogo
+              className={`transition-all ${transparency ? "w-[100px] h-[75px]" : "w-20 h-16"}`}
+            />
           </Link>
           <nav className="sm:hidden">
             <ul className="flex gap-10">
@@ -96,7 +97,7 @@ function Navbar() {
                       {
                         gridTemplateColumns: pathname === href ? "1fr" : "0fr",
                         transition: "grid-template-columns 0.5s ease-in-out",
-                      }
+                      },
                     )}`}
                   >
                     <div className="w-full overflow-hidden">
