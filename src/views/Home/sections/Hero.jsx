@@ -43,7 +43,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className={`!p-0 w-viewport flex items-center justify-center ${color} flex-col gap-10 fixed top-0 left-0 w-full transition duration-500 ease-in-out`}
+      className={`!p-0 w-viewport flex items-center justify-center ${color} flex-col gap-10 w-full transition duration-500 ease-in-out`}
     >
       <div
         className={`w-full flex flex-col items-center justify-center gap-5 relative`}
