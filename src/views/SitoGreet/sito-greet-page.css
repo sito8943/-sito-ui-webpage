@@ -1,0 +1,19 @@
+.sgPage {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 48px 20px 72px;
+}
+
+.sgHeader { text-align: center; margin-bottom: 28px; }
+.sgTitle { margin: 0; font-size: clamp(1.8rem, 4.5vw, 2.6rem); font-weight: 800; }
+.sgTag { color: rgba(0,0,0,0.65); }
+
+.sgSection { margin-top: 28px; }
+.sgH2 { font-size: 1.25rem; margin: 0 0 10px; }
+.sgList { margin: 0; padding-left: 18px; }
+.sgP { margin: 0 0 12px; line-height: 1.6; }
+
+.sgFooter { margin-top: 28px; text-align: center; }
+.sgLink { color: #e5484d; text-decoration: none; }
+.sgLink:hover { text-decoration: underline; }
+

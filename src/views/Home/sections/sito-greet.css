@@ -1,0 +1,165 @@
+/* SitoGreet preview styles (plain CSS, no UI libraries) */
+
+/* Fonts to mirror the newtab styling */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-800-normal.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-800-normal.ttf) format("truetype"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-800-normal.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-300-normal.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-300-normal.woff) format("woff");
+}
+
+:root {
+  --sg-bg-1: #0e1030;
+  --sg-bg-2: #1a1c4a;
+  --sg-bg-3: #23275e;
+  --sg-text: #ffffff;
+  --sg-text-dim: rgba(255, 255, 255, 0.75);
+  --sg-text-faint: rgba(255, 255, 255, 0.55);
+  --color-primary: #ff3f3f;
+  --color-hover-primary: #fa5757;
+}
+
+/* Section: full-viewport canvas with a dark bluish/purplish gradient and soft vignette */
+.sitoGreet {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(1200px 800px at 70% 20%, var(--sg-bg-3), transparent 60%),
+              radial-gradient(900px 600px at 30% 85%, var(--sg-bg-2), transparent 60%),
+              linear-gradient(160deg, var(--sg-bg-1), #0a0c26 60%);
+  color: var(--sg-text);
+  isolation: isolate; /* ensure vignette overlay blends nicely */
+}
+
+/* Subtle vignette */
+.sitoGreet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(1200px 800px at 50% 50%, rgba(255,255,255,0.06), transparent 70%);
+  mix-blend-mode: overlay;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* Top info line: centered, small, low contrast */
+.topInfo {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 0 16px;
+  animation: fadeDown 700ms ease-out both;
+}
+
+.topText {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.2px;
+  color: var(--sg-text-faint);
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.clock { margin-bottom: 6px; text-transform: capitalize; }
+
+.weather .wi { margin-right: 6px; filter: saturate(0.9); }
+.weather .temp { margin: 0 6px 0 2px; color: var(--sg-text); font-weight: 600; }
+.weather .sep { margin: 0 6px; color: var(--sg-text-faint); }
+.weather .wdesc { color: var(--sg-text-dim); }
+.weather .advice { color: var(--sg-text-dim); margin-left: 4px; }
+
+/* Center greeting */
+.center {
+  text-align: center;
+  padding: 24px;
+  animation: fadeUp 850ms ease-out 80ms both;
+}
+
+.greeting {
+  margin: 0;
+  font-weight: 800;
+  font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  /* Responsive scaling for large, bold headline */
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 8px 30px rgba(0,0,0,0.35);
+}
+
+.subtext {
+  margin-top: 14px;
+  font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+  color: var(--sg-text-dim);
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  animation: fadeUp 900ms ease-out 180ms both;
+}
+
+/* Footer credit layout like the newtab */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  animation: fadeUp 800ms ease-out 120ms both;
+}
+
+.footerCenter { flex: 1; text-align: center; }
+.footerLink { color: var(--color-primary); text-decoration: none; }
+.footerLink:hover { color: var(--color-hover-primary); text-decoration: underline; }
+
+/* Simple, tasteful motion */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .topInfo,
+  .center,
+  .footer {
+    animation: none !important;
+  }
+}
+
+/* GitHub icon button (newtab footer style) */
+.icon-button { font-size: 1rem; width: 36px; height: 36px; display: grid; place-items: center; color: rgba(255,255,255,0.9); }
+.icon-button:hover { color: var(--color-primary); }
