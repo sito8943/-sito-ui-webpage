@@ -25,6 +25,10 @@ const links = [
     id: "brandIdentity",
     href: "/brand-identity",
   },
+  {
+    id: "sitoGreet",
+    href: "/sito-greet",
+  },
 ];
 
 function Navbar() {

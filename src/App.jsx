@@ -14,6 +14,7 @@ const Home = loadable(() => import("./views/Home/Home"));
 const BrandIdentity = loadable(() =>
   import("./views/BrandIdentity/BrandIdentity")
 );
+const SitoGreetInfo = loadable(() => import("./views/SitoGreet/SitoGreetInfo"));
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="brand-identity" element={<View />}>
             <Route index element={<BrandIdentity />} />
+          </Route>
+          <Route path="sito-greet" element={<View />}>
+            <Route index element={<SitoGreetInfo />} />
           </Route>
         </Routes>
       </BrowserRouter>
