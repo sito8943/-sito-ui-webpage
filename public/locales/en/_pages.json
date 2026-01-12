@@ -1,7 +1,8 @@
 {
   "routes": {
-    "home": "Inicio",
-    "brandIdentity": "Identidad de Marca"
+    "home": "Home",
+    "brandIdentity": "Brand Identity",
+    "sitoGreet": "Sito Greet"
   },
   "home": {
     "hero": {
@@ -11,6 +12,17 @@
         "speed": "Velocidad",
         "productivity": "Productividad"
       }
+    },
+    "sitoGreet": {
+      "sectionAria": "Greeting preview",
+      "headerAria": "Date and weather",
+      "umbrellaAdvice": "An umbrella might help ☂️.",
+      "greeting": "Good afternoon, {{name}}!",
+      "subtext": "Browser extension",
+      "cta": "Learn more",
+      "ctaLabel": "Learn more about Sito Greet",
+      "githubAria": "Open GitHub",
+      "madeBy": "Made by"
     }
   },
   "brandIdentity": {

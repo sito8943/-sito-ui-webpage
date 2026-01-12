@@ -1,10 +1,26 @@
 {
+  "routes": {
+    "home": "Inicio",
+    "brandIdentity": "Identidad de Marca",
+    "sitoGreet": "Sito Greet"
+  },
   "home": {
     "hero": {
       "titles": {
         "productivity": "Productividad",
         "speed": "Velocidad"
       }
+    },
+    "sitoGreet": {
+      "sectionAria": "Vista previa de saludo",
+      "headerAria": "Fecha y clima",
+      "umbrellaAdvice": "Un paraguas puede ayudar ☂️.",
+      "greeting": "¡Buenas tardes, {{name}}!",
+      "subtext": "Extensión para navegador",
+      "cta": "Saber más",
+      "ctaLabel": "Saber más sobre Sito Greet",
+      "githubAria": "Abrir GitHub",
+      "madeBy": "Hecho por"
     },
     "logo": {
       "title": "Logo"

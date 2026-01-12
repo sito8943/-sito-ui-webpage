@@ -1,13 +1,17 @@
 // Minimal, semantic preview of the new-tab style greeting UI
 // Uses plain CSS (see `sito-greet.css`) for layout, gradient, and animations.
 import { useEffect, useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { describeWeather, loadWeather } from "../../SitoGreet/utils";
 import "./sito-greet.css";
 
 function SitoGreet() {
+  const { t, i18n } = useTranslation();
   // Simple weather state with graceful fallback
   const [weather, setWeather] = useState({ tempC: 6, code: 61 });
   const [, setWeatherLoaded] = useState(false);
+  const [now, setNow] = useState(() => new Date());
 
   // Choose a default location (Madrid) to avoid permissions/UI
   const coords = useMemo(() => ({ lat: 40.4168, lon: -3.7038 }), []);
@@ -31,17 +35,36 @@ function SitoGreet() {
     };
   }, [coords.lat, coords.lon]);
 
+  // Update clock every minute
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 60 * 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  const dateTimeFormatter = useMemo(
+    () =>
+      new Intl.DateTimeFormat(i18n.language, {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+      }),
+    [i18n.language]
+  );
+
   const desc = describeWeather(weather.code);
 
   return (
     <section
       id="sito-greet"
       className="sitoGreet"
-      aria-label="Greeting preview"
+      aria-label={t("_pages:home.sitoGreet.sectionAria")}
     >
       {/* Top: date + weather */}
-      <header className="topInfo" aria-label="Date and weather">
-        <p className="topText clock">Monday, January 5, 2026 At 2:18 PM</p>
+      <header className="topInfo" aria-label={t("_pages:home.sitoGreet.headerAria")}>        
+        <p className="topText clock">{dateTimeFormatter.format(now)}</p>
         <p className="topText weather" aria-live="polite">
           <span className="wi" aria-hidden>
             {" "}
@@ -53,7 +76,7 @@ function SitoGreet() {
           <span className="sep">·</span>
           <span className="advice">
             {desc.icon === "🌧" || desc.icon === "🌦"
-              ? "An umbrella might help ☂️."
+              ? t("_pages:home.sitoGreet.umbrellaAdvice")
               : ""}
           </span>
         </p>
@@ -62,9 +85,18 @@ function SitoGreet() {
       {/* Centered main greeting */}
       <main className="center" role="main">
         <h1 className="greeting" aria-live="polite">
-          Good afternoon, Sito!
+          {t("_pages:home.sitoGreet.greeting", { name: "Sito" })}
         </h1>
-        <p className="subtext">Profile: Original</p>
+        <p className="subtext">{t("_pages:home.sitoGreet.subtext")}</p>
+        <div className="ctaRow">
+          <Link
+            to="/sito-greet"
+            className="ctaButton"
+            aria-label={t("_pages:home.sitoGreet.ctaLabel")}
+          >
+            {t("_pages:home.sitoGreet.cta")}
+          </Link>
+        </div>
       </main>
 
       {/* Footer: GitHub on left, centered credit, no settings button */}
@@ -74,7 +106,7 @@ function SitoGreet() {
           href="https://github.com/sito8943/sito-greet"
           target="_blank"
           rel="noreferrer"
-          aria-label="Open GitHub"
+          aria-label={t("_pages:home.sitoGreet.githubAria")}
         >
           <svg
             fill="currentColor"
@@ -86,7 +118,7 @@ function SitoGreet() {
           </svg>
         </a>
         <p className="footerCenter">
-          <span>Made by </span>
+          <span>{t("_pages:home.sitoGreet.madeBy")} </span>
           <a
             className="footerLink"
             href="https://sito8943.com/?utm_source=sito-greet&utm_medium=about_page&utm_campaign=portfolio_link"
