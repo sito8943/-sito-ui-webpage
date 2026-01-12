@@ -65,7 +65,6 @@
   transform: translateX(-50%);
   text-align: center;
   padding: 0 16px;
-  animation: fadeDown 700ms ease-out both;
 }
 
 .topText {
@@ -89,7 +88,6 @@
 .center {
   text-align: center;
   padding: 24px;
-  animation: fadeUp 850ms ease-out 80ms both;
 }
 
 .greeting {
@@ -108,10 +106,9 @@
   font-size: clamp(0.95rem, 2.2vw, 1.15rem);
   color: var(--sg-text-dim);
   font-family: "Roboto", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  animation: fadeUp 900ms ease-out 180ms both;
 }
 
-.ctaRow { margin-top: 16px; animation: fadeUp 900ms ease-out 220ms both; }
+.ctaRow { margin-top: 16px; }
 .ctaButton {
   display: inline-block;
   padding: 0.6rem 1.6rem;
@@ -133,7 +130,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  animation: fadeUp 800ms ease-out 120ms both;
 }
 
 .footerCenter { flex: 1; text-align: center; }
@@ -164,14 +160,25 @@
 }
 
 /* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .topInfo,
-  .center,
-  .footer {
-    animation: none !important;
-  }
-}
+@media (prefers-reduced-motion: reduce) { }
 
 /* GitHub icon button (newtab footer style) */
 .icon-button { font-size: 1rem; width: 36px; height: 36px; display: grid; place-items: center; color: rgba(255,255,255,0.9); }
 .icon-button:hover { color: var(--color-primary); }
+
+/* IntersectionObserver-driven appearance transitions */
+.appear {
+  opacity: 0;
+  transform: translateY(8px) scale(0.985);
+  transition: opacity 500ms ease, transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.appear.from-top { transform: translateY(-8px) scale(0.985); }
+.appear.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .appear { opacity: 1; transform: none; transition: none; }
+}
