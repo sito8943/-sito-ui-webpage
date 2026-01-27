@@ -58,8 +58,8 @@ function Navbar() {
   return (
     <>
       <header
-        className={`w-full expand flex items-center justify-center fixed top-0 min-h-[60px] transition-all duration-500 z-[50] ${
-          transparency ? "left-0" : "left-[50%] translate-x-[-50%] bg-primary/80 backdrop-blur-md mx-auto"
+        className={`w-full expand flex items-center justify-center fixed top-0 min-h-[60px] duration-500 z-[50] ${
+          transparency ? "" : "bg-primary/80 backdrop-blur-md mx-auto"
         }`}
       >
         <div
