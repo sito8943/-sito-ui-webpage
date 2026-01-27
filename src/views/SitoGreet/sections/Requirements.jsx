@@ -1,14 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 function Requirements() {
+  const { t } = useTranslation();
   return (
     <section className="sgSection">
-      <h2 className="sgH2">Requirements</h2>
+      <h2 className="sgH2">{t("_pages:sitoGreetInfo.requirements.title")}</h2>
       <ul className="sgList">
-        <li>Firefox with WebExtension MV3 support (Firefox 109+ recommended).</li>
-        <li>No special build steps required for basic use.</li>
+        <li>{t("_pages:sitoGreetInfo.requirements.items.mv3")}</li>
+        <li>{t("_pages:sitoGreetInfo.requirements.items.noBuild")}</li>
       </ul>
     </section>
   );
 }
 
 export default Requirements;
-

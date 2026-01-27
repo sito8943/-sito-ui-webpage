@@ -15,7 +15,7 @@
       "sectionAria": "Vista previa de saludo",
       "headerAria": "Fecha y clima",
       "umbrellaAdvice": "Un paraguas puede ayudar ☂️.",
-      "greeting": "¡Buenas tardes, {{name}}!",
+      "greeting": "¡¡Sito Greet!!",
       "subtext": "Extensión para navegador",
       "cta": "Saber más",
       "ctaLabel": "Saber más sobre Sito Greet",
@@ -48,6 +48,174 @@
       "title": "Tipografía",
       "poppins": "Diseñada por Jonny Pinhorn y Ninad Kale, Poppins es una fuente sans-serif moderna y versátil que funciona bien en una variedad de contextos. Su diseño limpio y contemporáneo la hace adecuada para proyectos que buscan un aspecto fresco y moderno. Poppins ha sido diseñada con una excelente legibilidad, especialmente en tamaños de letra más pequeños. Poppins es una fuente de Google Fonts, lo que significa que es fácilmente accesible y utilizable en proyectos web.",
       "roboto": "Diseñado por Christian Robertson, Roboto tiene una naturaleza dual. Tiene un esqueleto mecánico y las formas son en gran medida geométricas. Al mismo tiempo, la fuente presenta curvas amigables y abiertas. Mientras que algunos grotescos distorsionan la forma de sus letras para forzar un ritmo rígido, Roboto no hace concesiones y permite que las letras se ajusten a su ancho natural. Esto crea un ritmo de lectura más natural que se encuentra más comúnmente en los tipos humanistas y serif."
+    }
+  },
+  "sitoGreetInfo": {
+    "pageAria": "Información de la extensión Sito Greet",
+    "header": {
+      "title": "Nueva pestaña de saludo (Extensión de Navegador)",
+      "tag": "Una extensión mínima de Navegador que reemplaza la nueva pestaña por un saludo amigable y un reloj en vivo, compatible con el idioma."
+    },
+    "preview": {
+      "sectionAria": "Vista previa de Sito Greet",
+      "headerAria": "fecha y clima",
+      "advice": "Día perfecto para salir.",
+      "greeting": "¡Buenas tardes, Sito!",
+      "profile": "Perfil: Original",
+      "githubAria": "Abrir Sito Greet en GitHub",
+      "madeBy": "Hecho por"
+    },
+    "features": {
+      "title": "Características",
+      "items": {
+        "newTab": "Anula la nueva pestaña con una vista limpia de saludo.",
+        "liveClock": "Reloj en vivo formateado según el idioma del navegador.",
+        "customizable": "Nombre de usuario y nombre de perfil personalizables (guardados vía",
+        "toolbar": "Popup de la barra de herramientas para actualizar valores rápidamente.",
+        "inPageSettings": "Menú de configuración en la página y diálogo para cambiar el nombre de usuario.",
+        "background": "Personalización de fondo: elige degradado por defecto, color sólido o sube una imagen.",
+        "minimalPermissions": {
+          "pre": "Permisos mínimos (solo",
+          "post": ")."
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "items": {
+        "manifest": {
+          "pre": "(MV3) reemplaza la Nueva pestaña por",
+          "post": "y define un popup de barra de herramientas"
+        },
+        "newtab": {
+          "pre": "renderiza el saludo y un reloj, leyendo valores desde"
+        },
+        "styling": {
+          "pre": "Los estilos se gestionan en",
+          "post": "y se comparten entre ambas páginas."
+        }
+      }
+    },
+    "fileStructure": {
+      "title": "Estructura de archivos",
+      "items": {
+        "manifest": "Manifiesto WebExtension (v3).",
+        "newtab": "UI y lógica de Nueva pestaña.",
+        "popup": "UI y lógica del popup de barra de herramientas.",
+        "styles": "Estilos compartidos.",
+        "icons": "Íconos."
+      }
+    },
+    "install": {
+      "title": "Instalación (Para mi Firefox)",
+      "steps": {
+        "openDebugging": {
+          "pre": "Abre tu navegador y navega a"
+        },
+        "loadTemporary": "Haz clic en “Cargar complemento temporal…”.",
+        "selectManifest": {
+          "pre": "Selecciona el"
+        },
+        "openNewTab": "Abre una nueva pestaña para ver el saludo."
+      },
+      "note": "Nota: Los complementos temporales se descargan al reiniciar tu navegador. Para desarrollo diario usa los pasos siguientes; para distribución, ve a Empaquetado."
+    },
+    "usage": {
+      "title": "Uso",
+      "items": {
+        "openNewTab": "Abre una nueva pestaña para ver el saludo y el reloj.",
+        "openPopup": "Haz clic en el ícono de la barra para abrir el popup y configurar:",
+        "name": "Nombre",
+        "profileName": "Nombre de perfil",
+        "inPageSettings": "Alternativamente, en la Nueva pestaña, haz clic en el botón de ajustes para abrir el menú en la página y cambiar el nombre de usuario mediante el diálogo.",
+        "background": "Fondo: selecciona Predeterminado, Color sólido (con selector) o Imagen (subida almacenada localmente en el almacenamiento de la extensión)."
+      }
+    },
+    "development": {
+      "title": "Desarrollo",
+      "items": {
+        "recommended": {
+          "pre": "Recomendado: usa",
+          "post": "para un ciclo de desarrollo rápido (recarga automática)."
+        },
+        "install": "Instalar:",
+        "run": "Ejecutar en tu navegador:",
+        "build": "Construir un distribuible:"
+      },
+      "note": {
+        "pre": "Los cambios en",
+        "mid": "o",
+        "mid2": "se recargan. Los valores se almacenan con",
+        "post": "y persisten entre sesiones."
+      }
+    },
+    "packaging": {
+      "title": "Empaquetado / Firma (Opcional)",
+      "items": {
+        "buildUnsigned": {
+          "pre": "Construir paquete sin firmar:",
+          "post": "(artefactos van a"
+        },
+        "sign": {
+          "pre": "Para publicar en AMO, firma con tus credenciales AMO:"
+        }
+      }
+    },
+    "requirements": {
+      "title": "Requisitos",
+      "items": {
+        "mv3": "Navegador con soporte para WebExtension MV3 (Firefox 109+ recomendado).",
+        "noBuild": "Sin pasos de build especiales para uso básico."
+      }
+    },
+    "permissions": {
+      "title": "Permisos",
+      "usedToSave": "usado para guardar",
+      "and": "y",
+      "locally": "localmente."
+    },
+    "notes": {
+      "title": "Notas",
+      "items": {
+        "clock": {
+          "pre": "El reloj usa",
+          "mid": "cuando está disponible, por defecto",
+          "post": "para el formateo."
+        },
+        "links": {
+          "pre": "Si personalizas enlaces o íconos en el pie de",
+          "mid": "actualiza el",
+          "post": "según sea necesario."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "intro": {
+        "pre": "Sito Greet guarda tus preferencias localmente en tu navegador usando",
+        "post": "La extensión no recoge analíticas, no te rastrea ni envía tus datos a servidores externos."
+      },
+      "items": {
+        "data": {
+          "pre": "Datos almacenados localmente: tu nombre visible",
+          "mid": "una etiqueta de perfil",
+          "post": "y configuración de fondo (predeterminado/color sólido/imagen subida) además de preferencias menores en la página."
+        },
+        "scope": {
+          "pre": "Ámbito del almacenamiento: los valores se guardan solo en tu dispositivo vía",
+          "post": "y no se transmiten."
+        },
+        "permissions": {
+          "pre": "Permisos: la extensión declara solo el permiso",
+          "post": "(según README). Sin telemetría."
+        },
+        "links": "Enlaces: los enlaces del pie (p. ej., GitHub) se abren en tu navegador al hacer clic; no se realizan solicitudes automáticas con tus datos personales.",
+        "removal": "Eliminación: al desinstalar la extensión o limpiar los datos de la extensión se eliminarán los valores almacenados."
+      },
+      "note": "¿Preguntas o dudas? Abre un issue en el repositorio de GitHub."
+    },
+    "footer": {
+      "viewSource": "Ver código en GitHub"
     }
   }
 }

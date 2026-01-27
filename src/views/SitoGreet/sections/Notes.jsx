@@ -1,13 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 function Notes() {
+  const { t } = useTranslation();
   return (
     <section className="sgSection">
-      <h2 className="sgH2">Notes</h2>
+      <h2 className="sgH2">{t("_pages:sitoGreetInfo.notes.title")}</h2>
       <ul className="sgList">
         <li>
-          The clock uses <code className="sgCode">navigator.language</code> when available, defaulting to <code className="sgCode">es-ES</code> for formatting.
+          {t("_pages:sitoGreetInfo.notes.items.clock.pre")} <code className="sgCode">navigator.language</code> {t("_pages:sitoGreetInfo.notes.items.clock.mid")} <code className="sgCode">es-ES</code> {t("_pages:sitoGreetInfo.notes.items.clock.post")}
         </li>
         <li>
-          If you customize links or icons in the footer of <code className="sgCode">newtab.html</code>, update the <code className="sgCode">href</code> as needed.
+          {t("_pages:sitoGreetInfo.notes.items.links.pre")} <code className="sgCode">newtab.html</code>, {t("_pages:sitoGreetInfo.notes.items.links.mid")} <code className="sgCode">href</code> {t("_pages:sitoGreetInfo.notes.items.links.post")}
         </li>
       </ul>
     </section>
@@ -15,4 +18,3 @@ function Notes() {
 }
 
 export default Notes;
-

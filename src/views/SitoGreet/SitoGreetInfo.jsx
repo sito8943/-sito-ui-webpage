@@ -12,11 +12,16 @@ import Permissions from './sections/Permissions';
 import Notes from './sections/Notes';
 import Privacy from './sections/Privacy';
 import Footer from './sections/Footer';
+import { useTranslation } from 'react-i18next';
 
 function SitoGreetInfo() {
+  const { t } = useTranslation();
   return (
     <div className="px-10 sm:px-5">
-      <article className="sgPage" aria-label="Sito Greet extension information">
+      <article
+        className="sgPage"
+        aria-label={t('_pages:sitoGreetInfo.pageAria')}
+      >
         <Header />
         <Features />
         <HowItWorks />

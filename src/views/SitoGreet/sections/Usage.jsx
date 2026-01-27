@@ -1,21 +1,28 @@
+import { useTranslation } from "react-i18next";
+
 function Usage() {
+  const { t } = useTranslation();
   return (
     <section className="sgSection">
-      <h2 className="sgH2">Usage</h2>
+      <h2 className="sgH2">{t("_pages:sitoGreetInfo.usage.title")}</h2>
       <ul className="sgList">
-        <li>Open a new tab to view the greeting and clock.</li>
+        <li>{t("_pages:sitoGreetInfo.usage.items.openNewTab")}</li>
         <li>
-          Click the toolbar icon to open the popup and set:
+          {t("_pages:sitoGreetInfo.usage.items.openPopup")}
           <ul>
-            <li>Name (<code className="sgCode">username</code>)</li>
-            <li>Profile name (<code className="sgCode">profile_name</code>)</li>
+            <li>
+              {t("_pages:sitoGreetInfo.usage.items.name")} (<code className="sgCode">username</code>)
+            </li>
+            <li>
+              {t("_pages:sitoGreetInfo.usage.items.profileName")} (<code className="sgCode">profile_name</code>)
+            </li>
           </ul>
         </li>
         <li>
-          Alternatively, on the New Tab page, click the settings button to open the in‑page menu and change the username via the dialog.
+          {t("_pages:sitoGreetInfo.usage.items.inPageSettings")}
         </li>
         <li>
-          Background: select Default, Solid color (with color picker), or Image (upload stored locally in extension storage).
+          {t("_pages:sitoGreetInfo.usage.items.background")}
         </li>
       </ul>
     </section>
@@ -23,4 +30,3 @@ function Usage() {
 }
 
 export default Usage;
-

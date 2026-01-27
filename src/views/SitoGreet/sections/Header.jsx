@@ -1,13 +1,12 @@
 import Preview from "./Preview";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+  const { t } = useTranslation();
   return (
     <header className="sgHeader">
-      <h1 className="sgTitle">Greeting New Tab (Firefox Extension)</h1>
-      <p className="sgTag">
-        A minimal Firefox extension that replaces the default new tab page with
-        a friendly greeting and a live, locale‑aware clock.
-      </p>
+      <h1 className="sgTitle">{t("_pages:sitoGreetInfo.header.title")}</h1>
+      <p className="sgTag">{t("_pages:sitoGreetInfo.header.tag")}</p>
       <Preview />
     </header>
   );

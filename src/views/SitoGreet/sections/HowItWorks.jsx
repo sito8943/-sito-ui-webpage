@@ -1,19 +1,21 @@
+import { useTranslation } from "react-i18next";
+
 function HowItWorks() {
+  const { t } = useTranslation();
   return (
     <section className="sgSection">
-      <h2 className="sgH2">How It Works</h2>
+      <h2 className="sgH2">{t("_pages:sitoGreetInfo.howItWorks.title")}</h2>
       <ul className="sgList">
         <li>
-          <code className="sgCode">manifest.json</code> (MV3) overrides the New Tab page to <code className="sgCode">newtab.html</code> and defines a toolbar popup (<code className="sgCode">popup.html</code>).
+          <code className="sgCode">manifest.json</code> {t("_pages:sitoGreetInfo.howItWorks.items.manifest.pre")} <code className="sgCode">newtab.html</code> {t("_pages:sitoGreetInfo.howItWorks.items.manifest.post")} (<code className="sgCode">popup.html</code>).
         </li>
         <li>
-          <code className="sgCode">newtab.js</code> renders the greeting and a ticking clock, reading values from <code className="sgCode">browser.storage.local</code>.
+          <code className="sgCode">newtab.js</code> {t("_pages:sitoGreetInfo.howItWorks.items.newtab.pre")} <code className="sgCode">browser.storage.local</code>.
         </li>
-        <li>Styling is handled in <code className="sgCode">style.css</code> and shared by both pages.</li>
+        <li>{t("_pages:sitoGreetInfo.howItWorks.items.styling.pre")} <code className="sgCode">style.css</code> {t("_pages:sitoGreetInfo.howItWorks.items.styling.post")}</li>
       </ul>
     </section>
   );
 }
 
 export default HowItWorks;
-

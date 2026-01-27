@@ -17,7 +17,7 @@
       "sectionAria": "Greeting preview",
       "headerAria": "Date and weather",
       "umbrellaAdvice": "An umbrella might help ☂️.",
-      "greeting": "Good afternoon, {{name}}!",
+      "greeting": "Sito Greet!!",
       "subtext": "Browser extension",
       "cta": "Learn more",
       "ctaLabel": "Learn more about Sito Greet",
@@ -195,6 +195,174 @@
         "profession": "Profesión: Poppins Bold, 9 ptos.",
         "contactInfo": "Información de contacto: Roboto Medium, 8.5 ptos."
       }
+    }
+  },
+  "sitoGreetInfo": {
+    "pageAria": "Sito Greet extension information",
+    "header": {
+      "title": "Greeting New Tab (Browser Extension)",
+      "tag": "A minimal Browser extension that replaces the default new tab page with a friendly greeting and a live, locale‑aware clock."
+    },
+    "preview": {
+      "sectionAria": "Sito Greet preview",
+      "headerAria": "date and weather",
+      "advice": "Perfect day to go out.",
+      "greeting": "Good afternoon, Sito!",
+      "profile": "Profile: Original",
+      "githubAria": "Open Sito Greet on GitHub",
+      "madeBy": "Made by"
+    },
+    "features": {
+      "title": "Features",
+      "items": {
+        "newTab": "New Tab override with a clean greeting view.",
+        "liveClock": "Live clock formatted using your browser locale.",
+        "customizable": "Customizable user name and profile name (persisted via",
+        "toolbar": "Toolbar popup to quickly update values.",
+        "inPageSettings": "In‑page settings menu and dialog to change the username.",
+        "background": "Background customization: choose default gradient, a solid color, or upload an image.",
+        "minimalPermissions": {
+          "pre": "Minimal permissions (only",
+          "post": ")."
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "items": {
+        "manifest": {
+          "pre": "(MV3) overrides the New Tab page to",
+          "post": "and defines a toolbar popup"
+        },
+        "newtab": {
+          "pre": "renders the greeting and a ticking clock, reading values from"
+        },
+        "styling": {
+          "pre": "Styling is handled in",
+          "post": "and shared by both pages."
+        }
+      }
+    },
+    "fileStructure": {
+      "title": "File Structure",
+      "items": {
+        "manifest": "WebExtension manifest (v3).",
+        "newtab": "New Tab UI and logic.",
+        "popup": "Toolbar popup UI and logic.",
+        "styles": "Shared styles.",
+        "icons": "Icons."
+      }
+    },
+    "install": {
+      "title": "Install (In my case Firefox Temporary)",
+      "steps": {
+        "openDebugging": {
+          "pre": "Open your Browser and navigate to"
+        },
+        "loadTemporary": "Click “Load Temporary Add-on…”.",
+        "selectManifest": {
+          "pre": "Select this project's"
+        },
+        "openNewTab": "Open a new tab to see the greeting."
+      },
+      "note": "Note: Temporary add-ons are unloaded when your Browser restarts. For day-to-day development use the steps below; for distribution, see Packaging."
+    },
+    "usage": {
+      "title": "Usage",
+      "items": {
+        "openNewTab": "Open a new tab to view the greeting and clock.",
+        "openPopup": "Click the toolbar icon to open the popup and set:",
+        "name": "Name",
+        "profileName": "Profile name",
+        "inPageSettings": "Alternatively, on the New Tab page, click the settings button to open the in-page menu and change the username via the dialog.",
+        "background": "Background: select Default, Solid color (with color picker), or Image (upload stored locally in extension storage)."
+      }
+    },
+    "development": {
+      "title": "Development",
+      "items": {
+        "recommended": {
+          "pre": "Recommended: use",
+          "post": "for a fast dev loop (auto-reload)."
+        },
+        "install": "Install:",
+        "run": "Run in your Browser:",
+        "build": "Build a distributable:"
+      },
+      "note": {
+        "pre": "Edits to",
+        "mid": "or",
+        "mid2": "are picked up on reload. Values are stored with",
+        "post": "and persist between sessions."
+      }
+    },
+    "packaging": {
+      "title": "Packaging / Signing (Optional)",
+      "items": {
+        "buildUnsigned": {
+          "pre": "Build an unsigned package:",
+          "post": "(artifacts go to"
+        },
+        "sign": {
+          "pre": "To publish on AMO, sign with your AMO credentials:"
+        }
+      }
+    },
+    "requirements": {
+      "title": "Requirements",
+      "items": {
+        "mv3": "Browser with WebExtension MV3 support (Firefox 109+ recommended).",
+        "noBuild": "No special build steps required for basic use."
+      }
+    },
+    "permissions": {
+      "title": "Permissions",
+      "usedToSave": "used to save",
+      "and": "and",
+      "locally": "locally."
+    },
+    "notes": {
+      "title": "Notes",
+      "items": {
+        "clock": {
+          "pre": "The clock uses",
+          "mid": "when available, defaulting to",
+          "post": "for formatting."
+        },
+        "links": {
+          "pre": "If you customize links or icons in the footer of",
+          "mid": "update the",
+          "post": "as needed."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": {
+        "pre": "Sito Greet stores your preferences locally in your browser using",
+        "post": "The extension does not collect analytics, track you, or send your data to external servers."
+      },
+      "items": {
+        "data": {
+          "pre": "Data stored locally: your display name",
+          "mid": "a profile label",
+          "post": "and background settings (default/solid color/uploaded image) plus minor in‑page preferences."
+        },
+        "scope": {
+          "pre": "Storage scope: values are saved only on your device via",
+          "post": "and are not transmitted."
+        },
+        "permissions": {
+          "pre": "Permissions: the extension declares only the",
+          "post": "permission (per README). No telemetry."
+        },
+        "links": "Links: footer links (e.g., GitHub) open in your browser when clicked; no automated requests are performed with your personal data.",
+        "removal": "Removal: uninstalling the extension or clearing extension data will remove the stored values."
+      },
+      "note": "Questions or concerns? Open an issue in the GitHub repository."
+    },
+    "footer": {
+      "viewSource": "View source on GitHub"
     }
   }
 }

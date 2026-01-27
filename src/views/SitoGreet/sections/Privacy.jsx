@@ -1,41 +1,33 @@
+import { useTranslation } from "react-i18next";
+
 function Privacy() {
+  const { t } = useTranslation();
   return (
     <section className="sgSection" id="privacy">
-      <h2 className="sgH2">Privacy Policy</h2>
-      <p className="sgP">
-        Sito Greet stores your preferences locally in your browser using
-        <code className="sgCode"> browser.storage.local</code>. The extension does not
-        collect analytics, track you, or send your data to external servers.
-      </p>
+      <h2 className="sgH2">{t("_pages:sitoGreetInfo.privacy.title")}</h2>
+      <p className="sgP">{t("_pages:sitoGreetInfo.privacy.intro.pre")} <code className="sgCode"> browser.storage.local</code>. {t("_pages:sitoGreetInfo.privacy.intro.post")}</p>
       <ul className="sgList" style={{ marginTop: 12 }}>
         <li>
-          Data stored locally: your display name (<code className="sgCode">username</code>),
-          a profile label (<code className="sgCode">profile_name</code>), and background
-          settings (default/solid color/uploaded image) plus minor in‑page preferences.
+          {t("_pages:sitoGreetInfo.privacy.items.data.pre")} (<code className="sgCode">username</code>), {t("_pages:sitoGreetInfo.privacy.items.data.mid")} (<code className="sgCode">profile_name</code>), {t("_pages:sitoGreetInfo.privacy.items.data.post")}
         </li>
         <li>
-          Storage scope: values are saved only on your device via
-          <code className="sgCode"> browser.storage.local</code> and are not transmitted.
+          {t("_pages:sitoGreetInfo.privacy.items.scope.pre")} <code className="sgCode"> browser.storage.local</code> {t("_pages:sitoGreetInfo.privacy.items.scope.post")}
         </li>
         <li>
-          Permissions: the extension declares only the
-          <code className="sgCode"> storage</code> permission (per README). No telemetry.
+          {t("_pages:sitoGreetInfo.privacy.items.permissions.pre")} <code className="sgCode"> storage</code> {t("_pages:sitoGreetInfo.privacy.items.permissions.post")}
         </li>
         <li>
-          Links: footer links (e.g., GitHub) open in your browser when clicked; no
-          automated requests are performed with your personal data.
+          {t("_pages:sitoGreetInfo.privacy.items.links")}
         </li>
         <li>
-          Removal: uninstalling the extension or clearing extension data will remove
-          the stored values.
+          {t("_pages:sitoGreetInfo.privacy.items.removal")}
         </li>
       </ul>
       <p className="sgP sgNote" style={{ marginTop: 12 }}>
-        Questions or concerns? Open an issue in the GitHub repository.
+        {t("_pages:sitoGreetInfo.privacy.note")}
       </p>
     </section>
   );
 }
 
 export default Privacy;
-

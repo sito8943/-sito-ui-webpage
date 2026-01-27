@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="sgFooter">
       <a
@@ -7,11 +10,10 @@ function Footer() {
         target="_blank"
         rel="noreferrer noopener"
       >
-        View source on GitHub
+        {t("_pages:sitoGreetInfo.footer.viewSource")}
       </a>
     </footer>
   );
 }
 
 export default Footer;
-

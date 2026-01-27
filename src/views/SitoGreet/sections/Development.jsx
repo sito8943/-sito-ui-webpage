@@ -1,27 +1,27 @@
+import { useTranslation } from "react-i18next";
+
 function Development() {
+  const { t } = useTranslation();
   return (
     <section className="sgSection">
-      <h2 className="sgH2">Development</h2>
+      <h2 className="sgH2">{t("_pages:sitoGreetInfo.development.title")}</h2>
       <ul className="sgList">
         <li>
-          Recommended: use <code className="sgCode">web-ext</code> for a fast dev loop (auto‑reload).
+          {t("_pages:sitoGreetInfo.development.items.recommended.pre")} <code className="sgCode">web-ext</code> {t("_pages:sitoGreetInfo.development.items.recommended.post")}
         </li>
         <li>
-          Install: <code className="sgCode">npm install -g web-ext</code>
+          {t("_pages:sitoGreetInfo.development.items.install")} <code className="sgCode">npm install -g web-ext</code>
         </li>
         <li>
-          Run in Firefox: <code className="sgCode">web-ext run</code>
+          {t("_pages:sitoGreetInfo.development.items.run")} <code className="sgCode">web-ext run</code>
         </li>
         <li>
-          Build a distributable: <code className="sgCode">web-ext build</code>
+          {t("_pages:sitoGreetInfo.development.items.build")} <code className="sgCode">web-ext build</code>
         </li>
       </ul>
-      <p className="sgP sgNote">
-        Edits to <code className="sgCode">newtab.*</code> or <code className="sgCode">style.css</code> are picked up on reload. Values are stored with <code className="sgCode">browser.storage.local</code> and persist between sessions.
-      </p>
+      <p className="sgP sgNote">{t("_pages:sitoGreetInfo.development.note.pre")} <code className="sgCode">newtab.*</code> {t("_pages:sitoGreetInfo.development.note.mid")} <code className="sgCode">style.css</code> {t("_pages:sitoGreetInfo.development.note.mid2")} <code className="sgCode">browser.storage.local</code> {t("_pages:sitoGreetInfo.development.note.post")}</p>
     </section>
   );
 }
 
 export default Development;
-

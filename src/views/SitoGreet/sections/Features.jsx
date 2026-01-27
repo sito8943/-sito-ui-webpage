@@ -1,21 +1,29 @@
+import { useTranslation } from "react-i18next";
+
 function Features() {
+  const { t } = useTranslation();
   return (
     <section className="sgSection">
-      <h2 className="sgH2">Features</h2>
+      <h2 className="sgH2">{t("_pages:sitoGreetInfo.features.title")}</h2>
       <ul className="sgList">
-        <li>New Tab override with a clean greeting view.</li>
-        <li>Live clock formatted using your browser locale.</li>
+        <li>{t("_pages:sitoGreetInfo.features.items.newTab")}</li>
+        <li>{t("_pages:sitoGreetInfo.features.items.liveClock")}</li>
         <li>
-          Customizable user name and profile name (persisted via <code className="sgCode">storage</code>).
+          {t("_pages:sitoGreetInfo.features.items.customizable")}
+          {" "}
+          (<code className="sgCode">storage</code>).
         </li>
-        <li>Toolbar popup to quickly update values.</li>
-        <li>In‑page settings menu and dialog to change the username.</li>
-        <li>Background customization: choose default gradient, a solid color, or upload an image.</li>
-        <li>Minimal permissions (only <code className="sgCode">storage</code>).</li>
+        <li>{t("_pages:sitoGreetInfo.features.items.toolbar")}</li>
+        <li>{t("_pages:sitoGreetInfo.features.items.inPageSettings")}</li>
+        <li>{t("_pages:sitoGreetInfo.features.items.background")}</li>
+        <li>
+          {t("_pages:sitoGreetInfo.features.items.minimalPermissions.pre")} {" "}
+          <code className="sgCode">storage</code>
+          {t("_pages:sitoGreetInfo.features.items.minimalPermissions.post")}
+        </li>
       </ul>
     </section>
   );
 }
 
 export default Features;
-

@@ -130,7 +130,7 @@ function SitoGreet() {
       {/* Centered main greeting */}
       <main className="center" role="main">
         <h1 className="greeting appear" aria-live="polite" data-delay="0">
-          {t("_pages:home.sitoGreet.greeting", { name: "Sito" })}
+          {t("_pages:home.sitoGreet.greeting")}
         </h1>
         <p className="subtext appear" data-delay="120">
           {t("_pages:home.sitoGreet.subtext")}
