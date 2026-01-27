@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 // components
 import ToTop from "../../components/ToTop/ToTop";
-import Navbar from "../Natural/components/Navbar";
+import Navbar from "./components/Navbar";
 
 function View() {
   return (

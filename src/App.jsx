@@ -7,7 +7,6 @@ import { SplashScreen } from "@sito/ui";
 
 // layouts
 import View from "./layouts/View/View";
-import Natural from "./layouts/Natural/Natural";
 
 // views
 const Home = loadable(() => import("./views/Home/Home"));
@@ -21,14 +20,10 @@ function App() {
     <Suspense fallback={<SplashScreen />}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Natural />}>
+          <Route path="/" element={<View />}>
             <Route index element={<Home />} />
-          </Route>
-          <Route path="brand-identity" element={<View />}>
-            <Route index element={<BrandIdentity />} />
-          </Route>
-          <Route path="sito-greet" element={<View />}>
-            <Route index element={<SitoGreetInfo />} />
+            <Route path="/brand-identity" element={<BrandIdentity />} />
+            <Route path="/sito-greet" element={<SitoGreetInfo />} />
           </Route>
         </Routes>
       </BrowserRouter>
