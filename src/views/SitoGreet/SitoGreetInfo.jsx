@@ -5,6 +5,7 @@ import HowItWorks from './sections/HowItWorks';
 import FileStructure from './sections/FileStructure';
 import Install from './sections/Install';
 import Usage from './sections/Usage';
+import FeatureFlags from './sections/FeatureFlags';
 import Development from './sections/Development';
 import Packaging from './sections/Packaging';
 import Requirements from './sections/Requirements';
@@ -28,6 +29,7 @@ function SitoGreetInfo() {
         <FileStructure />
         <Install />
         <Usage />
+        <FeatureFlags />
         <Development />
         <Packaging />
         <Requirements />

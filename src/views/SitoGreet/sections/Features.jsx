@@ -16,6 +16,11 @@ function Features() {
         <li>{t("_pages:sitoGreetInfo.features.items.toolbar")}</li>
         <li>{t("_pages:sitoGreetInfo.features.items.inPageSettings")}</li>
         <li>{t("_pages:sitoGreetInfo.features.items.background")}</li>
+        <li>{t("_pages:sitoGreetInfo.features.items.featureFlags")}</li>
+        <li>{t("_pages:sitoGreetInfo.features.items.pinnedTabs")}</li>
+        <li>{t("_pages:sitoGreetInfo.features.items.recentHistory")}</li>
+        <li>{t("_pages:sitoGreetInfo.features.items.calendar")}</li>
+        <li>{t("_pages:sitoGreetInfo.features.items.directionalLayout")}</li>
         <li>
           {t("_pages:sitoGreetInfo.features.items.minimalPermissions.pre")} {" "}
           <code className="sgCode">storage</code>

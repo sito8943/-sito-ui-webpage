@@ -54,7 +54,7 @@
     "pageAria": "Información de la extensión Sito Greet",
     "header": {
       "title": "Nueva pestaña de saludo (Extensión de Navegador)",
-      "tag": "Una extensión mínima de Navegador que reemplaza la nueva pestaña por un saludo amigable y un reloj en vivo, compatible con el idioma."
+      "tag": "Una extensión mínima de Navegador que reemplaza la nueva pestaña por un saludo amigable, reloj en vivo, clima opcional y módulos productivos como calendario, pestañas fijadas e historial reciente."
     },
     "preview": {
       "sectionAria": "Vista previa de Sito Greet",
@@ -71,12 +71,17 @@
         "newTab": "Anula la nueva pestaña con una vista limpia de saludo.",
         "liveClock": "Reloj en vivo formateado según el idioma del navegador.",
         "customizable": "Nombre de usuario y nombre de perfil personalizables (guardados vía",
-        "toolbar": "Popup de la barra de herramientas para actualizar valores rápidamente.",
-        "inPageSettings": "Menú de configuración en la página y diálogo para cambiar el nombre de usuario.",
-        "background": "Personalización de fondo: elige degradado por defecto, color sólido o sube una imagen.",
+        "toolbar": "Panel de desarrollador con Feature Flags para activar o desactivar módulos sin tocar código.",
+        "inPageSettings": "Menú de configuración en la página y diálogo con secciones para personalización, clima y pestañas fijadas.",
+        "background": "Personalización de fondo: elige degradado por defecto, color sólido o sube una imagen, con control de opacidad de superposición.",
+        "featureFlags": "Feature Flags persistentes (Ctrl+Shift+D): clima, fondo, animaciones, reloj, perfil, debug, pestañas fijadas e historial reciente.",
+        "pinnedTabs": "Pestañas fijadas con hasta 4 accesos rápidos y diálogo mini para añadir enlaces.",
+        "recentHistory": "Historial reciente (hasta 8 sitios) con solicitud de permiso en tiempo de ejecución.",
+        "calendar": "Calendario mensual integrado en la vista expandida hacia arriba.",
+        "directionalLayout": "Layout direccional: expandir hacia arriba (calendario) o hacia abajo (pestañas/historial), con botones y atajos de teclado.",
         "minimalPermissions": {
-          "pre": "Permisos mínimos (solo",
-          "post": ")."
+          "pre": "Permisos mínimos (base en",
+          "post": "y `history` opcional al activar Historial Reciente)."
         }
       }
     },
@@ -85,15 +90,16 @@
       "items": {
         "manifest": {
           "pre": "(MV3) reemplaza la Nueva pestaña por",
-          "post": "y define un popup de barra de herramientas"
+          "post": "y define la configuración para el entorno de la extensión."
         },
         "newtab": {
-          "pre": "renderiza el saludo y un reloj, leyendo valores desde"
+          "pre": "renderiza saludo, reloj, clima, calendario, pestañas fijadas e historial reciente leyendo valores desde"
         },
         "styling": {
           "pre": "Los estilos se gestionan en",
-          "post": "y se comparten entre ambas páginas."
-        }
+          "post": "y controlan vistas direccionales, panel de flags y módulos de contenido."
+        },
+        "featureFlags": "Los Feature Flags se guardan bajo `feature_flags` en el almacenamiento local y se aplican en caliente."
       }
     },
     "fileStructure": {
@@ -101,7 +107,7 @@
       "items": {
         "manifest": "Manifiesto WebExtension (v3).",
         "newtab": "UI y lógica de Nueva pestaña.",
-        "popup": "UI y lógica del popup de barra de herramientas.",
+        "popup": "Panel de control en la misma Nueva pestaña (sin popup dedicado en esta versión).",
         "styles": "Estilos compartidos.",
         "icons": "Íconos."
       }
@@ -124,12 +130,55 @@
       "title": "Uso",
       "items": {
         "openNewTab": "Abre una nueva pestaña para ver el saludo y el reloj.",
-        "openPopup": "Haz clic en el ícono de la barra para abrir el popup y configurar:",
+        "openPopup": "Desde la Nueva pestaña puedes abrir Ajustes y configurar:",
         "name": "Nombre",
         "profileName": "Nombre de perfil",
-        "inPageSettings": "Alternativamente, en la Nueva pestaña, haz clic en el botón de ajustes para abrir el menú en la página y cambiar el nombre de usuario mediante el diálogo.",
-        "background": "Fondo: selecciona Predeterminado, Color sólido (con selector) o Imagen (subida almacenada localmente en el almacenamiento de la extensión)."
+        "inPageSettings": "En la Nueva pestaña, haz clic en el botón de ajustes para abrir el diálogo y cambiar tus preferencias.",
+        "background": "Fondo: selecciona Predeterminado, Color sólido (con selector) o Imagen (subida almacenada localmente en el almacenamiento de la extensión), y ajusta la opacidad del overlay.",
+        "directional": "Usa los botones de flecha o las teclas `ArrowUp`/`ArrowDown` para cambiar entre vista superior (calendario) e inferior (pestañas/historial).",
+        "devPanel": "Pulsa `Ctrl+Shift+D` para abrir el panel de Feature Flags y alternar funciones en runtime."
       }
+    },
+    "featureFlags": {
+      "title": "Feature Flags (Panel de desarrollador)",
+      "intro": "Sito Greet incluye un sistema de flags integrado para activar o desactivar módulos sin cambiar código.",
+      "openPanel": "Abre el panel con `Ctrl+Shift+D` en la Nueva pestaña.",
+      "flags": {
+        "weather": {
+          "default": "ON",
+          "description": "Widget de clima y su sección de ajustes."
+        },
+        "backgroundCustomization": {
+          "default": "ON",
+          "description": "Opciones de fondo en ajustes."
+        },
+        "animations": {
+          "default": "ON",
+          "description": "Animaciones de entrada y transición."
+        },
+        "clock": {
+          "default": "ON",
+          "description": "Visualización de fecha y hora."
+        },
+        "profileDisplay": {
+          "default": "ON",
+          "description": "Mostrar nombre de perfil bajo el saludo."
+        },
+        "debugMode": {
+          "default": "OFF",
+          "description": "Logs de depuración en consola."
+        },
+        "pinnedTabs": {
+          "default": "ON",
+          "description": "Accesos rápidos de pestañas fijadas."
+        },
+        "recentHistory": {
+          "default": "OFF",
+          "description": "Muestra los últimos sitios visitados (requiere permiso opcional)."
+        }
+      },
+      "persistence": "Los flags se guardan en `browser.storage.local` con la clave `feature_flags` y persisten entre sesiones.",
+      "reset": "Usa “Reset all flags” para restaurar los valores por defecto."
     },
     "development": {
       "title": "Desarrollo",
@@ -172,7 +221,9 @@
       "title": "Permisos",
       "usedToSave": "usado para guardar",
       "and": "y",
-      "locally": "localmente."
+      "locally": "localmente.",
+      "optionalHistory": "Permiso opcional `history` para la sección de Historial Reciente.",
+      "weatherHost": "Permiso de host para consultar `https://api.open-meteo.com/*` cuando usas el clima."
     },
     "notes": {
       "title": "Notas",
@@ -199,15 +250,15 @@
         "data": {
           "pre": "Datos almacenados localmente: tu nombre visible",
           "mid": "una etiqueta de perfil",
-          "post": "y configuración de fondo (predeterminado/color sólido/imagen subida) además de preferencias menores en la página."
+          "post": "configuración de fondo, feature flags, pestañas fijadas y preferencias menores en la página."
         },
         "scope": {
           "pre": "Ámbito del almacenamiento: los valores se guardan solo en tu dispositivo vía",
           "post": "y no se transmiten."
         },
         "permissions": {
-          "pre": "Permisos: la extensión declara solo el permiso",
-          "post": "(según README). Sin telemetría."
+          "pre": "Permisos: la extensión declara el permiso",
+          "post": "como base; `history` se solicita de forma opcional para Historial Reciente. Sin telemetría."
         },
         "links": "Enlaces: los enlaces del pie (p. ej., GitHub) se abren en tu navegador al hacer clic; no se realizan solicitudes automáticas con tus datos personales.",
         "removal": "Eliminación: al desinstalar la extensión o limpiar los datos de la extensión se eliminarán los valores almacenados."

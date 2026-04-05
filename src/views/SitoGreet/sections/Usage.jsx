@@ -24,6 +24,8 @@ function Usage() {
         <li>
           {t("_pages:sitoGreetInfo.usage.items.background")}
         </li>
+        <li>{t("_pages:sitoGreetInfo.usage.items.directional")}</li>
+        <li>{t("_pages:sitoGreetInfo.usage.items.devPanel")}</li>
       </ul>
     </section>
   );

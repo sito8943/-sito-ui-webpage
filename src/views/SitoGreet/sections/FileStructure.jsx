@@ -13,7 +13,7 @@ function FileStructure() {
           <code className="sgCode">newtab.html</code>, <code className="sgCode">newtab.js</code> — {t("_pages:sitoGreetInfo.fileStructure.items.newtab")}
         </li>
         <li>
-          <code className="sgCode">popup.html</code>, <code className="sgCode">popup.js</code> — {t("_pages:sitoGreetInfo.fileStructure.items.popup")}
+          {t("_pages:sitoGreetInfo.fileStructure.items.popup")}
         </li>
         <li>
           <code className="sgCode">style.css</code> — {t("_pages:sitoGreetInfo.fileStructure.items.styles")}

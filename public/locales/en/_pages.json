@@ -201,7 +201,7 @@
     "pageAria": "Sito Greet extension information",
     "header": {
       "title": "Greeting New Tab (Browser Extension)",
-      "tag": "A minimal Browser extension that replaces the default new tab page with a friendly greeting and a live, locale‑aware clock."
+      "tag": "A minimal browser extension that replaces the new tab with a friendly greeting, live clock, optional weather, and productivity modules such as calendar, pinned tabs, and recent history."
     },
     "preview": {
       "sectionAria": "Sito Greet preview",
@@ -218,12 +218,17 @@
         "newTab": "New Tab override with a clean greeting view.",
         "liveClock": "Live clock formatted using your browser locale.",
         "customizable": "Customizable user name and profile name (persisted via",
-        "toolbar": "Toolbar popup to quickly update values.",
-        "inPageSettings": "In‑page settings menu and dialog to change the username.",
-        "background": "Background customization: choose default gradient, a solid color, or upload an image.",
+        "toolbar": "Developer panel with Feature Flags to enable or disable modules without touching code.",
+        "inPageSettings": "In-page settings menu and dialog with sections for personalization, weather, and pinned tabs.",
+        "background": "Background customization: choose the default gradient, a solid color, or upload an image, with overlay opacity control.",
+        "featureFlags": "Persistent Feature Flags (Ctrl+Shift+D): weather, background, animations, clock, profile, debug, pinned tabs, and recent history.",
+        "pinnedTabs": "Pinned tabs with up to 4 quick links and a mini dialog to add links.",
+        "recentHistory": "Recent history module (up to 8 sites) with runtime permission request.",
+        "calendar": "Built-in monthly calendar in the upward expanded view.",
+        "directionalLayout": "Directional layout: expand upward (calendar) or downward (tabs/history), with buttons and keyboard shortcuts.",
         "minimalPermissions": {
-          "pre": "Minimal permissions (only",
-          "post": ")."
+          "pre": "Minimal permissions (based on",
+          "post": "and optional `history` when enabling Recent History)."
         }
       }
     },
@@ -232,15 +237,16 @@
       "items": {
         "manifest": {
           "pre": "(MV3) overrides the New Tab page to",
-          "post": "and defines a toolbar popup"
+          "post": "and defines the extension environment settings."
         },
         "newtab": {
-          "pre": "renders the greeting and a ticking clock, reading values from"
+          "pre": "renders greeting, clock, weather, calendar, pinned tabs, and recent history, reading values from"
         },
         "styling": {
           "pre": "Styling is handled in",
-          "post": "and shared by both pages."
-        }
+          "post": "and controls directional views, the flags panel, and content modules."
+        },
+        "featureFlags": "Feature Flags are stored under `feature_flags` in local storage and applied live."
       }
     },
     "fileStructure": {
@@ -248,7 +254,7 @@
       "items": {
         "manifest": "WebExtension manifest (v3).",
         "newtab": "New Tab UI and logic.",
-        "popup": "Toolbar popup UI and logic.",
+        "popup": "Control panel in the same New Tab page (no dedicated popup in this version).",
         "styles": "Shared styles.",
         "icons": "Icons."
       }
@@ -271,12 +277,55 @@
       "title": "Usage",
       "items": {
         "openNewTab": "Open a new tab to view the greeting and clock.",
-        "openPopup": "Click the toolbar icon to open the popup and set:",
+        "openPopup": "From the New Tab page you can open Settings and configure:",
         "name": "Name",
         "profileName": "Profile name",
-        "inPageSettings": "Alternatively, on the New Tab page, click the settings button to open the in-page menu and change the username via the dialog.",
-        "background": "Background: select Default, Solid color (with color picker), or Image (upload stored locally in extension storage)."
+        "inPageSettings": "On the New Tab page, click the settings button to open the dialog and change your preferences.",
+        "background": "Background: select Default, Solid color (with color picker), or Image (upload stored locally in extension storage), and adjust overlay opacity.",
+        "directional": "Use the arrow buttons or `ArrowUp`/`ArrowDown` to switch between the top view (calendar) and bottom view (tabs/history).",
+        "devPanel": "Press `Ctrl+Shift+D` to open the Feature Flags panel and toggle functions at runtime."
       }
+    },
+    "featureFlags": {
+      "title": "Feature Flags (Developer Panel)",
+      "intro": "Sito Greet includes a built-in flag system to enable or disable modules without changing code.",
+      "openPanel": "Open the panel with `Ctrl+Shift+D` in the New Tab page.",
+      "flags": {
+        "weather": {
+          "default": "ON",
+          "description": "Weather widget and its settings section."
+        },
+        "backgroundCustomization": {
+          "default": "ON",
+          "description": "Background options in settings."
+        },
+        "animations": {
+          "default": "ON",
+          "description": "Entry and transition animations."
+        },
+        "clock": {
+          "default": "ON",
+          "description": "Date and time display."
+        },
+        "profileDisplay": {
+          "default": "ON",
+          "description": "Show profile name under the greeting."
+        },
+        "debugMode": {
+          "default": "OFF",
+          "description": "Debug logs in the console."
+        },
+        "pinnedTabs": {
+          "default": "ON",
+          "description": "Pinned tab quick links."
+        },
+        "recentHistory": {
+          "default": "OFF",
+          "description": "Shows recently visited sites (requires optional permission)."
+        }
+      },
+      "persistence": "Flags are stored in `browser.storage.local` with the key `feature_flags` and persist across sessions.",
+      "reset": "Use \"Reset all flags\" to restore default values."
     },
     "development": {
       "title": "Development",
@@ -319,7 +368,9 @@
       "title": "Permissions",
       "usedToSave": "used to save",
       "and": "and",
-      "locally": "locally."
+      "locally": "locally.",
+      "optionalHistory": "Optional `history` permission for the Recent History section.",
+      "weatherHost": "Host permission to query `https://api.open-meteo.com/*` when weather is enabled."
     },
     "notes": {
       "title": "Notes",
@@ -346,15 +397,15 @@
         "data": {
           "pre": "Data stored locally: your display name",
           "mid": "a profile label",
-          "post": "and background settings (default/solid color/uploaded image) plus minor in‑page preferences."
+          "post": "background settings, feature flags, pinned tabs, and minor in-page preferences."
         },
         "scope": {
           "pre": "Storage scope: values are saved only on your device via",
           "post": "and are not transmitted."
         },
         "permissions": {
-          "pre": "Permissions: the extension declares only the",
-          "post": "permission (per README). No telemetry."
+          "pre": "Permissions: the extension declares",
+          "post": "as a base; `history` is requested optionally for Recent History. No telemetry."
         },
         "links": "Links: footer links (e.g., GitHub) open in your browser when clicked; no automated requests are performed with your personal data.",
         "removal": "Removal: uninstalling the extension or clearing extension data will remove the stored values."

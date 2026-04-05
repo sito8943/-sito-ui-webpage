@@ -9,6 +9,8 @@ function Permissions() {
         <li>
           <code className="sgCode">storage</code> — {t("_pages:sitoGreetInfo.permissions.usedToSave")} <code className="sgCode">username</code> {t("_pages:sitoGreetInfo.permissions.and")} <code className="sgCode">profile_name</code> {t("_pages:sitoGreetInfo.permissions.locally")}
         </li>
+        <li>{t("_pages:sitoGreetInfo.permissions.optionalHistory")}</li>
+        <li>{t("_pages:sitoGreetInfo.permissions.weatherHost")}</li>
       </ul>
     </section>
   );
